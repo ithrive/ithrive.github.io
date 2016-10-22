@@ -1,0 +1,19 @@
+{
+  "name": "ithrive.github.io",
+  "description": "iThrive website",
+  "main": "",
+  "authors": [
+    "Torben Sko <torben.sko@gmail.com>"
+  ],
+  "homepage": "https://github.com/ithrive/ithrive.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
