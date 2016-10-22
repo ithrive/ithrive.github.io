@@ -4,3 +4,109 @@ $theme-font-path: "/fonts/";
 // bower:scss
 @import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+@mixin padSection($size) {
+	> .container-fluid,
+	> .container {
+		padding-top: $size;
+		padding-bottom: $size;
+
+		@media (max-width: $screen-xs-max) {
+			padding-top: $size*0.6;
+			padding-bottom: $size*0.8;
+		}
+	}
+}
+
+.section {
+	@include padSection(100px);
+	position: relative;
+	overflow: hidden;
+
+	> * {
+		position: relative;
+	}
+
+	> .layer {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+		&-img {
+			background-size: cover;
+			background-position: 50% 50%;
+
+			&-inset {
+				box-shadow: inset 0 0 5px rgba(#000,0.1);
+			}
+
+			@media (max-width: $screen-xs-max) {
+				position: relative;
+				width: 100%;
+				height: 200px;
+			}
+		}
+		&-gradient {
+			&-light {
+				background: -moz-linear-gradient(left, rgba(#fff,1) 0%, rgba(#fff,0) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left, rgba(#fff,1) 0%,rgba(#fff,0) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right, rgba(#fff,1) 0%,rgba(#fff,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+			}
+			&-dark {
+				background: -moz-linear-gradient(left, rgba(#fff,1) 0%, rgba(#fff,0) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left, rgba(#fff,1) 0%,rgba(#fff,0) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right, rgba(#fff,1) 0%,rgba(#fff,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+			}
+		}
+	}
+
+	&_title {
+		$color: #000;
+		color: $color;
+		font-size: 30pt;
+		border-bottom: solid 2px $color;
+		margin-bottom: 40px;
+		display: inline-block;
+		
+		@media (max-width: $screen-sm-max) {
+			font-size: 24pt;
+		}
+
+		@media (max-width: $screen-xs-max) {
+			display: block;
+			text-align: center;
+			font-size: 20pt;
+			border-width: 1px;
+		}
+	}
+}
+
+.section-welcome {
+	.layer-img {
+		background-image: url('/images/desert-washed.jpg');
+	}
+}
+.section-ithrive {
+	.ithrive_products {
+		text-align: center;
+	}
+}
+
+
+.btn {
+	&-outline {
+		border: 1px #000 solid;
+		color: #000;
+		background-color: transparent;
+
+		&-primary {
+			border: 1px $brand-primary solid;
+			color: $brand-primary;
+			background-color: transparent;
+		}
+	}
+}
