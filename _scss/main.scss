@@ -1,9 +1,16 @@
 $icon-font-path: "/fonts/";
 $theme-font-path: "/fonts/";
 
+$brand-primary: rgb(111, 188, 70);
+$brand-primary-compliment: #fff;
+
 // bower:scss
 @import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
 
 @mixin padSection($top, $bottom) {
 	> .container-fluid,
@@ -101,9 +108,11 @@ $theme-font-path: "/fonts/";
 		background-image: url('/images/laura-desert.jpg');
 	}
 }
+
 .section-ithrive {
 	.ithrive_products {
 		text-align: center;
+		margin: 40px 0;
 	}
 }
 
@@ -118,6 +127,31 @@ $theme-font-path: "/fonts/";
 			border: 1px $brand-primary solid;
 			color: $brand-primary;
 			background-color: transparent;
+		}
+	}
+}
+
+.product {
+	display: inline-block;
+	margin: 0 5px 10px 5px;
+	box-shadow: 0 0 5px rgba(#000,0.3);
+	border: 3px solid #fff;
+
+	img {
+		$size: 180px;
+		width: $size;
+		height: $size;
+		opacity: 0.5;
+		transition: opacity 0.5s;
+	}
+	&_name {
+		background-color: $brand-primary;
+		color: $brand-primary-compliment;
+		padding: 5px 0;
+	}
+	&:hover {
+		img {
+			opacity: 1;
 		}
 	}
 }

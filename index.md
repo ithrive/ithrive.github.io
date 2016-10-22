@@ -9,11 +9,20 @@ layout: default
 		</div><!-- .row -->
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="ithrive_products">
-					<a href="" class="btn btn-outline btn-lg">Studio Pilates</a>
-					<a href="" class="btn btn-outline btn-lg">Home Pilates</a>
-					<a href="" class="btn btn-outline btn-lg">Thrive Group</a>
-				</p>
+				<div class="ithrive_products">
+					<a class="product">
+						<img src="/images/product-studio.jpg" alt="" />
+						<div class="product_name">Studio Pilates</div><!-- .product_name -->
+					</a><!-- .product -->
+					<a class="product">
+						<img src="/images/product-athome.jpg" alt="" />
+						<div class="product_name">Home Pilates</div><!-- .product_name -->
+					</a><!-- .product -->
+					<a class="product">
+						<img src="/images/product-thrive.jpg" alt="" />
+						<div class="product_name">Thrive Group</div><!-- .product_name -->
+					</a><!-- .product -->
+				</div>
 			</div><!-- .col-sm-12 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
