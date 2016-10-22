@@ -1,0 +1,42 @@
+footer {
+	background: $brand-primary;
+	color: $brand-primary-compliment;
+	padding: 70px 0;
+
+	.footer_logo {
+		opacity: 0.4;
+		max-width: 100%;
+		width: 480px;
+		transition: opacity 0.5s;
+	}
+
+	&:hover {
+		.footer_logo {
+			opacity: 1;
+		}
+	}
+
+	.footer_social {
+		text-align: right;
+		font-size: 24pt;
+		line-height: 1.2em;
+
+		a {
+			color: rgba($brand-primary-compliment, 0.6);
+			display: block;
+			&:hover {
+				color: $brand-primary-compliment;
+			}
+		}
+		
+		.fa {
+			margin-left: 10px;
+		}
+	}
+	.footer_mailingList {
+		margin: 20px 0;
+		.btn {
+			border: solid 1px $brand-primary-compliment;
+		}
+	}
+}
