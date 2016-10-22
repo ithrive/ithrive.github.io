@@ -5878,8 +5878,24 @@ button.close {
         font-size: 20pt;
         border-width: 1px; } }
 
-.section-welcome .layer-img {
-  background-image: url("/images/desert-washed.jpg"); }
+.section-aboutMe {
+  color: #fff; }
+  .section-aboutMe a {
+    color: #fff;
+    text-decoration: underline; }
+
+.section-aboutMe > .container-fluid,
+.section-aboutMe > .container {
+  padding-top: 300px;
+  padding-bottom: 100px; }
+  @media (max-width: 767px) {
+    .section-aboutMe > .container-fluid,
+    .section-aboutMe > .container {
+      padding-top: 180px;
+      padding-bottom: 80px; } }
+
+.section-aboutMe .layer-img {
+  background-image: url("/images/laura-desert.jpg"); }
 
 .section-ithrive .ithrive_products {
   text-align: center; }

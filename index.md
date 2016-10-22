@@ -19,12 +19,12 @@ layout: default
 	</div><!-- .container -->
 </section><!-- .section -->
 
-<section class="section section-welcome">
+<section class="section section-aboutMe">
 	<div class="layer layer-img"></div><!-- .layer layer-img -->
 	<div class="container">
-		<div class="row col-sm-8">
-			<h1>Lorem ipsum dolor sit amet.</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, illo?</p>
+		<div class="row col-sm-4">
+			<h1>About me</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque iure sint commodi magnam blanditiis autem praesentium repellendus exercitationem explicabo repudiandae.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sint quisquam placeat culpa, recusandae aliquid ipsum in sit animi odit.</p>
 		</div><!-- .row col-sm-8 -->
 	</div><!-- .container -->

@@ -5,21 +5,21 @@ $theme-font-path: "/fonts/";
 @import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@mixin padSection($size) {
+@mixin padSection($top, $bottom) {
 	> .container-fluid,
 	> .container {
-		padding-top: $size;
-		padding-bottom: $size;
+		padding-top: $top;
+		padding-bottom: $bottom;
 
 		@media (max-width: $screen-xs-max) {
-			padding-top: $size*0.6;
-			padding-bottom: $size*0.8;
+			padding-top: $top*0.6;
+			padding-bottom: $bottom*0.8;
 		}
 	}
 }
 
 .section {
-	@include padSection(100px);
+	@include padSection(100px, 100px);
 	position: relative;
 	overflow: hidden;
 
@@ -85,9 +85,20 @@ $theme-font-path: "/fonts/";
 	}
 }
 
-.section-welcome {
+%whiteText {
+	color: #fff;
+	a {
+		color: #fff;
+		text-decoration: underline;
+	}
+}
+
+.section-aboutMe {
+	@include padSection(300px, 100px);
+	@extend %whiteText;
+
 	.layer-img {
-		background-image: url('/images/desert-washed.jpg');
+		background-image: url('/images/laura-desert.jpg');
 	}
 }
 .section-ithrive {
