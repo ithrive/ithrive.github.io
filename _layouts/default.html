@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>iThrive {{ page.title }}</title>
 		<link rel="stylesheet" type="text/css" href="lib/main.css" />
-		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+SC|Quicksand" rel="stylesheet">
 
 		<!-- bower:css -->
 		<!-- endbower -->
@@ -23,61 +23,7 @@
 
 {{ content }}
 
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-5">
-				<img src="/images/logo-horizontal-sm.png" class="img-responsive footer_logo" alt="" />
-			</div><!-- .col-sm-6 -->
-			<div class="col-sm-5 col-sm-offset-2">
-				<div class="footer_mailingList">
-					<!-- <h3>Subscribe</h3> -->
-					<p>Join the mailing list by providing your email below.</p>
-					<form name="form" novalidate ng-submit="submit(form)" class="form-horizontal">
-						<fieldset>
-							<div class="alert alert-warning tmp-hide" ng-show="msgs.error">
-								<h4>Unfortunately, an error occurred</h4>
-								<p>
-									If you continue to have problems please <a href="mailto:laura@ithrive.net.au">contact me.</a>
-								</p>
-							</div><!-- .alert alert-warning -->
-
-							<div class="alert alert-success tmp-hide" ng-show="msgs.success">
-								<h4>Thank you for expressing your interest!</h4>
-								<p>We will contact you shortly with more information.</p>
-							</div><!-- .alert alert-warning -->
-
-							<div class="form-group" ng-class="{'has-error': form.$submitted && form.email.$invalid}">
-							  <!-- <label class="control-label col-sm-2">Subscribe</label> -->
-							  <div class="col-sm-8">
-							    <input type="email" class="form-control" name="email" placeholder="laura@ithrive.net.au" ng-model="formModel.email_address" required />
-							  </div><!-- .col-sm-8 -->
-					    	<div class="col-sm-4">
-					        <button type="submit" class="btn btn-primary btn-block" ladda="processing">
-									  Subscribe
-									</button>
-					    	</div><!-- .col-sm-8 col-sm-offset-4 -->
-						    <p class="help-block tmp-hide" ng-show="form.$submitted && form.email.$error.required">
-						      Please enter your email address
-						    </p>
-						    <p class="help-block tmp-hide" ng-show="form.$submitted && form.email.$error.email">
-						      The value you entered is not a valid email address
-						    </p>
-							</div>
-					  </fieldset>
-					</form>
-				</div><!-- .footer_mailingList -->
-				<p class="footer_social">
-					<a href="mailto:laura@ithrive.net.au"><i class="fa fa-envelope-o"></i> laura@ithrive.net.au</a>
-					<a href="http://fb.me/ITHRIVEMANLY" target="_blank"><i class="fa fa-facebook"></i> /iThriveManly</a>
-					<!-- <i class="fa fa-linkedin"></i> -->
-					<!-- <i class="fa fa-twitter"></i> -->
-					<!-- <i class="fa fa-instagram"></i> -->
-				</p><!-- .footer_social -->
-			</div><!-- .col-sm-6 -->
-		</div><!-- .row -->
-	</div><!-- .container -->
-</footer>
+{% include footer.html %}
 
 		<!-- bower:js -->
 		<script src="/lib/jquery/dist/jquery.js"></script>

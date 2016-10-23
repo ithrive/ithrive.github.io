@@ -2,26 +2,39 @@
 layout: default
 ---
 
-<section class="section section-ithrive">
+<section class="section section-product">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-4"><img src="/images/ithrive-logo.jpg" alt="" class="img-responsive" /></div><!-- .col-sm-4 col-sm-offset-4 -->
+			<div class="col-sm-4 col-sm-offset-4">
+				<img src="/images/ithrive-logo.jpg" alt="" class="img-responsive" />
+				<p class="tagline">Pilates | Massage | Community</p><!-- .tagline -->
+			</div><!-- .col-sm-4 col-sm-offset-4 -->
 		</div><!-- .row -->
 		<div class="row">
 			<div class="col-sm-12">
-				<div class="ithrive_products">
-					<a class="product">
-						<img src="/images/product-studio.jpg" alt="" />
-						<div class="product_name">Studio Pilates</div><!-- .product_name -->
-					</a><!-- .product -->
-					<a class="product">
-						<img src="/images/product-athome.jpg" alt="" />
-						<div class="product_name">Home Pilates</div><!-- .product_name -->
-					</a><!-- .product -->
-					<a class="product">
-						<img src="/images/product-thrive.jpg" alt="" />
-						<div class="product_name">Thrive Group</div><!-- .product_name -->
-					</a><!-- .product -->
+				<div class="product_services">
+					<h3>Explore my services</h3>
+					<div class="servicePreview">
+						<a href="/studio">
+							<img src="/images/service-studio.jpg" alt="" />
+							<div class="service_name">Studio</div><!-- .service_name -->
+						</a><!-- .service -->
+						<p>Odio magni assumenda consequuntur.</p>
+					</div><!-- .service -->
+					<div class="servicePreview">
+						<a href="/home">
+							<img src="/images/service-home.jpg" alt="" />
+							<div class="service_name">Home</div><!-- .service_name -->
+						</a><!-- .service -->
+						<p>Donsectetur adipisicing elit.</p>
+					</div><!-- .service -->
+					<div class="servicePreview">
+						<a href="/community">
+							<img src="/images/service-community.jpg" alt="" />
+							<div class="service_name">Community</div><!-- .service_name -->
+						</a><!-- .service -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div><!-- .service -->
 				</div>
 			</div><!-- .col-sm-12 -->
 		</div><!-- .row -->

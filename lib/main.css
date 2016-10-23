@@ -8035,6 +8035,12 @@ footer {
 body {
   font-family: 'Quicksand', sans-serif; }
 
+h1, .tagline {
+  font-family: 'Cormorant SC', serif; }
+
+p {
+  line-height: 1.2em; }
+
 a:hover {
   text-decoration: none; }
 
@@ -8124,9 +8130,19 @@ a:hover {
 .section-aboutMe .layer-img {
   background-image: url("/images/laura-desert.jpg"); }
 
-.section-ithrive .ithrive_products {
-  text-align: center;
-  margin: 40px 0; }
+.section-aboutMe > h3 {
+  color: #6fbc46; }
+
+.section-product {
+  text-align: center; }
+  .section-product .tagline {
+    font-size: 20pt;
+    color: #777777; }
+  .section-product .product_services {
+    margin: 40px 0; }
+    .section-product .product_services > h3 {
+      color: #6fbc46;
+      margin-bottom: 15px; }
 
 .btn-outline {
   border: 1px #000 solid;
@@ -8137,17 +8153,24 @@ a:hover {
     color: #6fbc46;
     background-color: transparent; }
 
-.product {
+.servicePreview {
   display: inline-block;
-  margin: 0 5px 10px 5px; }
-  .product img {
+  margin: 0 5px 10px 5px;
+  width: 180px;
+  vertical-align: top; }
+  .servicePreview a {
+    display: block;
+    margin-bottom: 5px; }
+  .servicePreview img {
     width: 180px;
     height: 180px;
     opacity: 0.5;
     transition: opacity 0.5s; }
-  .product_name {
+  .servicePreview .service_name {
     background-color: #6fbc46;
     color: #fff;
     padding: 5px 0; }
-  .product:hover img {
+  .servicePreview:hover img {
     opacity: 1; }
+  .servicePreview p {
+    color: #777777; }
