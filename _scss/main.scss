@@ -129,6 +129,7 @@ a:hover {
 .section-aboutMe {
 	@include padSection(300px, 100px);
 	@extend %whiteText;
+	background-color: rgb(225,125,70);
 
 	.layer-img {
 		background-image: url('/images/laura-desert.jpg');

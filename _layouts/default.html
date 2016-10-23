@@ -19,15 +19,18 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	</head>
-	<body ng-controller="MainCtrl">
+	<body>
+		<!--[if lte IE 9]>
+			<script src="//cdn.rawgit.com/jpillora/xdomain/0.7.4/dist/xdomain.min.js" slave="http://tsko-mailchimp-service.herokuapp.com/ithrive.html"></script>
+		<![endif]-->
 
 {{ content }}
-
 {% include footer.html %}
 
 		<!-- bower:js -->
-		<script src="/lib/jquery/dist/jquery.js"></script>
-		<script src="/lib/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+		<script src="/scripts/jquery/dist/jquery.js"></script>
+		<script src="/scripts/angular/angular.js"></script>
 		<!-- endbower -->
+		<script src="/scripts/app.js"></script>
 	</body>
 </html>

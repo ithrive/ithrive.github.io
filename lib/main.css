@@ -8118,21 +8118,21 @@ a:hover {
     color: #fff;
     text-decoration: underline; }
 
-.section-aboutMe > .container-fluid,
-.section-aboutMe > .container {
-  padding-top: 300px;
-  padding-bottom: 100px; }
-  @media (max-width: 767px) {
-    .section-aboutMe > .container-fluid,
-    .section-aboutMe > .container {
-      padding-top: 180px;
-      padding-bottom: 80px; } }
-
-.section-aboutMe .layer-img {
-  background-image: url("/images/laura-desert.jpg"); }
-
-.section-aboutMe > h3 {
-  color: #6fbc46; }
+.section-aboutMe {
+  background-color: #e17d46; }
+  .section-aboutMe > .container-fluid,
+  .section-aboutMe > .container {
+    padding-top: 300px;
+    padding-bottom: 100px; }
+    @media (max-width: 767px) {
+      .section-aboutMe > .container-fluid,
+      .section-aboutMe > .container {
+        padding-top: 180px;
+        padding-bottom: 80px; } }
+  .section-aboutMe .layer-img {
+    background-image: url("/images/laura-desert.jpg"); }
+  .section-aboutMe > h3 {
+    color: #6fbc46; }
 
 .section-product {
   text-align: center; }

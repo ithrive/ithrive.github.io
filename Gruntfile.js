@@ -40,15 +40,22 @@ module.exports = function(grunt) {
           '_layouts/default.html'
         ],
         ignorePath: '../bower_components/',
+        exclude: [
+          'bootstrap.js',
+        ],
         onPathInjected: function(fileObject) {
-          console.log('Run: cp bower_components/'+fileObject.path+' ./lib');
+          var folder = fileObject.path.match(/\.js$/) ? 'scripts' : 'styles';
+          console.log();
+          console.log('# RUN:');
+          console.log('mkdir -p '+folder+'/'+fileObject.path.replace(/\/[^\/]+$/, ''));
+          console.log('cp bower_components/'+fileObject.path+' '+folder+'/'+fileObject.path);
         },
         // defaults:
         fileTypes: {
           html: {
             replace: {
-              js: '<script src="/lib/{{filePath}}"></script>',
-              css: '<link rel="stylesheet" href="/lib/{{filePath}}" />'
+              js: '<script src="/scripts/{{filePath}}"></script>',
+              css: '<link rel="stylesheet" href="/styles/{{filePath}}" />'
             }
           },
         },
