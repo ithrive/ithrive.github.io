@@ -3,6 +3,7 @@ angular.module('App', [])
 
 	})
 	.run(function() {
+		// Provides a way to hide angular logic before angular is ready.
 		$('.tmp-hide').removeClass('tmp-hide');
 	})
 	.directive('mailchimpForm', function($http, $log) {
