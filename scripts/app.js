@@ -11,7 +11,7 @@ angular.module('App', [])
 			// transclude: true,
 			link: function(scope, element, attrs) {
 				// var mailchimpUrl = 'http://localhost:5000/';
-				var mailchimpUrl = 'http://tsko-mailchimp-service.herokuapp.com/';
+				var mailchimpUrl = 'https://tsko-mailchimp-service.herokuapp.com/';
 				var	formDefaults = {
 							status: 'subscribed',
 							merge_fields: {

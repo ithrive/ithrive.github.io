@@ -8,7 +8,7 @@
 				<div class="footer_mailingList">
 					<!-- <h3>Subscribe</h3> -->
 					<p>Join the mailing list by providing your email below.</p>
-					<form name="form" novalidate ng-submit="submit(form)" class="form-horizontal" mailchimp-form source="footer">
+					<form name="form" novalidate ng-submit="submit(form)" class="form-horizontal tmp-hide" mailchimp-form source="footer">
 						<fieldset>
 							<div class="alert alert-warning tmp-hide" ng-show="msgs.error">
 								<h4>Unfortunately, an error occurred</h4>
@@ -17,7 +17,7 @@
 								</p>
 							</div><!-- .alert alert-warning -->
 
-							<div class="alert alert-success tmp-hide" ng-show="msgs.success">
+							<div class="alert alert-success" ng-show="msgs.success">
 								<h4>Thank you for expressing your interest!</h4>
 								<p>We will contact you shortly with more information.</p>
 							</div><!-- .alert alert-warning -->
@@ -33,10 +33,10 @@
 									</button>
 					    	</div><!-- .col-sm-8 col-sm-offset-4 -->
 					    	<div class="col-sm-12">
-							    <p class="help-block tmp-hide" ng-show="form.$submitted && form.email.$error.required">
+							    <p class="help-block" ng-show="form.$submitted && form.email.$error.required">
 							      Please enter your email address
 							    </p>
-							    <p class="help-block tmp-hide" ng-show="form.$submitted && form.email.$error.email">
+							    <p class="help-block" ng-show="form.$submitted && form.email.$error.email">
 							      The value you entered is not a valid email address
 							    </p>
 							  </div><!-- .col-sm-12 -->
