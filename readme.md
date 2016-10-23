@@ -13,6 +13,5 @@ bundle install
 
 Run:
 ```
-grunt
-./serve.sh
+grunt serve
 ```

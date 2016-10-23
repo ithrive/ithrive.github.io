@@ -68,11 +68,41 @@ module.exports = function(grunt) {
         ],
       },
     },
+
+    jekyll: {
+      options: {
+        bundleExec: true,
+        src : '.'
+      },
+      dist: {
+        options: {
+          dest: '_site',
+          config: '_config.yml,_config.build.yml'
+        }
+      },
+      serve: {
+        options: {
+          serve: true,
+          dest: '_site',
+          drafts: true,
+          future: true
+        }
+      }
+    },
+
+    // Run some tasks in parallel to speed up the build process
+    concurrent: {
+      serve: [
+        'jekyll:serve',
+        'watch',
+      ],
+    },
   });
 
-  // Default task(s).
-  grunt.registerTask('default', [
+  
+  grunt.registerTask('serve', [
   		'sass:dev',
       'wiredep',
-  		'watch']);
+      'concurrent:serve',
+    ]);
 };
