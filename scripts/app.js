@@ -6,7 +6,7 @@ angular.module('App', [])
 		// Provides a way to hide angular logic before angular is ready.
 		$('.tmp-hide').removeClass('tmp-hide');
 	})
-	.directive('mailchimpForm', function($http, $log) {
+	.directive('mailchimpForm', function($http, $log, $location) {
 		return {
 			// template: '<div ng-transclude></div>',
 			// transclude: true,
@@ -17,6 +17,7 @@ angular.module('App', [])
 							status: 'subscribed',
 							merge_fields: {
 								SOURCE: attrs.source,
+								URL: $location.path(),
 							}, 
 						};
 				
