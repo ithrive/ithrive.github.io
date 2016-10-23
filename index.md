@@ -5,7 +5,7 @@ layout: default
 <section class="section section-ithrive">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-4"><img src="/images/logo-with-text.jpg" alt="" class="img-responsive" /></div><!-- .col-sm-4 col-sm-offset-4 -->
+			<div class="col-sm-4 col-sm-offset-4"><img src="/images/ithrive-logo.jpg" alt="" class="img-responsive" /></div><!-- .col-sm-4 col-sm-offset-4 -->
 		</div><!-- .row -->
 		<div class="row">
 			<div class="col-sm-12">

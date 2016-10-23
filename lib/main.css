@@ -8139,9 +8139,7 @@ a:hover {
 
 .product {
   display: inline-block;
-  margin: 0 5px 10px 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border: 3px solid #fff; }
+  margin: 0 5px 10px 5px; }
   .product img {
     width: 180px;
     height: 180px;
