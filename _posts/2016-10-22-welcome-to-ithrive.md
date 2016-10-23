@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog
 title:  "Welcome to iThrive"
 date:   2016-10-22 12:29:04 +1100
 categories: jekyll update

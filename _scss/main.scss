@@ -21,6 +21,7 @@ body {
 %altFont {
 	font-family: 'Cormorant SC', serif;
 	letter-spacing: 0.02em;
+	line-height: 1.0em;
 }
 
 h1 {
@@ -48,6 +49,7 @@ a:hover {
 .b-lazy.b-loaded {
 	opacity: 1;
 }
+
 
 @mixin padSection($top, $bottom) {
 	> .container-fluid,
@@ -134,6 +136,10 @@ a:hover {
 	a {
 		color: #fff;
 		text-decoration: underline;
+
+		&.btn {
+			text-decoration: none;
+		}
 	}
 }
 
@@ -144,6 +150,15 @@ a:hover {
 
 	> h3 {
 		color: $brand-primary;
+	}
+}
+
+.section-community {
+	// @include padSection(150px, 150px);
+	// @extend %whiteText;
+
+	.btn-lg {
+		margin-top: 20px;
 	}
 }
 
@@ -177,9 +192,14 @@ a:hover {
 		color: #000;
 		background-color: transparent;
 
-		&-primary {
+		&.btn-primary {
 			border: 1px $brand-primary solid;
 			color: $brand-primary;
+			background-color: transparent;
+		}
+		&.btn-light {
+			border: 1px #fff solid;
+			color: #fff;
 			background-color: transparent;
 		}
 	}
@@ -216,5 +236,25 @@ a:hover {
 	}
 	p {
 		color: $gray-light;
+	}
+}
+
+article.post {
+	margin: 50px 0;
+}
+
+.postListing {
+	.postListing_posts {
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}
+}
+
+.postPreview {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid $gray-lighter;
+	.post_title {
+		margin: 0;
 	}
 }

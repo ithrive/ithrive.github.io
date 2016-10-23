@@ -8025,6 +8025,9 @@ button.close {
     .navbar li.active a.navbar_blog {
       border-color: #6fbc46; }
 
+.navbar-offset {
+  height: 50px; }
+
 footer {
   background: #6fbc46;
   color: #fff;
@@ -8057,7 +8060,8 @@ body {
 
 h1, .tagline {
   font-family: 'Cormorant SC', serif;
-  letter-spacing: 0.02em; }
+  letter-spacing: 0.02em;
+  line-height: 1.0em; }
 
 p {
   line-height: 1.2em; }
@@ -8144,6 +8148,8 @@ a:hover {
   .section-aboutMe a {
     color: #fff;
     text-decoration: underline; }
+    .section-aboutMe a.btn {
+      text-decoration: none; }
 
 .section-aboutMe {
   background-color: #e17d46; }
@@ -8158,6 +8164,9 @@ a:hover {
         padding-bottom: 80px; } }
   .section-aboutMe > h3 {
     color: #6fbc46; }
+
+.section-community .btn-lg, .section-community .btn-group-lg > .btn {
+  margin-top: 20px; }
 
 .section-product {
   text-align: center; }
@@ -8174,9 +8183,13 @@ a:hover {
   border: 1px #000 solid;
   color: #000;
   background-color: transparent; }
-  .btn-outline-primary {
+  .btn-outline.btn-primary {
     border: 1px #6fbc46 solid;
     color: #6fbc46;
+    background-color: transparent; }
+  .btn-outline.btn-light {
+    border: 1px #fff solid;
+    color: #fff;
     background-color: transparent; }
 
 .servicePreview {
@@ -8200,3 +8213,17 @@ a:hover {
     opacity: 1; }
   .servicePreview p {
     color: #777777; }
+
+article.post {
+  margin: 50px 0; }
+
+.postListing .postListing_posts {
+  margin-top: 50px;
+  margin-bottom: 100px; }
+
+.postPreview {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eeeeee; }
+  .postPreview .post_title {
+    margin: 0; }
