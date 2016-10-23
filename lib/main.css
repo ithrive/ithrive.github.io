@@ -8048,6 +8048,13 @@ a:hover {
 .tmp-hide {
   display: none; }
 
+.b-lazy {
+  transition: opacity 500ms ease-in-out;
+  opacity: 0; }
+
+.b-lazy.b-loaded {
+  opacity: 1; }
+
 .section {
   position: relative;
   overflow: hidden; }
@@ -8129,8 +8136,6 @@ a:hover {
       .section-aboutMe > .container {
         padding-top: 180px;
         padding-bottom: 80px; } }
-  .section-aboutMe .layer-img {
-    background-image: url("/images/laura-desert.jpg"); }
   .section-aboutMe > h3 {
     color: #6fbc46; }
 

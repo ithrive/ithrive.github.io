@@ -43,7 +43,7 @@ layout: default
 </section><!-- .section -->
 
 <section class="section section-aboutMe">
-	<div class="layer layer-img"></div><!-- .layer layer-img -->
+	<div class="layer layer-img b-lazy" data-src="/images/laura-desert.jpg"></div><!-- .layer layer-img -->
 	<div class="container">
 		<div class="row col-sm-4">
 			<h1>About me</h1>

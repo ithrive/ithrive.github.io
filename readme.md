@@ -5,11 +5,20 @@ iThrive website developed using [Jekyll](jekyllrb.com) and hosted on [GitHub pag
 
 ## Development
 
+Install RVM (see website).
+
+```
+rvm install ruby 2.2.2
+gem install bundler
+```
+
+
 Install:
 ```
 npm install
 bundle install
 ```
+
 
 Run:
 ```

@@ -34,8 +34,18 @@ a:hover {
 	text-decoration: none;
 }
 
+// Hide conditional/angular elements until ready
 .tmp-hide {
 	display: none;
+}
+
+// Lazy load images
+.b-lazy {
+	transition: opacity 500ms ease-in-out;
+  opacity: 0;
+}
+.b-lazy.b-loaded {
+	opacity: 1;
 }
 
 @mixin padSection($top, $bottom) {
@@ -131,9 +141,6 @@ a:hover {
 	@extend %whiteText;
 	background-color: rgb(225,125,70);
 
-	.layer-img {
-		background-image: url('/images/laura-desert.jpg');
-	}
 	> h3 {
 		color: $brand-primary;
 	}

@@ -26,11 +26,19 @@
 
 {{ content }}
 {% include footer.html %}
+		<script src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 
 		<!-- bower:js -->
 		<script src="/scripts/jquery/dist/jquery.js"></script>
 		<script src="/scripts/angular/angular.js"></script>
+		<script src="/scripts/bLazy/blazy.js"></script>
 		<!-- endbower -->
 		<script src="/scripts/app.js"></script>
+
+		<script>
+			;(function() {
+	      var bLazy = new Blazy();
+	  	})();
+	  </script>
 	</body>
 </html>
