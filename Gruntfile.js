@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         ],
         ignorePath: '../bower_components/',
         exclude: [
-          'bootstrap.js',
+          // 'bootstrap.js',
         ],
         onPathInjected: function(fileObject) {
           var folder = fileObject.path.match(/\.js$/) ? 'scripts' : 'styles';

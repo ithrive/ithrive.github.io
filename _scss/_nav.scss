@@ -1,0 +1,28 @@
+.navbar {
+	background-color: rgba(#fff, 0.95);
+	border-bottom: 1px solid rgba(#000, 0.1);
+
+	img.navbar_logo {
+		height: 50px;
+		margin-right: 20px;
+	}
+	.navbar_blog {
+		border: solid 1px $gray-light;
+		height: 40px;
+		margin-top: 5px;
+		border-radius: 20px;
+		line-height: 40px;
+		padding: 0 20px;
+	}
+	a {
+		color: $gray-light;
+	}
+	li.active {
+		a {
+			color: $brand-primary;
+			&.navbar_blog {
+				border-color: $brand-primary;
+			}
+		}
+	}
+}

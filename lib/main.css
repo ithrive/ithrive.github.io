@@ -8005,6 +8005,26 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .navbar img.navbar_logo {
+    height: 50px;
+    margin-right: 20px; }
+  .navbar .navbar_blog {
+    border: solid 1px #777777;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 20px;
+    line-height: 40px;
+    padding: 0 20px; }
+  .navbar a {
+    color: #777777; }
+  .navbar li.active a {
+    color: #6fbc46; }
+    .navbar li.active a.navbar_blog {
+      border-color: #6fbc46; }
+
 footer {
   background: #6fbc46;
   color: #fff;
