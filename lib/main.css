@@ -8036,7 +8036,8 @@ body {
   font-family: 'Quicksand', sans-serif; }
 
 h1, .tagline {
-  font-family: 'Cormorant SC', serif; }
+  font-family: 'Cormorant SC', serif;
+  letter-spacing: 0.02em; }
 
 p {
   line-height: 1.2em; }
