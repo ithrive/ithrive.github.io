@@ -8231,13 +8231,17 @@ article.post {
 .section-inquiry {
   background: #eeeeee; }
 
-.control-label {
-  text-align: center;
-  display: block;
-  color: #777777;
-  font-weight: 300; }
+.form_heading {
+  font-size: 14pt;
+  color: #777777; }
+  @media (max-width: 767px) {
+    .form_heading {
+      text-align: center; } }
 
-.formSubmit {
-  margin-top: 20px;
-  padding-top: 20px;
+fieldset + fieldset {
+  margin-top: 10px;
+  padding-top: 10px;
   border-top: 1px solid #eeeeee; }
+
+.section-comingSoon {
+  text-align: center; }

@@ -265,15 +265,34 @@ article.post {
 
 }
 
-.control-label {
-	text-align: center;
-	display: block;
+// .control-label {
+// 	text-align: center;
+// 	display: block;
+// 	color: $gray-light;
+// 	font-weight: 300;
+
+// 	&.col-sm-12 {
+// 		text-align: left;
+// 		padding-bottom: 4px;
+// 	}
+// }
+
+.form_heading {
+	font-size: 14pt;
 	color: $gray-light;
-	font-weight: 300;
+	// margin: 22px 0 8px 0;
+
+	@media (max-width: $screen-xs-max) {
+		text-align: center;
+	}
+}
+fieldset + fieldset {
+	// margin-top: 20px;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid $gray-lighter;
 }
 
-.formSubmit {
-	margin-top: 20px;
-	padding-top: 20px;
-	border-top: 1px solid $gray-lighter;
+.section-comingSoon {
+	text-align: center;
 }
