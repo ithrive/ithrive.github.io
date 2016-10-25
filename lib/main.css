@@ -8230,6 +8230,8 @@ article.post {
 
 .section-inquiry {
   background: #eeeeee; }
+  .section-inquiry .well {
+    min-height: 300px; }
 
 .form_heading {
   font-size: 14pt;

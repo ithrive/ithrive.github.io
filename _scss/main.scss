@@ -262,7 +262,9 @@ article.post {
 .section-inquiry {
 	// @extend %lightText; 
 	background: $gray-lighter;
-
+	.well {
+		min-height: 300px;
+	}
 }
 
 // .control-label {

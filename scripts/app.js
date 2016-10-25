@@ -1,4 +1,6 @@
-angular.module('App', [])
+angular.module('App', [
+		'angularSpinner',
+	])
 	.config(function($locationProvider) {
 		// Stop normal page requests
     // $locationProvider.html5Mode(true);
@@ -9,7 +11,11 @@ angular.module('App', [])
 	})
 	.directive('mailchimpForm', function($http, $log, $location) {
 		return {
-			template: '<div ng-transclude ng-if="ready"></div>',
+			template: 
+				'<div>'+
+					'<div ng-transclude ng-if="ready"></div>'+
+					'<span us-spinner="{radius:10, width:1, length:8}" spinner-on="!ready"></span>'+
+				'</div>',
 			transclude: true,
 			// scope: {},
 			link: function(scope, element, attrs) {
@@ -35,6 +41,8 @@ angular.module('App', [])
 				scope.processing = false;
 				scope.msgs = {};
 				scope.formModel = angular.copy(formDefaults);
+				scope.formModel.email_address = 'torben.sko@gmail.com';
+				console.log(scope.formModel);
 
 				// Make sure the server is awake
 				// element.hide();
