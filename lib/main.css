@@ -8227,3 +8227,17 @@ article.post {
   border-bottom: 1px solid #eeeeee; }
   .postPreview .post_title {
     margin: 0; }
+
+.section-inquiry {
+  background: #eeeeee; }
+
+.control-label {
+  text-align: center;
+  display: block;
+  color: #777777;
+  font-weight: 300; }
+
+.formSubmit {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee; }

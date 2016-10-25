@@ -28,7 +28,7 @@ angular.module('App', [])
 				scope.formModel = angular.copy(formDefaults);
 
 				// Make sure the server is awake
-				element.hide();
+				// element.hide();
 				$http.get(mailchimpUrl+'ping', scope.formModel)
 					.then(function(response) {
 						console.log(response.data);

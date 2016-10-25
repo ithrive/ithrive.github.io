@@ -131,7 +131,7 @@ a:hover {
 	}
 }
 
-%whiteText {
+%lightText {
 	color: #fff;
 	a {
 		color: #fff;
@@ -145,7 +145,7 @@ a:hover {
 
 .section-aboutMe {
 	@include padSection(300px, 100px);
-	@extend %whiteText;
+	@extend %lightText;
 	background-color: rgb(225,125,70);
 
 	> h3 {
@@ -155,7 +155,7 @@ a:hover {
 
 .section-community {
 	// @include padSection(150px, 150px);
-	// @extend %whiteText;
+	// @extend %lightText;
 
 	.btn-lg {
 		margin-top: 20px;
@@ -257,4 +257,23 @@ article.post {
 	.post_title {
 		margin: 0;
 	}
+}
+
+.section-inquiry {
+	// @extend %lightText; 
+	background: $gray-lighter;
+
+}
+
+.control-label {
+	text-align: center;
+	display: block;
+	color: $gray-light;
+	font-weight: 300;
+}
+
+.formSubmit {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid $gray-lighter;
 }

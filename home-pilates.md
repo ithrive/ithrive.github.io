@@ -15,3 +15,5 @@ permalink: /home-pilates/
 		</div><!-- .row -->
 	</div><!-- .container -->
 </section>
+
+{% include mailing-list.html %}

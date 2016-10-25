@@ -5,10 +5,10 @@
 				<a href="/"><img src="/images/logo-footer.png" class="img-responsive footer_logo" alt="" /></a>
 			</div><!-- .col-sm-6 -->
 			<div class="col-sm-5 col-sm-offset-2">
-				<div class="footer_mailingList">
+				<div class="footer_mailingList tmp-hide" mailchimp-form source="footer">
 					<!-- <h3>Subscribe</h3> -->
 					<p>Join the mailing list by providing your email below.</p>
-					<form name="form" novalidate ng-submit="submit(form)" class="form-horizontal tmp-hide" mailchimp-form source="footer">
+					<form name="form" novalidate ng-submit="submit(form)" class="form-horizontal" >
 						<fieldset>
 							<div class="alert alert-warning tmp-hide" ng-show="msgs.error">
 								<h4>Unfortunately, an error occurred</h4>
