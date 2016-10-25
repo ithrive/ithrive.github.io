@@ -35,6 +35,12 @@ footer {
 	}
 	.footer_mailingList {
 		margin: 20px 0;
+		form {
+			position: relative;
+			.form-group {
+				margin-bottom: 0px;
+			}
+		}
 		.btn {
 			border: solid 1px $brand-primary-compliment;
 		}

@@ -8052,6 +8052,10 @@ footer {
       margin-left: 10px; }
   footer .footer_mailingList {
     margin: 20px 0; }
+    footer .footer_mailingList form {
+      position: relative; }
+      footer .footer_mailingList form .form-group {
+        margin-bottom: 0px; }
     footer .footer_mailingList .btn {
       border: solid 1px #fff; }
 

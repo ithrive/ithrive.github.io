@@ -9,6 +9,7 @@
 					<!-- <h3>Subscribe</h3> -->
 					<p>Join the mailing list by providing your email below.</p>
 					<form name="form" novalidate ng-submit="submit(form)" class="form-horizontal" >
+						<span us-spinner="{radius:8, width:1, length:6}" spinner-on="processing"></span>
 						<fieldset>
 							<div class="alert alert-warning tmp-hide" ng-show="msgs.error">
 								<h4>Unfortunately, an error occurred</h4>
@@ -28,7 +29,7 @@
 							    <input type="email" class="form-control" name="email" placeholder="laura@ithrive.net.au" ng-model="formModel.email_address" required />
 							  </div><!-- .col-sm-8 -->
 					    	<div class="col-sm-4">
-					        <button type="submit" class="btn btn-primary btn-block" ladda="processing">
+					        <button type="submit" class="btn btn-primary btn-block" ng-disabled="processing">
 									  Subscribe
 									</button>
 					    	</div><!-- .col-sm-8 col-sm-offset-4 -->
