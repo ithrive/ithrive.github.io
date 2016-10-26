@@ -4,7 +4,6 @@ layout: default
 
 <div class="navbar-offset"></div><!-- .navbar-offset -->
 
-
 <div class="container postListing">
   <div class="postListing_posts">
     <!-- This loops through the paginated posts -->
@@ -15,14 +14,11 @@ layout: default
         <div class="row">
           <div class="col-sm-4">
             <h2 class="post_title">
-              {% if content_length != excerpt_length %}
-                <a href="{{ post.url }}">{{ post.title }}</a>
-              {% else %}
-                {{ post.title }}
-              {% endif %}
+              <a href="{{ post.url }}">{{ post.title }}</a>
             </h2>
-            <p class="author">
-              <span class="date">{{ post.date }}</span>
+            <p class="post_details">
+              <span class="post_date">{{ post.date | date_to_string }}</span>
+              <span class="disqus-comment-count" data-disqus-url="{{ post.url }}#disqus_thread"></span>
             </p>
           </div>
           <div class="col-sm-8">
@@ -68,3 +64,5 @@ layout: default
     </div><!-- .col-sm-12 -->
   </div><!-- .row -->
 </div><!-- .container -->
+
+<script id="dsq-count-scr" src="//{{ page.disqusShortName }}.disqus.com/count.js" async></script>
