@@ -35,7 +35,6 @@ angular.module('App', [
 				scope.processing = false;
 				scope.msgs = {};
 				var model = scope.formModel = angular.copy(formDefaults);
-				model.email_address = 'torben.sko@gmail.com';
 
 				// Make sure the server is awake
 				$http.get(mailchimpUrl+'ping')
@@ -47,7 +46,6 @@ angular.module('App', [
 					});
 
 				scope.submit = function(form) {
-					console.log('submit');
 					if ( form.$invalid ) {
 						return;
 					}
