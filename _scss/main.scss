@@ -433,3 +433,13 @@ article.knowledgeBase {
 		}
 	}
 }
+
+.knowledge {
+	color: #57a6bf;
+
+	&::after {
+		content: "\f05a";
+		font-family: 'FontAwesome';
+		padding-left: 2px;
+	}
+}

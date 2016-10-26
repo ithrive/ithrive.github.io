@@ -1,5 +1,6 @@
 angular.module('App', [
 		'angularSpinner',
+		'ui.bootstrap',
 	])
 	.config(function($locationProvider) {
 		// Stop normal page requests
@@ -8,6 +9,29 @@ angular.module('App', [
 	.run(function() {
 		// Provides a way to hide angular logic before angular is ready.
 		$('.tmp-hide').removeClass('tmp-hide');
+	})
+	.directive('em', function($compile, $rootScope) {
+		return {
+			// transclude: true,
+			restrict: 'E',
+			scope: {},
+			link: function(scope, element, attrs, ctrl, transclude) {
+				var text = element.text().toLowerCase();
+				_.each(knowledgeBaseLookup, function(val, key) {
+					if ( text == key ) {
+						var popoverScope = $rootScope.$new(false, scope);
+
+						popoverScope.popover = _.extend({
+					    templateUrl: 'knowledgePopover.html',
+					  }, val);
+
+						var $html = $('<span class="knowledge" uib-popover-template="popover.templateUrl">'+text+'</span>');
+						element.replaceWith($html);
+						$compile($html)(popoverScope);
+					}
+				});
+			}
+		}
 	})
 	.directive('mailchimpForm', function($http, $log, $timeout) {
 		return {

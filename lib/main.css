@@ -8363,3 +8363,10 @@ article.knowledgeBase {
       vertical-align: middle;
       padding-bottom: 3px;
       color: #bbb; }
+
+.knowledge {
+  color: #57a6bf; }
+  .knowledge::after {
+    content: "\f05a";
+    font-family: 'FontAwesome';
+    padding-left: 2px; }

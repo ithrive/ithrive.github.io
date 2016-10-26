@@ -26,6 +26,26 @@
 {% include nav.html %}
 {{ content }}
 {% include footer.html %}
+
+<script>
+var knowledgeBaseLookup = {
+	{% for entry in site.knowledge_base %}
+		"{{ entry.terms }}": {
+			description: "{{ entry.description }}",
+			url: "{{ entry.url }}",
+		},
+	{% endfor %}
+};
+</script>
+<script type="text/ng-template" id="knowledgePopover.html">
+  {% raw %}
+  <div>{{ popover.description }}</div>
+  <div class="clearfix">
+	<a href="{{ popover.url }}" class="pull-right" target="_blank">Learn more <span class="fa fa-angle-right"></span></a>
+	{% endraw %}
+</div>
+</script>
+
 		<script src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 
 		<!-- bower:js -->
@@ -34,6 +54,8 @@
 		<script src="/scripts/angular/angular.js"></script>
 		<script src="/scripts/spin.js/spin.js"></script>
 		<script src="/scripts/angular-spinner/angular-spinner.js"></script>
+		<script src="/scripts/lodash/lodash.js"></script>
+		<script src="/scripts/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 		<!-- endbower -->
 		<script src="/scripts/app.js"></script>
 
