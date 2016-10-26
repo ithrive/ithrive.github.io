@@ -2,9 +2,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-5">
-				<a href="/"><img src="/images/logo-footer.png" class="img-responsive footer_logo" alt="" /></a>
+				<a href="/"><img src="/images/logo-footer.png" class="footer_logo" alt="" /></a>
 			</div><!-- .col-sm-6 -->
-			<div class="col-sm-5 col-sm-offset-2">
+			<div class="col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
 				<div class="footer_mailingList tmp-hide" mailchimp-form source="footer">
 					<!-- <h3>Subscribe</h3> -->
 					<p>Join the mailing list by providing your email below.</p>
@@ -25,14 +25,14 @@
 
 							<div class="form-group" ng-class="{'has-error': form.$submitted && form.email.$invalid}">
 							  <!-- <label class="control-label col-sm-2">Subscribe</label> -->
-							  <div class="col-sm-8">
+							  <div class="col-xs-8">
 							    <input type="email" class="form-control" name="email" placeholder="laura@ithrive.net.au" ng-model="formModel.email_address" required />
-							  </div><!-- .col-sm-8 -->
-					    	<div class="col-sm-4">
+							  </div><!-- .col-xs-8 -->
+					    	<div class="col-xs-4">
 					        <button type="submit" class="btn btn-primary btn-block" ng-disabled="processing">
 									  Subscribe
 									</button>
-					    	</div><!-- .col-sm-8 col-sm-offset-4 -->
+					    	</div><!-- .col-xs-8 col-sm-offset-4 -->
 					    	<div class="col-sm-12">
 							    <p class="help-block" ng-show="form.$submitted && form.email.$error.required">
 							      Please enter your email address

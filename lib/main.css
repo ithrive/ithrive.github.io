@@ -8032,17 +8032,29 @@ footer {
   background: #6fbc46;
   color: #fff;
   padding: 70px 0; }
+  @media (max-width: 767px) {
+    footer {
+      text-align: center; } }
   footer .footer_logo {
     opacity: 0.4;
     max-width: 100%;
     width: 480px;
     transition: opacity 0.5s; }
+    @media (max-width: 767px) {
+      footer .footer_logo {
+        width: 200px; } }
   footer:hover .footer_logo {
     opacity: 1; }
   footer .footer_social {
     text-align: right;
     font-size: 24pt;
     line-height: 1.2em; }
+    @media (max-width: 991px) {
+      footer .footer_social {
+        font-size: 18pt; } }
+    @media (max-width: 767px) {
+      footer .footer_social {
+        text-align: center; } }
     footer .footer_social a {
       color: rgba(255, 255, 255, 0.6);
       display: block; }
