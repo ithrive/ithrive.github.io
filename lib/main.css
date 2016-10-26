@@ -1158,7 +1158,7 @@ h1, h2, h3, h4, h5, h6,
   .h6 .small {
     font-weight: normal;
     line-height: 1;
-    color: #777777; }
+    color: #bbb; }
 
 h1, .h1,
 h2, .h2,
@@ -1256,7 +1256,7 @@ mark,
   text-transform: capitalize; }
 
 .text-muted {
-  color: #777777; }
+  color: #bbb; }
 
 .text-primary {
   color: #6fbc46; }
@@ -1395,7 +1395,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #777777; }
+  border-bottom: 1px dotted #bbb; }
 
 .initialism {
   font-size: 90%; }
@@ -1415,7 +1415,7 @@ blockquote {
     display: block;
     font-size: 80%;
     line-height: 1.428571429;
-    color: #777777; }
+    color: #bbb; }
     blockquote footer:before,
     blockquote small:before,
     blockquote .small:before {
@@ -2024,7 +2024,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777777;
+  color: #bbb;
   text-align: left; }
 
 th {
@@ -3066,7 +3066,7 @@ fieldset[disabled] a.btn {
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
   fieldset[disabled] .btn-link:hover,
   fieldset[disabled] .btn-link:focus {
-    color: #777777;
+    color: #bbb;
     text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -3196,7 +3196,7 @@ tbody.collapse.in {
   background-color: #6fbc46; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
-  color: #777777; }
+  color: #bbb; }
 
 .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   text-decoration: none;
@@ -3224,7 +3224,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   font-size: 12px;
   line-height: 1.428571429;
-  color: #777777;
+  color: #bbb;
   white-space: nowrap; }
 
 .dropdown-backdrop {
@@ -3553,9 +3553,9 @@ tbody.collapse.in {
         text-decoration: none;
         background-color: #eeeeee; }
     .nav > li.disabled > a {
-      color: #777777; }
+      color: #bbb; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-        color: #777777;
+        color: #bbb;
         text-decoration: none;
         background-color: transparent;
         cursor: not-allowed; }
@@ -3994,14 +3994,14 @@ tbody.collapse.in {
   background-color: #222;
   border-color: #090909; }
   .navbar-inverse .navbar-brand {
-    color: #9d9d9d; }
+    color: #e1e1e1; }
     .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
       color: #fff;
       background-color: transparent; }
   .navbar-inverse .navbar-text {
-    color: #9d9d9d; }
+    color: #e1e1e1; }
   .navbar-inverse .navbar-nav > li > a {
-    color: #9d9d9d; }
+    color: #e1e1e1; }
     .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
       color: #fff;
       background-color: transparent; }
@@ -4029,7 +4029,7 @@ tbody.collapse.in {
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
       background-color: #090909; }
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-      color: #9d9d9d; }
+      color: #e1e1e1; }
       .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #fff;
         background-color: transparent; }
@@ -4040,11 +4040,11 @@ tbody.collapse.in {
       color: #444;
       background-color: transparent; } }
   .navbar-inverse .navbar-link {
-    color: #9d9d9d; }
+    color: #e1e1e1; }
     .navbar-inverse .navbar-link:hover {
       color: #fff; }
   .navbar-inverse .btn-link {
-    color: #9d9d9d; }
+    color: #e1e1e1; }
     .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
       color: #fff; }
     .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus,
@@ -4065,7 +4065,7 @@ tbody.collapse.in {
       padding: 0 5px;
       color: #ccc; }
   .breadcrumb > .active {
-    color: #777777; }
+    color: #bbb; }
 
 .pagination {
   display: inline-block;
@@ -4116,7 +4116,7 @@ tbody.collapse.in {
   .pagination > .disabled > a,
   .pagination > .disabled > a:hover,
   .pagination > .disabled > a:focus {
-    color: #777777;
+    color: #bbb;
     background-color: #fff;
     border-color: #ddd;
     cursor: not-allowed; }
@@ -4186,7 +4186,7 @@ tbody.collapse.in {
   .pager .disabled > a:hover,
   .pager .disabled > a:focus,
   .pager .disabled > span {
-    color: #777777;
+    color: #bbb;
     background-color: #fff;
     cursor: not-allowed; }
 
@@ -4213,9 +4213,9 @@ a.label:hover, a.label:focus {
   cursor: pointer; }
 
 .label-default {
-  background-color: #777777; }
+  background-color: #bbb; }
   .label-default[href]:hover, .label-default[href]:focus {
-    background-color: #5e5e5e; }
+    background-color: #a2a2a2; }
 
 .label-primary {
   background-color: #6fbc46; }
@@ -4253,7 +4253,7 @@ a.label:hover, a.label:focus {
   vertical-align: middle;
   white-space: nowrap;
   text-align: center;
-  background-color: #777777;
+  background-color: #bbb;
   border-radius: 10px; }
   .badge:empty {
     display: none; }
@@ -4564,12 +4564,12 @@ button.list-group-item {
 
 .list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
   background-color: #eeeeee;
-  color: #777777;
+  color: #bbb;
   cursor: not-allowed; }
   .list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading {
     color: inherit; }
   .list-group-item.disabled .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text {
-    color: #777777; }
+    color: #bbb; }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
@@ -8012,14 +8012,14 @@ button.close {
     height: 50px;
     margin-right: 20px; }
   .navbar a.navbar_blog {
-    border: solid 1px #777777;
+    border: solid 1px #bbb;
     height: 40px;
     margin-top: 5px;
     border-radius: 20px;
     line-height: 40px;
     padding: 0 20px; }
   .navbar a {
-    color: #777777; }
+    color: #bbb; }
   .navbar li.active a {
     color: #fff;
     background-color: #6fbc46; }
@@ -8205,7 +8205,7 @@ a:hover {
       margin-bottom: 10px; }
     .section-product .product_logo p {
       font-size: 14pt;
-      color: #777777; }
+      color: #bbb; }
   .section-product .product_services {
     margin: 40px 0; }
     .section-product .product_services > h3 {
@@ -8245,7 +8245,7 @@ a:hover {
   .servicePreview:hover img {
     opacity: 1; }
   .servicePreview p {
-    color: #777777; }
+    color: #bbb; }
 
 article.post {
   padding: 50px 0; }
@@ -8255,12 +8255,12 @@ article.post {
   article.post .post_body {
     font-size: 12pt; }
   article.post .post_details {
-    color: #777777; }
+    color: #bbb; }
 
 .postListing .postListing_heading {
   text-align: center;
   margin: 50px 0;
-  color: #777777; }
+  color: #bbb; }
 
 .postListing .postListing_posts {
   margin-bottom: 100px; }
@@ -8285,7 +8285,7 @@ article.post {
     padding-bottom: 5px; }
   .postPreview-listing .post_excerpt {
     padding-top: 10px;
-    color: #777777; }
+    color: #bbb; }
 
 .postPreview-sidebar {
   margin-bottom: 20px; }
@@ -8293,7 +8293,7 @@ article.post {
     font-size: 14pt; }
   .postPreview-sidebar .post_excerpt {
     font-size: 10pt;
-    color: #777777;
+    color: #bbb;
     line-height: 1.2em; }
   .postPreview-sidebar .post_date {
     font-size: 9pt; }
@@ -8307,7 +8307,7 @@ article.post {
 
 .form_heading {
   font-size: 14pt;
-  color: #777777; }
+  color: #bbb; }
   @media (max-width: 767px) {
     .form_heading {
       text-align: center; } }
@@ -8338,7 +8338,7 @@ aside.block {
   padding-left: 20px; }
   aside.block .block_heading {
     margin: 20px 0 20px -20px;
-    color: #777777;
+    color: #bbb;
     font-size: 12pt; }
 
 article.knowledgeBase {
@@ -8346,7 +8346,20 @@ article.knowledgeBase {
   article.knowledgeBase .article_heading {
     font-size: 30pt;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #eeeeee; }
   article.knowledgeBase .article_excerpt {
     font-size: 14pt; }
+  article.knowledgeBase .article_shortVersion {
+    text-style: italic;
+    font-size: 18pt;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 40px; }
+    article.knowledgeBase .article_shortVersion label {
+      font-size: 10pt;
+      margin-right: 15px;
+      font-weight: 800;
+      vertical-align: middle;
+      padding-bottom: 3px;
+      color: #bbb; }

@@ -3,6 +3,7 @@ $theme-font-path: "/fonts/";
 
 $brand-primary: rgb(111, 188, 70);
 $brand-primary-compliment: #fff;
+$gray-light: #bbb;
 
 $grid-gutter-width: 10px;
 
@@ -407,10 +408,28 @@ article.knowledgeBase {
 	.article_heading {
 		font-size: 30pt;
 		padding-bottom: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		border-bottom: 1px solid $gray-lighter;
 	}
 	.article_excerpt {
 		font-size: 14pt;
+	}
+	.article_shortVersion {
+		text-style: italic;
+		font-size: 18pt;
+		padding: 10px 0;
+		border-bottom: 1px solid $gray-lighter;
+		margin-bottom: 40px;
+
+		label {
+			font-size: 10pt;
+			margin-right: 15px;
+			font-weight: 800;
+			// line-height: 1.5em;
+			vertical-align: middle;
+			// text-decoration: underline;
+			padding-bottom: 3px;
+			color: $gray-light;
+		}
 	}
 }

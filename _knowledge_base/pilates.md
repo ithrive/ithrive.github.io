@@ -1,5 +1,6 @@
 ---
 title: Pilates
+description: "Pilates is a physical fitness system developed in the early 20th century by Joseph Pilates."
 ---
 
 Pilates is a physical fitness system developed in the early 20th century by Joseph Pilates. Pilates called his method "Contrology." It is practiced worldwide, and especially in western countries such as Canada, the United States and the United Kingdom. As of 2005, there were 11 million people practicing the discipline regularly and 14,000 instructors in the United States.
