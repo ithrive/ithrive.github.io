@@ -8272,9 +8272,13 @@ article.post {
   float: right; }
 
 .postPreview-listing {
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #eeeeee; }
+  margin-bottom: 20px; }
+  .postPreview-listing header {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 5px; }
+  .postPreview-listing .post_excerpt {
+    padding-top: 10px;
+    color: #777777; }
 
 .postPreview-sidebar {
   margin-bottom: 20px; }

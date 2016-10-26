@@ -288,9 +288,16 @@ article.post {
 		float: right;
 	}
 	&-listing {
-		padding-bottom: 10px;
-		margin-bottom: 10px;
-		border-bottom: 1px solid $gray-lighter;
+		margin-bottom: 20px;
+
+		header {
+			border-bottom: 1px solid $gray-lighter;
+			padding-bottom: 5px;
+		}
+		.post_excerpt {
+			padding-top: 10px;
+			color: $gray-light;
+		}
 	}
 	&-sidebar {
 		margin-bottom: 20px;

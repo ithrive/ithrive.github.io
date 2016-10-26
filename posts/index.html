@@ -8,10 +8,14 @@ title: 'Latest news'
 <div class="container postListing">
   <h1 class="postListing_heading">News and interest pieces</h1>
   <div class="postListing_posts">
-    <!-- This loops through the paginated posts -->
-    {% for post in paginator.posts %}
-      {% include post-preview-listing.html post=post %}
-    {% endfor %}
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <!-- This loops through the paginated posts -->
+        {% for post in paginator.posts %}
+          {% include post-preview-listing.html post=post %}
+        {% endfor %}
+      </div><!-- .col-sm-8 col-sm-offset-2 -->
+    </div><!-- .row -->
   </div><!-- .row -->
   <div class="row">
     <div class="col-sm-12">
