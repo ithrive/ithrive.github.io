@@ -1,0 +1,10 @@
+<div class="postPreview postPreview-sidebar">
+	<header>
+		<h3 class="post_title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+    <span class="post_date">{{ include.post.date | date_to_string }}</span>
+	</header>
+	<div class="post_excerpt">
+		{{ include.post.excerpt }}
+		<p><a href="{{ include.post.url }}" class="post_more">Read more</a></p>
+	</div><!-- .post_excerpt -->
+</div><!-- .postPreview-sidebar -->

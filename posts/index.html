@@ -10,15 +10,14 @@ layout: default
     {% for post in paginator.posts %}
       {% assign content_length = post.content | strip | size %}
       {% assign excerpt_length = post.excerpt | strip | size %}
-      <div class="postPreview">
+      <div class="postPreview postPreview-listing">
         <div class="row">
           <div class="col-sm-4">
             <h2 class="post_title">
               <a href="{{ post.url }}">{{ post.title }}</a>
             </h2>
             <p class="post_details">
-              <span class="post_date">{{ post.date | date_to_string }}</span>
-              <span class="disqus-comment-count" data-disqus-url="{{ post.url }}#disqus_thread"></span>
+              <span class="post_date disqus-comment-count" data-disqus-identifier="{{ page.id }}">{{ post.date | date_to_string }}</span>
             </p>
           </div>
           <div class="col-sm-8">
@@ -65,4 +64,4 @@ layout: default
   </div><!-- .row -->
 </div><!-- .container -->
 
-<script id="dsq-count-scr" src="//{{ page.disqusShortName }}.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="//{{ site.disqusShortName }}.disqus.com/count.js" async></script>

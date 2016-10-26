@@ -262,11 +262,35 @@ article.post {
 }
 
 .postPreview {
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid $gray-lighter;
 	.post_title {
 		margin: 0;
+	}
+	&-listing {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid $gray-lighter;
+	}
+	&-sidebar {
+		@include clearfix;
+		margin-bottom: 20px;
+
+		.post_title {
+			font-size: 14pt;
+		}
+		.post_excerpt {
+			font-size: 10pt;
+			color: $gray-light;
+			line-height: 1.2em;
+		}
+		.post_date {
+			font-size: 9pt;
+		}
+		.post_more {
+			float: right;
+		}
+		header {
+			margin: 0 0 10px 0;
+		}
 	}
 }
 
@@ -314,4 +338,24 @@ fieldset + fieldset {
 	padding-top: 10px;
 	border-top: 1px solid $gray-lighter;
 	margin: 20px 0;
+}
+
+.postSideBar {
+	padding-top: 100px;
+	.sideBar_h1 {
+		@extend %altFont;
+		text-align: center;
+	}
+}
+
+aside.block {
+	$inset: 20px;
+	padding-left: $inset;
+
+	.block_heading {
+		// border-bottom: 1px solid $gray-lighter;
+		margin: 20px 0 20px (-$inset);
+		color: $gray-light;
+		font-size: 12pt;
+	}
 }
