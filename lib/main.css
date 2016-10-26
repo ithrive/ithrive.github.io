@@ -8062,7 +8062,7 @@ footer {
 body {
   font-family: 'Quicksand', sans-serif; }
 
-h1, .tagline, .postSideBar .sideBar_h1 {
+h1, .tagline, .postSideBar .sideBar_heading {
   font-family: 'Cormorant SC', serif;
   letter-spacing: 0.02em;
   line-height: 1.0em; }
@@ -8232,8 +8232,18 @@ article.post {
   margin-top: 50px;
   margin-bottom: 100px; }
 
+.postPreview:before, .postPreview:after {
+  content: " ";
+  display: table; }
+
+.postPreview:after {
+  clear: both; }
+
 .postPreview .post_title {
   margin: 0; }
+
+.postPreview a.post_more {
+  float: right; }
 
 .postPreview-listing {
   padding-bottom: 10px;
@@ -8242,11 +8252,6 @@ article.post {
 
 .postPreview-sidebar {
   margin-bottom: 20px; }
-  .postPreview-sidebar:before, .postPreview-sidebar:after {
-    content: " ";
-    display: table; }
-  .postPreview-sidebar:after {
-    clear: both; }
   .postPreview-sidebar .post_title {
     font-size: 14pt; }
   .postPreview-sidebar .post_excerpt {
@@ -8255,8 +8260,6 @@ article.post {
     line-height: 1.2em; }
   .postPreview-sidebar .post_date {
     font-size: 9pt; }
-  .postPreview-sidebar .post_more {
-    float: right; }
   .postPreview-sidebar header {
     margin: 0 0 10px 0; }
 
@@ -8286,9 +8289,13 @@ fieldset + fieldset {
   margin: 20px 0; }
 
 .postSideBar {
-  padding-top: 100px; }
-  .postSideBar .sideBar_h1 {
-    text-align: center; }
+  padding: 100px 0 0 50px; }
+  @media (max-width: 767px) {
+    .postSideBar {
+      padding: 40px 0 0 0; } }
+  .postSideBar .sideBar_heading {
+    text-align: center;
+    margin: 10px 0 30px 0; }
 
 aside.block {
   padding-left: 20px; }

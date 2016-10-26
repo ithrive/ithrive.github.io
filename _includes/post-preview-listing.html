@@ -1,0 +1,24 @@
+{% assign content_length = include.post.content | strip | size %}
+{% assign excerpt_length = include.post.excerpt | strip | size %}
+
+<div class="postPreview postPreview-listing">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2 class="post_title">
+        <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+      </h2>
+      <p class="post_details">
+        <span class="post_date disqus-comment-count" data-disqus-identifier="{{ page.id }}">{{ include.post.date | date_to_string }}</span>
+      </p>
+    </div>
+    <div class="col-sm-8">
+      <div class="content">
+        {{ include.post.excerpt }}
+        
+        {% if content_length != excerpt_length %}
+          <p><a href="{{ include.post.url }}">Read more</a></p>
+        {% endif %}
+      </div>
+    </div>
+  </div><!-- .row -->
+</div><!-- .postPreview -->

@@ -8,29 +8,7 @@ layout: default
   <div class="postListing_posts">
     <!-- This loops through the paginated posts -->
     {% for post in paginator.posts %}
-      {% assign content_length = post.content | strip | size %}
-      {% assign excerpt_length = post.excerpt | strip | size %}
-      <div class="postPreview postPreview-listing">
-        <div class="row">
-          <div class="col-sm-4">
-            <h2 class="post_title">
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </h2>
-            <p class="post_details">
-              <span class="post_date disqus-comment-count" data-disqus-identifier="{{ page.id }}">{{ post.date | date_to_string }}</span>
-            </p>
-          </div>
-          <div class="col-sm-8">
-            <div class="content">
-              {{ post.excerpt }}
-              
-              {% if content_length != excerpt_length %}
-                <p><a href="{{ post.url }}">Read more</a></p>
-              {% endif %}
-            </div>
-          </div>
-        </div><!-- .row -->
-      </div><!-- .postPreview -->
+      {% include post-preview-listing.html post=post %}
     {% endfor %}
   </div><!-- .row -->
   <div class="row">
