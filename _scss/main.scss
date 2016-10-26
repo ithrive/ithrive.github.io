@@ -31,6 +31,18 @@ h1 {
 p {
 	line-height: 1.2em;
 }
+ 
+p {
+	em {
+		background: yellow;
+	}	
+	strong {
+		font-weight: 900;
+		text-decoration: underline;
+	}
+}
+
+
 
 a:hover {
 	text-decoration: none;

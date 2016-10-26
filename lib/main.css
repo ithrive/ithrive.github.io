@@ -8083,6 +8083,13 @@ h1, .section-product .product_logo p, .tagline, .postSideBar .sideBar_heading {
 p {
   line-height: 1.2em; }
 
+p em {
+  background: yellow; }
+
+p strong {
+  font-weight: 900;
+  text-decoration: underline; }
+
 a:hover {
   text-decoration: none; }
 
