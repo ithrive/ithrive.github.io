@@ -8023,6 +8023,8 @@ button.close {
   .navbar li.active a {
     color: #fff;
     background-color: #6fbc46; }
+    .navbar li.active a.navbar_blog {
+      border-color: #437329; }
 
 .navbar-offset {
   height: 50px; }
@@ -8248,8 +8250,12 @@ article.post {
   article.post .post_details {
     color: #777777; }
 
+.postListing .postListing_heading {
+  text-align: center;
+  margin: 50px 0;
+  color: #777777; }
+
 .postListing .postListing_posts {
-  margin-top: 50px;
   margin-bottom: 100px; }
 
 .postPreview:before, .postPreview:after {

@@ -23,6 +23,9 @@
 		a {
 			color: #fff;
 			background-color: $brand-primary;
+			&.navbar_blog {
+				border-color: darken($brand-primary, 20%);
+			}
 		}
 	}
 }

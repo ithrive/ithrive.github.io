@@ -268,8 +268,12 @@ article.post {
 }
 
 .postListing {
+	.postListing_heading {
+		text-align: center;
+		margin: 50px 0;
+		color: $gray-light;
+	}
 	.postListing_posts {
-		margin-top: 50px;
 		margin-bottom: 100px;
 	}
 }

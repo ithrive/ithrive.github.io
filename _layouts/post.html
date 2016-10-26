@@ -29,9 +29,9 @@ layout: 'default'
 					{% include post-preview-sidebar.html post=page.next %}
 				</aside>
 			{% endif %}
-			{% if page.previously %}
+			{% if page.previous %}
 				<aside class="block">
-					<h4 class="block_heading"><i class="fa fa-angle-down"></i> Previous</h4>
+					<h4 class="block_heading"><i class="fa fa-angle-down"></i> Previously</h4>
 					{% include post-preview-sidebar.html post=page.previous %}
 				</aside>
 			{% endif %}
