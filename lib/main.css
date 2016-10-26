@@ -8074,7 +8074,7 @@ footer {
 body {
   font-family: 'Quicksand', sans-serif; }
 
-h1, .tagline, .postSideBar .sideBar_heading {
+h1, .section-product .product_logo p, .tagline, .postSideBar .sideBar_heading {
   font-family: 'Cormorant SC', serif;
   letter-spacing: 0.02em;
   line-height: 1.0em; }
@@ -8186,9 +8186,16 @@ a:hover {
 
 .section-product {
   text-align: center; }
-  .section-product .tagline {
-    font-size: 20pt;
-    color: #777777; }
+  .section-product .product_logo {
+    text-align: center;
+    margin: 20px auto 40px auto; }
+    .section-product .product_logo img {
+      width: 300px;
+      max-width: 100%;
+      margin-bottom: 10px; }
+    .section-product .product_logo p {
+      font-size: 14pt;
+      color: #777777; }
   .section-product .product_services {
     margin: 40px 0; }
     .section-product .product_services > h3 {

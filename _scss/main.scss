@@ -165,9 +165,21 @@ a:hover {
 .section-product {
 	text-align: center;
 
-	.tagline {
-		font-size: 20pt;
-		color: $gray-light;
+	.product_logo {
+		text-align: center;
+		margin: 20px auto 40px auto;
+
+		img {
+			width: 300px;
+			max-width: 100%;
+			margin-bottom: 10px;
+		}
+
+		p {
+			@extend %altFont;
+			font-size: 14pt;
+			color: $gray-light;
+		}
 	}
 
 // Preview of the service, as displayed on the homepage

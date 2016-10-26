@@ -5,12 +5,10 @@ layout: default
 
 <section class="section section-product">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-4 col-sm-offset-4">
-				<img src="/images/ithrive-logo.jpg" alt="" class="img-responsive" />
-				<p class="tagline">Pilates | Massage | Community</p><!-- .tagline -->
-			</div><!-- .col-sm-4 col-sm-offset-4 -->
-		</div><!-- .row -->
+		<div class="product_logo">
+			<img src="/images/ithrive-logo.jpg" />
+			<p>Pilates | Massage | Community</p><!-- .tagline -->
+		</div><!-- .product_logo -->
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="product_services">
