@@ -66,7 +66,7 @@ layout: default
 		<div class="row">
 			<div class="col-sm-4">
 				<h1>About me</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque iure sint commodi magnam blanditiis autem praesentium repellendus exercitationem explicabo repudiandae.</p>
+				<p>Lorem <em>pilates</em> dolor sit amet, consectetur adipisicing elit. Eaque iure sint commodi magnam blanditiis autem praesentium repellendus exercitationem explicabo repudiandae.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sint quisquam placeat culpa, recusandae aliquid ipsum in sit animi odit.</p>
 			</div><!-- .col-sm-4 -->
 		</div><!-- .row col-sm-8 -->

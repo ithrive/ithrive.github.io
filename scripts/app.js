@@ -25,7 +25,7 @@ angular.module('App', [
 					    templateUrl: 'knowledgePopover.html',
 					  }, val);
 
-						var $html = $('<span class="knowledge" uib-popover-template="popover.templateUrl">'+text+'</span>');
+						var $html = $('<span class="knowledge" uib-popover-template="popover.templateUrl" popover-append-to-body="true">'+text+'</span>');
 						element.replaceWith($html);
 						$compile($html)(popoverScope);
 					}
