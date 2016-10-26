@@ -8011,7 +8011,7 @@ button.close {
   .navbar img.navbar_logo {
     height: 50px;
     margin-right: 20px; }
-  .navbar .navbar_blog {
+  .navbar a.navbar_blog {
     border: solid 1px #777777;
     height: 40px;
     margin-top: 5px;
@@ -8021,9 +8021,8 @@ button.close {
   .navbar a {
     color: #777777; }
   .navbar li.active a {
-    color: #6fbc46; }
-    .navbar li.active a.navbar_blog {
-      border-color: #6fbc46; }
+    color: #fff;
+    background-color: #6fbc46; }
 
 .navbar-offset {
   height: 50px; }

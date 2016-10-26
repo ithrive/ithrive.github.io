@@ -6,7 +6,8 @@
 		height: 50px;
 		margin-right: 20px;
 	}
-	.navbar_blog {
+
+	a.navbar_blog {
 		border: solid 1px $gray-light;
 		height: 40px;
 		margin-top: 5px;
@@ -14,15 +15,14 @@
 		line-height: 40px;
 		padding: 0 20px;
 	}
+
 	a {
 		color: $gray-light;
 	}
 	li.active {
 		a {
-			color: $brand-primary;
-			&.navbar_blog {
-				border-color: $brand-primary;
-			}
+			color: #fff;
+			background-color: $brand-primary;
 		}
 	}
 }
