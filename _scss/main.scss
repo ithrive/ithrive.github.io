@@ -400,3 +400,17 @@ aside.block {
 		font-size: 12pt;
 	}
 }
+
+article.knowledgeBase {
+	padding: 50px 0 100px 0;
+
+	.article_heading {
+		font-size: 30pt;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $gray-lighter;
+	}
+	.article_excerpt {
+		font-size: 14pt;
+	}
+}

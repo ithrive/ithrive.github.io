@@ -41,3 +41,13 @@ exclude:
   - package.json
   - readme.md
   - serve.sh
+collections:
+  knowledge_base:
+    output: true
+    permalink: /knowledge-base/:path/
+defaults:
+- scope:
+    collection: knowledge_base
+  values:
+    layout: knowledge-base
+

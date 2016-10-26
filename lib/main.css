@@ -8340,3 +8340,13 @@ aside.block {
     margin: 20px 0 20px -20px;
     color: #777777;
     font-size: 12pt; }
+
+article.knowledgeBase {
+  padding: 50px 0 100px 0; }
+  article.knowledgeBase .article_heading {
+    font-size: 30pt;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eeeeee; }
+  article.knowledgeBase .article_excerpt {
+    font-size: 14pt; }
