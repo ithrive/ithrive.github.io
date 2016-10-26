@@ -5,4 +5,4 @@ permalink: /studio-pilates/
 ---
 
 {% include coming-soon.html %}
-{% include mailing-list.html %}
+{% include mailing-list.html interest="pilates" %}

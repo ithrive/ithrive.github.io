@@ -9,16 +9,12 @@ angular.module('App', [
 		// Provides a way to hide angular logic before angular is ready.
 		$('.tmp-hide').removeClass('tmp-hide');
 	})
-	.directive('mailchimpForm', function($http, $log, $location) {
+	.directive('mailchimpForm', function($http, $log, $timeout) {
 		return {
-			template: 
-				'<div>'+
-					'<div ng-transclude ng-if="ready"></div>'+
-					'<span us-spinner="{radius:10, width:1, length:8}" spinner-on="!ready"></span>'+
-				'</div>',
+			template: '<span us-spinner="{radius:10, width:1, length:8}" spinner-on="!ready"></span>',
 			transclude: true,
-			// scope: {},
-			link: function(scope, element, attrs) {
+			scope: {},
+			link: function(scope, element, attrs, ctrl, transclude) {
 				// var mailchimpUrl = 'http://localhost:5000/';
 				var mailchimpUrl = 'https://tsko-mailchimp-service.herokuapp.com/';
 				var	location = window.location.toString(),
@@ -26,30 +22,28 @@ angular.module('App', [
 							status: 'subscribed',
 							merge_fields: {
 								SOURCE: attrs.source,
-								// URL: $location.path(), // requires HTML5 mode
-								URL: location,
+								URL: location, // $location.path(), - requires HTML5 mode
 							}, 
 						};
 
 				scope.ready = false;
 
-				console.log(attrs.interest);
 				if ( attrs.interest ) {
 					formDefaults.merge_fields.INTEREST = attrs.interest;
 				}
 				
 				scope.processing = false;
 				scope.msgs = {};
-				scope.formModel = angular.copy(formDefaults);
-				scope.formModel.email_address = 'torben.sko@gmail.com';
-				console.log(scope.formModel);
+				var model = scope.formModel = angular.copy(formDefaults);
+				model.email_address = 'torben.sko@gmail.com';
 
 				// Make sure the server is awake
-				// element.hide();
 				$http.get(mailchimpUrl+'ping')
 					.then(function(response) {
-						// element.show();
 						scope.ready = true;
+						transclude(scope, function (clone) {
+	            element.append(clone);
+	          });
 					});
 
 				scope.submit = function(form) {
@@ -60,9 +54,9 @@ angular.module('App', [
 					scope.msgs = {};
 					scope.processing = true;
 
-					$http.post(mailchimpUrl+'ithrive/register', scope.formModel)
+					$http.post(mailchimpUrl+'ithrive/register', model)
 						.then(function(response) {
-							scope.formModel = angular.copy(formDefaults);
+							model = angular.copy(formDefaults);
 							scope.msgs.success = true;
 							scope.form.$submitted = false;
 						})

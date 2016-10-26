@@ -5,4 +5,4 @@ permalink: /studio-massage/
 ---
 
 {% include coming-soon.html %}
-{% include mailing-list.html %}
+{% include mailing-list.html interest="massage" %}
