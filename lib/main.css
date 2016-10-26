@@ -8180,8 +8180,10 @@ a:hover {
   .section-aboutMe > h3 {
     color: #6fbc46; }
 
-.section-community .btn-lg, .section-community .btn-group-lg > .btn {
-  margin-top: 20px; }
+.section-community {
+  background-color: #fac832; }
+  .section-community .btn-lg, .section-community .btn-group-lg > .btn {
+    margin-top: 20px; }
 
 .section-product {
   text-align: center; }
