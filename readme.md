@@ -5,20 +5,13 @@ iThrive website developed using [Jekyll](jekyllrb.com) and hosted on [GitHub pag
 
 ## Creating
 
-```
-bundle exec jekyll page "My New Page"
-```
-
-```
-bundle exec jekyll page "My New Page"
-```
-
 
 ## Development
 
 Install RVM (see website).
 
 ```
+npm install -g grunt-cli bower
 rvm install ruby 2.2.2
 gem install bundler
 ```
@@ -26,6 +19,7 @@ gem install bundler
 Install:
 ```
 npm install
+bower install
 bundle install
 ```
 
