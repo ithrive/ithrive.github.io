@@ -19,13 +19,13 @@ angular.module('App', [
 	 */
 	.directive('keyword', function($compile, $rootScope) {
 		return {
-			restrict: 'A',
+			restrict: 'E',
 			link: function(scope, element, attrs) {
 
-				var details = knowledgeBaseLookup[attrs.keyword];
+				var details = knowledgeBaseLookup[attrs.value];
 
 				if ( !details ) {
-					console.warn('unknown keyword', attrs.keyword);
+					console.warn('unknown keyword', attrs.value);
 					return;
 				}
 
@@ -44,7 +44,7 @@ angular.module('App', [
 	/**
 	 * Find known keywords and mark them up so they become popup boxes.
 	 *
-	 * e.g. "and pilates can" => "and <span keyword="pilates">pilates</span> can"
+	 * e.g. "and pilates can" => "and <keyword value="pilates">pilates</keyword> can"
 	 */
 	.directive('allowKeywords', function($compile) {
 		return {
@@ -54,19 +54,24 @@ angular.module('App', [
 			link: function(scope, element, attrs, ctrl, transclude) {
 
 				$('p', element).each(function() {
-					var subsituteHtml = html = element.html().toLowerCase();
+					var $p = $(this),
+							subsituteHtml = html = $p.html();
 
 					_.each(knowledgeBaseLookup, function(val, key) {
-						if ( !subsituteHtml.match(val.regex) ) {
+						if ( val.found || !subsituteHtml.match(val.regex) ) {
 							return;
 						}
+						// Only match once
+						val.found = true;
+
 						subsituteHtml = subsituteHtml.replace(val.regex, function myFunction(match) {
-							return '<span keyword="'+key+'">'+match+'</span>'
+							return '<keyword value="'+key+'">'+match+'</keyword>';
 						});
 					});
+
 					if ( subsituteHtml.length > html.length ) {
-						var $html = $(subsituteHtml);
-						element.replaceWith($html);
+						var $html = $('<p>').html(subsituteHtml);
+						$p.replaceWith($html);
 						$compile($html)(scope);
 					}
 				});
