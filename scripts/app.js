@@ -57,6 +57,7 @@ angular.module('App', [
 					var $p = $(this),
 							subsituteHtml = html = $p.html();
 
+					// TODO: this could match HTML e.g. if the keyword is "strong"
 					_.each(knowledgeBaseLookup, function(val, key) {
 						if ( val.found || !subsituteHtml.match(val.regex) ) {
 							return;
