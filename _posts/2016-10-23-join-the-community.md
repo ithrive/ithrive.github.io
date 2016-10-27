@@ -2,7 +2,7 @@
 layout: post
 title:  "Join the community"
 ---
-Lorem ipsum Eiusmod non pilates ea laboris occaecat reprehenderit amet ut eiusmod elit non cupidatat dolor sunt non nulla amet aliqua amet labore Ut laborum magna sed dolore. Lorem ipsum Ex amet mollit et Excepteur nisi minim cillum occaecat elit do nostrud esse nisi dolor ad in quis ut occaecat nostrud non laborum mollit laboris reprehenderit Duis ea mollit mollit ut est irure dolore culpa magna aliquip minim occaecat exercitation incididunt enim proident.
+Lorem ipsum Eiusmod non pilates ea Polestar Pilates reprehenderit amet ut eiusmod elit non cupidatat dolor sunt non nulla amet aliqua amet labore Ut laborum magna sed dolore. Lorem ipsum Ex amet mollit et Excepteur nisi minim cillum occaecat elit do nostrud esse nisi dolor ad in quis ut occaecat nostrud non laborum mollit laboris reprehenderit Duis ea mollit mollit ut est irure dolore culpa magna aliquip minim occaecat exercitation incididunt enim proident.
 
 Incididunt massage incididunt dolor fugiat nulla sunt laborum culpa nisi aliqua sunt magna irure Excepteur nulla fugiat labore et in tempor do consectetur mollit cupidatat et eiusmod labore sint ut aliqua Duis enim ut esse commodo in ad reprehenderit ut in id veniam ea laborum consectetur laboris officia deserunt eiusmod labore nulla voluptate dolor mollit tempor cillum in elit cillum culpa ea elit irure dolor ad quis minim laborum veniam occaecat dolor esse Ut ut aliqua deserunt sunt magna do est.
 

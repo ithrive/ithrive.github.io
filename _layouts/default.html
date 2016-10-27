@@ -30,15 +30,23 @@
 <script>
 var knowledgeBaseLookup = {
 	{% for entry in site.knowledge_base %}
-		"{{ entry.terms }}": {
-			description: "{{ entry.description }}",
-			url: "{{ entry.url }}",
-		},
+		{% for term in entry.terms | split:',' %}
+			"{{ term }}": {
+				term: "{{ term }}",
+				description: "{{ entry.description }}",
+				url: "{{ entry.url }}",
+			{% if entry.includeImage %}
+				image: "/images{{ entry.url }}popover.jpg",
+			{% endif %}
+			},
+		{% endfor %}
 	{% endfor %}
 };
 </script>
+
 <script type="text/ng-template" id="knowledgePopover.html">
   {% raw %}
+  <img class="img-responsive" src="{{ popover.image }}" ng-if="popover.image" />
   <div>{{ popover.description }}</div>
 	<div class="clearfix">
 		<a href="{{ popover.url }}" class="pull-right" target="_blank">Learn more <span class="fa fa-angle-right"></span></a>
