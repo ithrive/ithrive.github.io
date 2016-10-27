@@ -9,25 +9,65 @@ angular.module('App', [
 	.run(function() {
 		// Provides a way to hide angular logic before angular is ready.
 		$('.tmp-hide').removeClass('tmp-hide');
+		
+		_.each(knowledgeBaseLookup, function(val, key) {
+			val.regex = new RegExp('('+key+')', 'i');
+		});
 	})
-	.directive('em', function($compile, $rootScope) {
+	/*
+	 * Add a popover to highlighted keywords.
+	 */
+	.directive('keyword', function($compile, $rootScope) {
+		return {
+			restrict: 'A',
+			link: function(scope, element, attrs) {
+
+				var details = knowledgeBaseLookup[attrs.keyword];
+
+				if ( !details ) {
+					console.warn('unknown keyword', attrs.keyword);
+					return;
+				}
+
+				// Create a scope for the popover
+				var popoverScope = $rootScope.$new(false, scope);
+				popoverScope.popover = _.extend({
+				  templateUrl: 'knowledgePopover.html',
+				}, details);
+
+				var $html = $('<span class="keyword" uib-popover-template="popover.templateUrl" popover-append-to-body="true">'+element.text()+'</span>');
+				element.replaceWith($html);
+				$compile($html)(popoverScope);
+			}
+		};
+	})
+	/**
+	 * Find known keywords and mark them up so they become popup boxes.
+	 *
+	 * e.g. "and pilates can" => "and <span keyword="pilates">pilates</span> can"
+	 */
+	.directive('allowKeywords', function($compile) {
 		return {
 			// transclude: true,
-			restrict: 'E',
+			restrict: 'A',
 			scope: {},
 			link: function(scope, element, attrs, ctrl, transclude) {
-				var text = element.text().toLowerCase();
-				_.each(knowledgeBaseLookup, function(val, key) {
-					if ( text == key ) {
-						var popoverScope = $rootScope.$new(false, scope);
 
-						popoverScope.popover = _.extend({
-					    templateUrl: 'knowledgePopover.html',
-					  }, val);
+				$('p', element).each(function() {
+					var subsituteHtml = html = element.html().toLowerCase();
 
-						var $html = $('<span class="knowledge" uib-popover-template="popover.templateUrl" popover-append-to-body="true">'+text+'</span>');
+					_.each(knowledgeBaseLookup, function(val, key) {
+						if ( !subsituteHtml.match(val.regex) ) {
+							return;
+						}
+						subsituteHtml = subsituteHtml.replace(val.regex, function myFunction(match) {
+							return '<span keyword="'+key+'">'+match+'</span>'
+						});
+					});
+					if ( subsituteHtml.length > html.length ) {
+						var $html = $(subsituteHtml);
 						element.replaceWith($html);
-						$compile($html)(popoverScope);
+						$compile($html)(scope);
 					}
 				});
 			}

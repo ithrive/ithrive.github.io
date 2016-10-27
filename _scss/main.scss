@@ -434,12 +434,22 @@ article.knowledgeBase {
 	}
 }
 
-.knowledge {
-	color: #57a6bf;
+.keyword {
+	$color: #57a6bf;
+	color: $color;
+	
+	&:hover {
+		&::after {
+			color: $color;
+		}
+	}
 
 	&::after {
 		content: "\f05a";
 		font-family: 'FontAwesome';
 		padding-left: 2px;
+		color: lighten(#57a6bf, 30%);
+		font-size: 80%;
+		transition: color 0.5s;
 	}
 }

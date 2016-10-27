@@ -8364,9 +8364,14 @@ article.knowledgeBase {
       padding-bottom: 3px;
       color: #bbb; }
 
-.knowledge {
+.keyword {
   color: #57a6bf; }
-  .knowledge::after {
+  .keyword:hover::after {
+    color: #57a6bf; }
+  .keyword::after {
     content: "\f05a";
     font-family: 'FontAwesome';
-    padding-left: 2px; }
+    padding-left: 2px;
+    color: #c6e1e9;
+    font-size: 80%;
+    transition: color 0.5s; }
