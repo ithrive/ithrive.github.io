@@ -8375,3 +8375,9 @@ article.knowledgeBase {
     color: #c6e1e9;
     font-size: 80%;
     transition: color 0.5s; }
+
+.keywordPopover .popover_image {
+  height: 70px;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat; }

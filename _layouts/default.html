@@ -46,10 +46,12 @@ var knowledgeBaseLookup = {
 
 <script type="text/ng-template" id="knowledgePopover.html">
   {% raw %}
-  <img class="img-responsive" src="{{ popover.image }}" ng-if="popover.image" />
-  <div>{{ popover.description }}</div>
-	<div class="clearfix">
-		<a href="{{ popover.url }}" class="pull-right" target="_blank">Learn more <span class="fa fa-angle-right"></span></a>
+  <div class="keywordPopover">
+	  <div class="popover_image" style="background-image: url('{{ popover.image }}');" ng-if="popover.image"></div>
+	  <div>{{ popover.description }}</div>
+		<div class="clearfix">
+			<a href="{{ popover.url }}" class="pull-right" target="_blank">Learn more <span class="fa fa-angle-right"></span></a>
+		</div>
 	</div>
 	{% endraw %}
 </script>
