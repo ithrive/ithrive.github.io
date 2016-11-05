@@ -19,6 +19,16 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
+a[target="_blank"] {
+	color: $brand-danger;
+	&::after {
+		font-family: FontAwesome;
+		content: $fa-var-external-link;
+		margin-left: 0.2em;
+		font-size: 80%;
+	}
+}
+
 %altFont {
 	font-family: 'Cormorant SC', serif;
 	letter-spacing: 0.02em;
