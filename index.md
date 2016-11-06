@@ -48,7 +48,7 @@ layout: default
 </section><!-- .section -->
 
 <section class="section section-community">
-	<div class="layer layer-img b-lazy" data-src="/images/section-community.jpg"></div><!-- .layer layer-img -->
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/community.jpg"></div><!-- .layer layer-img -->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-8">
@@ -61,7 +61,7 @@ layout: default
 </section><!-- .section section-welcome -->
 
 <section class="section section-aboutMe">
-	<div class="layer layer-img b-lazy" data-src="/images/laura-desert.jpg"></div><!-- .layer layer-img -->
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/laura-desert.jpg"></div><!-- .layer layer-img -->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">

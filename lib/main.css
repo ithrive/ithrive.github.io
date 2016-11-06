@@ -5815,15 +5815,15 @@ button.close {
     display: none !important; } }
 
 /*!
- *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -7641,7 +7641,6 @@ button.close {
   content: ""; }
 
 .fa-battery-4:before,
-.fa-battery:before,
 .fa-battery-full:before {
   content: ""; }
 
@@ -7988,143 +7987,6 @@ button.close {
 .fa-font-awesome:before {
   content: ""; }
 
-.fa-handshake-o:before {
-  content: ""; }
-
-.fa-envelope-open:before {
-  content: ""; }
-
-.fa-envelope-open-o:before {
-  content: ""; }
-
-.fa-linode:before {
-  content: ""; }
-
-.fa-address-book:before {
-  content: ""; }
-
-.fa-address-book-o:before {
-  content: ""; }
-
-.fa-vcard:before,
-.fa-address-card:before {
-  content: ""; }
-
-.fa-vcard-o:before,
-.fa-address-card-o:before {
-  content: ""; }
-
-.fa-user-circle:before {
-  content: ""; }
-
-.fa-user-circle-o:before {
-  content: ""; }
-
-.fa-user-o:before {
-  content: ""; }
-
-.fa-id-badge:before {
-  content: ""; }
-
-.fa-drivers-license:before,
-.fa-id-card:before {
-  content: ""; }
-
-.fa-drivers-license-o:before,
-.fa-id-card-o:before {
-  content: ""; }
-
-.fa-quora:before {
-  content: ""; }
-
-.fa-free-code-camp:before {
-  content: ""; }
-
-.fa-telegram:before {
-  content: ""; }
-
-.fa-thermometer-4:before,
-.fa-thermometer:before,
-.fa-thermometer-full:before {
-  content: ""; }
-
-.fa-thermometer-3:before,
-.fa-thermometer-three-quarters:before {
-  content: ""; }
-
-.fa-thermometer-2:before,
-.fa-thermometer-half:before {
-  content: ""; }
-
-.fa-thermometer-1:before,
-.fa-thermometer-quarter:before {
-  content: ""; }
-
-.fa-thermometer-0:before,
-.fa-thermometer-empty:before {
-  content: ""; }
-
-.fa-shower:before {
-  content: ""; }
-
-.fa-bathtub:before,
-.fa-s15:before,
-.fa-bath:before {
-  content: ""; }
-
-.fa-podcast:before {
-  content: ""; }
-
-.fa-window-maximize:before {
-  content: ""; }
-
-.fa-window-minimize:before {
-  content: ""; }
-
-.fa-window-restore:before {
-  content: ""; }
-
-.fa-times-rectangle:before,
-.fa-window-close:before {
-  content: ""; }
-
-.fa-times-rectangle-o:before,
-.fa-window-close-o:before {
-  content: ""; }
-
-.fa-bandcamp:before {
-  content: ""; }
-
-.fa-grav:before {
-  content: ""; }
-
-.fa-etsy:before {
-  content: ""; }
-
-.fa-imdb:before {
-  content: ""; }
-
-.fa-ravelry:before {
-  content: ""; }
-
-.fa-eercast:before {
-  content: ""; }
-
-.fa-microchip:before {
-  content: ""; }
-
-.fa-snowflake-o:before {
-  content: ""; }
-
-.fa-superpowers:before {
-  content: ""; }
-
-.fa-wpexplorer:before {
-  content: ""; }
-
-.fa-meetup:before {
-  content: ""; }
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -8254,49 +8116,15 @@ a:hover {
   overflow: hidden; }
   .section > .container-fluid,
   .section > .container {
-    padding-top: 100px;
-    padding-bottom: 100px; }
+    padding-top: 140px;
+    padding-bottom: 140px; }
     @media (max-width: 767px) {
       .section > .container-fluid,
       .section > .container {
-        padding-top: 60px;
-        padding-bottom: 80px; } }
+        padding-top: 40px;
+        padding-bottom: 60px; } }
   .section > * {
     position: relative; }
-  .section > .layer {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; }
-    .section > .layer-img {
-      background-size: cover;
-      background-position: 50% 50%; }
-      .section > .layer-img-inset {
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); }
-      @media (max-width: 767px) {
-        .section > .layer-img {
-          position: relative;
-          width: 100%;
-          height: 200px; } }
-    .section > .layer-gradient-light {
-      background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
-      /* IE6-9 */ }
-    .section > .layer-gradient-dark {
-      background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
-      /* IE6-9 */ }
   .section_title {
     color: #000;
     font-size: 30pt;
@@ -8313,13 +8141,69 @@ a:hover {
         font-size: 20pt;
         border-width: 1px; } }
 
-.section-aboutMe {
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+  .layer-img {
+    background-size: cover;
+    background-position: 50% 50%; }
+    .layer-img-inset {
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); }
+    @media (max-width: 767px) {
+      .layer-img {
+        position: relative;
+        width: 100%;
+        height: 200px; } }
+  .layer-gradient-light {
+    background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+    /* IE6-9 */ }
+  .layer-gradient-light-reverse {
+    background: -moz-linear-gradient(right, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(right, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE6-9 */ }
+  .layer-gradient-dark {
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+    /* IE6-9 */ }
+  .layer-gradient-dark-reverse {
+    background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+    /* IE6-9 */ }
+
+.section-lightOnDark, .section-aboutMe {
   color: #fff; }
-  .section-aboutMe a {
+  .section-lightOnDark a, .section-aboutMe a {
     color: #fff;
     text-decoration: underline; }
-    .section-aboutMe a.btn {
+    .section-lightOnDark a.btn, .section-aboutMe a.btn {
       text-decoration: none; }
+
+.section-lightOnDark {
+  background-color: #888; }
 
 .section-aboutMe {
   background-color: #e17d46; }
@@ -8330,8 +8214,8 @@ a:hover {
     @media (max-width: 767px) {
       .section-aboutMe > .container-fluid,
       .section-aboutMe > .container {
-        padding-top: 180px;
-        padding-bottom: 80px; } }
+        padding-top: 40px;
+        padding-bottom: 60px; } }
   .section-aboutMe > h3 {
     color: #6fbc46; }
 
