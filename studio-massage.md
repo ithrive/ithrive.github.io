@@ -40,12 +40,6 @@ permalink: /studio-massage/
 				<p>One hour $100</p>
 				<p>45 minutes $80</p>
 				<p>30 minutes $65</p>
-		</div>
-	</div>
-</section>
-<section class="section section-lightOnDark">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/myo_logo.jpg"></div>
-		<div class="container">
 			<h3>Health Fund Rebates</h3>
 			 <p>As a certified member of Massage & Myotherapy Australia, Laura is registered with all major health funds for rebates. Check with your fund for level of coverage you can expect</p> 
 		</div><!-- .col-sm-8 -->
