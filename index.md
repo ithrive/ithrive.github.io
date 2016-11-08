@@ -47,8 +47,8 @@ layout: default
 	</div><!-- .container -->
 </section><!-- .section -->
 
-<section class="section section-community">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/community.jpg"></div><!-- .layer layer-img -->
+<!-- <section class="section section-community">
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/community.jpg"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-8">
@@ -56,9 +56,9 @@ layout: default
 				<p>I believe that genuine connection with the people around us is as important to our health as exercise and nutrition. ithrive therefore, is as much about what happens outside the studio as within. I envisage a growing hub of activity around this page however for now I invite you to come and join our weekly morning beach walk along the gorgeous Manly beach. Morning is such a magical time to be out, connect with others and soak up some healing sun rays before the UV gets too high.  We are so blessed to live in this beautiful place, let's get out amongst it!  </p>
 				<p><a href="/community" class="btn btn-lg btn-outline">Learn more</a></p>
 			</div>
-		</div><!-- .row col-sm-8 -->
-	</div><!-- .container -->
-</section><!-- .section section-welcome -->
+		</div>
+	</div>
+</section> -->
 
 <section class="section section-aboutMe">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/laura-desert.jpg"></div><!-- .layer layer-img -->
