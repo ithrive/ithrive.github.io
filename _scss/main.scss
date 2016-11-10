@@ -19,6 +19,11 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 a[target="_blank"] {
 	color: $brand-danger;
 	&::after {
@@ -40,7 +45,8 @@ h1 {
 }
 
 p {
-	line-height: 1.2em;
+	font-size: 12pt;
+	line-height: 1.1em;
 }
  
 p {
@@ -229,10 +235,18 @@ a:hover {
 		max-width: 100%;
 		margin-top: 20px;
 		margin-left: 30px;
+
+		@media (max-width: $screen-xs-max) {
+			margin-left: 0px;
+		}
 	}
 	h1 {
 		font-size: 50pt;
+		line-height: 1.2em;
 		border-bottom: 1px solid rgba(#fff,0.6);
+		@media (max-width: $screen-xs-max) {
+			font-size: 40pt;
+		}
 	}
 	p {
 		font-size: 20pt;
@@ -549,7 +563,9 @@ article.knowledgeBase {
 .section-quote {
 	// @include padSection(80px, 80px);
 	text-align: center;
-	font-size: 16pt;
 	line-height: 1.4em;
 	text-align: center;
+	p {
+		font-size: 18pt;
+	}
 }
