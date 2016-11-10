@@ -8083,7 +8083,7 @@ a[target="_blank"] {
     margin-left: 0.2em;
     font-size: 80%; }
 
-h1, .section-product .product_logo p, .tagline, .postSideBar .sideBar_heading {
+h1, .section .section_title, .cost .cost_price, .section-product .product_logo p, .tagline, .postSideBar .sideBar_heading {
   font-family: 'Cormorant SC', serif;
   letter-spacing: 0.02em;
   line-height: 1.0em; }
@@ -8125,21 +8125,24 @@ a:hover {
         padding-bottom: 60px; } }
   .section > * {
     position: relative; }
-  .section_title {
-    color: #000;
+  .section .section_title {
     font-size: 30pt;
-    border-bottom: solid 2px #000;
-    margin-bottom: 40px;
-    display: inline-block; }
+    margin-bottom: 20px; }
     @media (max-width: 991px) {
-      .section_title {
+      .section .section_title {
         font-size: 24pt; } }
     @media (max-width: 767px) {
-      .section_title {
-        display: block;
-        text-align: center;
-        font-size: 20pt;
-        border-width: 1px; } }
+      .section .section_title {
+        font-size: 20pt; } }
+  .section .section_title-full {
+    text-align: center;
+    margin-bottom: 40px; }
+    @media (max-width: 991px) {
+      .section .section_title-full {
+        font-size: 24pt; } }
+    @media (max-width: 767px) {
+      .section .section_title-full {
+        font-size: 20pt; } }
 
 .layer {
   position: absolute;
@@ -8194,6 +8197,27 @@ a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
     /* IE6-9 */ }
 
+.well-product {
+  background: #6fbc46; }
+  .well-product * {
+    color: #fff; }
+
+.cost {
+  text-align: right;
+  font-size: 12pt;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .cost + .cost {
+    margin-top: 15px; }
+  .cost .cost_price {
+    font-size: 30pt;
+    font-weight: 600; }
+    .cost .cost_price small {
+      font-size: 12pt; }
+  .cost .cost_details {
+    line-height: 1em;
+    color: rgba(255, 255, 255, 0.6); }
+
 .section-lightOnDark, .section-aboutMe {
   color: #fff; }
   .section-lightOnDark a, .section-aboutMe a {
@@ -8204,6 +8228,28 @@ a:hover {
 
 .section-lightOnDark {
   background-color: #888; }
+
+.section-splash {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
+  .section-splash > .container-fluid,
+  .section-splash > .container {
+    padding-top: 450px;
+    padding-bottom: 40px; }
+    @media (max-width: 767px) {
+      .section-splash > .container-fluid,
+      .section-splash > .container {
+        padding-top: 40px;
+        padding-bottom: 60px; } }
+  .section-splash .logo {
+    width: 200px;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 30px; }
+  .section-splash h1 {
+    font-size: 50pt;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
+  .section-splash p {
+    font-size: 20pt; }
 
 .section-aboutMe {
   background-color: #e17d46; }
@@ -8411,3 +8457,9 @@ article.knowledgeBase {
   background-size: contain;
   background-position: 50%;
   background-repeat: no-repeat; }
+
+.section-quote {
+  text-align: center;
+  font-size: 16pt;
+  line-height: 1.4em;
+  text-align: center; }
