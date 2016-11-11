@@ -4,7 +4,7 @@ title: 'Remedial Massage Therapy'
 permalink: /massage/
 ---
 
-<section class="section section-lightOnDark section-splash">
+<section class="section section-splash">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0947.jpg"></div>
 	<div class="container">
 		<div class="row">

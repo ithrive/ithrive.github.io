@@ -1,5 +1,5 @@
 .navbar {
-	background-color: rgba(#fff, 0.95);
+	background-color: rgba(#fff, 0.9);
 	// border-bottom: 1px solid rgba(#000, 0.1);
 
 	img.navbar_logo {
@@ -17,10 +17,10 @@
 	}
 
 	a {
-		color: $gray-light;
+		color: $gray;
 	}
 	.navbar-toggle .icon-bar {
-		background-color: $gray-light;
+		background-color: $gray;
 		margin-right: 0;
 	}
 	ul, li {

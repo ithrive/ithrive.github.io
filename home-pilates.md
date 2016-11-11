@@ -8,7 +8,7 @@ permalink: /home-pilates/
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/shutterstock_50752900.jpg"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-12">
 				<h1>Pilates at Home</h1>
 				<p>Enjoy pilates in the comfort of your own home</p>
 				<img src="/images/logo-footer.png" class="logo" />
@@ -20,8 +20,10 @@ permalink: /home-pilates/
 <section class="section section-quote">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3">
-				<p>This is a great option for anyone in the Manly area with mobility or travel restrictions, children at home or just a busy lifestyle.  For your at home pilates experience, all you need to provide is the space. Laura will bring a thick Pilates mat and a range of small apparatus to keep things interesting.</p>
+			<div class="col-sm-8 col-sm-offset-2">
+				<p>This <strong>at-home</strong> service lets you enjoy pilates in a comfortable setting - your own home</p>
+				<p><em>At home pilates</em> is a great option for anyone in the <em>Manly</em> area with <strong>transport restrictions</strong>, <strong>small children</strong> or have a <strong>busy lifestyle</strong>.</p>
+				<p>All you need to provide is the space - Laura will bring all other equipment, including a range of interesting apparatus!</p>
 			</div>
 		</div>
 	</div>
