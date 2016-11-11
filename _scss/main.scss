@@ -36,7 +36,7 @@ a[target="_blank"] {
 }
 
 %altFont {
-	font-family: 'Cormorant SC', serif;
+	font-family: 'Gloria Hallelujah', serif;
 	letter-spacing: 0.02em;
 	line-height: 1.0em;
 }
@@ -240,7 +240,7 @@ a:hover {
 		width: 200px;
 		max-width: 100%;
 		margin-top: 20px;
-		margin-left: 30px;
+		// margin-left: 30px;
 
 		@media (max-width: $screen-xs-max) {
 			margin-left: 0px;
@@ -249,7 +249,8 @@ a:hover {
 	h1 {
 		font-size: 50pt;
 		line-height: 1em;
-		border-bottom: 1px solid rgba(#fff,0.6);
+		// border-bottom: 1px solid rgba(#fff,0.6);
+		
 		@media (max-width: $screen-xs-max) {
 			font-size: 30pt;
 		}

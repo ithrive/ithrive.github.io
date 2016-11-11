@@ -53,14 +53,14 @@ permalink: /home-pilates/
 					<div class="cost_price">$150</div>
 					<div class="cost_details">1 hour class</div>
 				</div>
-				<div class="cost">
+				<!-- <div class="cost">
 					<div class="cost_price">$260</div>
 					<div class="cost_details">2 hour class</div>
 				</div>
 				<div class="cost">
 					<div class="cost_price">$340</div>
 					<div class="cost_details">3 hour class</div>
-				</div>
+				</div> -->
 			</div><!-- .well -->
 		</div><!-- .col-sm-4 -->
 		<div class="col-sm-4">
@@ -71,14 +71,14 @@ permalink: /home-pilates/
 					<div class="cost_price">$150</div>
 					<div class="cost_details">1 hour class</div>
 				</div>
-				<div class="cost">
+				<!-- <div class="cost">
 					<div class="cost_price">$260</div>
 					<div class="cost_details">2 hour class</div>
 				</div>
 				<div class="cost">
 					<div class="cost_price">$340</div>
 					<div class="cost_details">3 hour class</div>
-				</div>
+				</div> -->
 			</div><!-- .well -->
 		</div><!-- .col-sm-4 -->
 		<div class="col-sm-4">
@@ -89,14 +89,14 @@ permalink: /home-pilates/
 					<div class="cost_price">$150</div>
 					<div class="cost_details">1 hour class</div>
 				</div>
-				<div class="cost">
+				<!-- <div class="cost">
 					<div class="cost_price">$260</div>
 					<div class="cost_details">2 hour class</div>
 				</div>
 				<div class="cost">
 					<div class="cost_price">$340</div>
 					<div class="cost_details">3 hour class</div>
-				</div>
+				</div> -->
 			</div><!-- .well -->
 		</div>
 		<div class="col-sm-12">
