@@ -40,9 +40,7 @@ module.exports = function(grunt) {
           '_layouts/default.html'
         ],
         ignorePath: '../bower_components/',
-        exclude: [
-          // 'bootstrap.js',
-        ],
+        exclude: [],
         onPathInjected: function(fileObject) {
           var folder = fileObject.path.match(/\.js$/) ? 'scripts' : 'styles';
           console.log();
@@ -64,7 +62,7 @@ module.exports = function(grunt) {
         src: ['./_scss/*.{scss,sass}'],
         ignorePath: '../bower_components/',
         exclude: [
-          // '_bootstrap.scss',
+          '_bootstrap.scss',
         ],
       },
     },
