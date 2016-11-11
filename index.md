@@ -22,7 +22,7 @@ layout: default
 					<div class="servicePreview">
 						<a href="/home-pilates" class="preview_img b-lazy" data-src="/images/service-home-pilates.jpg"></a>
 						<div class="service_name">Home pilates</div><!-- .service_name -->
-						<p>Private pilates in the comfort of your own home</p>
+						<p>Pilates in the comfort of your own home</p>
 						<p><a href="/home-pilates">Learn more &gt;</a></p>
 					</div><!-- .service -->
 					<div class="servicePreview">
