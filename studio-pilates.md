@@ -105,7 +105,7 @@ permalink: /studio-pilates/
 			</div><!-- .col-sm-4 -->
 			<div class="col-sm-4 col-sm-offset-2">
 				<h2>Where to find me</h2>
-				<p>The studio pilates classes are held in the <a href="http://www.abodyofwork.com.au/">A Body of Work</a> studio.</p>
+				<p>The studio pilates classes are held in the <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> studio.</p>
 				<p class="address">
 					117 Old Pittwater Road<br> 
 					Brookvale nsw 2100 
