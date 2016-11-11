@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: info
 title: 'Studio Pilates'
 permalink: /studio-pilates/
 ---

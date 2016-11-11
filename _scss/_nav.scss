@@ -31,5 +31,7 @@
 }
 
 .navbar-offset {
-	height: 50px;
+	@media (max-width:$screen-xs-max) {
+		height: 50px;
+	}
 }

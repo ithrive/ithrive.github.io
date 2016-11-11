@@ -3,6 +3,7 @@ $theme-font-path: "/fonts/";
 
 $brand-primary: rgb(111, 188, 70);
 $brand-primary-compliment: #fff;
+$brand-info: yellow;
 $gray-light: #bbb;
 
 $grid-gutter-width: 10px;
@@ -567,5 +568,13 @@ article.knowledgeBase {
 	text-align: center;
 	p {
 		font-size: 18pt;
+	}
+}
+
+.well-announce {
+	font-size: 130%;
+	text-align: center;
+	strong {
+		font-size: 120%;
 	}
 }
