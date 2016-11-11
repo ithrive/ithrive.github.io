@@ -62,7 +62,8 @@ permalink: /studio-pilates/
 				<p>Your initial private session will include a chat about your intentions and goals for attending Pilates and some movement and mobility assessments.  This allows for development of your individual program and also provides some handy benchmarks for us to refer to later, as a measure of your progress!</p>
 				<p>We will then move on to learn how to use your breath as a tool for movement, how to sense and use your abdominals effectively, as well as introducing you to your first repertoire on the equipment!</p>
 				<div class="cost">
-					<div class="cost_price">$110<small>/hr</small></div>
+					<div class="cost_price">$110</div>
+					<div class="cost_details">1 hour session</div>
 				</div><!-- .cost -->
 			</div><!-- .well -->
 		</div><!-- .col-sm-4 -->
@@ -71,13 +72,9 @@ permalink: /studio-pilates/
 				<h3>Solo sessions</h3>
 				<p>Many people choose to continue on with regular private sessions.  Private tuition really allows you to fine tune your movement strategies, building strength, efficiency and robustness more quickly. If you are rehabiliating an injury or working toward a specific performance goal this is definitely the way to go.</p>
 				<div class="cost">
-					<div class="cost_price">$110<small>/hr</small></div>
-					<div class="cost_details">single session</div>
+					<div class="cost_price">$110</div>
+					<div class="cost_details">1 hour session</div>
 				</div>
-				<div class="cost">
-					<div class="cost_price">$100<small>/hr</small></div>
-					<div class="cost_details">for 10 sessions</div>
-				</div><!-- .cost -->
 			</div><!-- .well -->
 		</div><!-- .col-sm-4 -->
 		<div class="col-sm-4">
@@ -85,15 +82,16 @@ permalink: /studio-pilates/
 				<h3>Pairs sessions</h3> 
 				<p>Book your workout with a friend, partner or family member. Your program will still be individually tailored to your goals and abilities. Share the cost and double the fun!</p>
 				<div class="cost">
-					<div class="cost_price">$65<small>/person</small></div>
-					<div class="cost_details">single session</div>
+					<div class="cost_price">$110</div>
+					<div class="cost_details">1 hour session</div>
 				</div>
-				<div class="cost">
-					<div class="cost_price">$60<small>/person</small></div>
-					<div class="cost_details">for 10 sessions</div>
-				</div><!-- .cost -->
 			</div><!-- .well -->
 		</div>
+		<div class="col-sm-12">
+			<div class="well well-info well-announce">
+				Save <strong>$100</strong> if you book 10 sessions in advance
+			</div><!-- .well well-info -->
+		</div><!-- .col-sm-12 -->
 	</div>
 </section>
 
