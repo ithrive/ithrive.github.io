@@ -626,6 +626,7 @@ article.knowledgeBase {
 	font-size: 130%;
 	text-align: center;
 	strong {
+		@extend %altFont;
 		font-size: 120%;
 	}
 	background: lighten($brand-primary, 40%);
