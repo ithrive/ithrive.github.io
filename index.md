@@ -7,39 +7,35 @@ layout: default
 	<div class="container">
 		<div class="product_logo">
 			<img src="/images/ithrive-logo.jpg" />
-			<p>Pilates | Massage | Community</p><!-- .tagline -->
+			 <p>Pilates | Massage</p>
 		</div><!-- .product_logo -->
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="product_services">
-					<h3>Explore services</h3>
+					<h3>My services</h3>
 					<div class="servicePreview">
 						<a href="/studio-pilates">
 							<img src="/images/service-studio-pilates.jpg" alt="" />
 							<div class="service_name">Studio pilates</div><!-- .service_name -->
 						</a><!-- .service -->
-						<p>Visit our fully equipped pilates studio at A Body of Work in Brookvale for individual or duo Pilates classes </p>
+						<p>Enjoy pilates in a fully equipped studio located in Brookvale, NSW</p>
+						<a href="/studio-pilates" class="btn btn-primary">Learn more &gt;</a>
 					</div><!-- .service -->
 					<div class="servicePreview">
 						<a href="/home-pilates">
 							<img src="/images/service-home-pilates.jpg" alt="" />
 							<div class="service_name">Home pilates</div><!-- .service_name -->
 						</a><!-- .service -->
-						<p>Enjoy a private lesson in your own home or why not get a few friends together and host a pilates mat class!</p>
+						<p>Private pilates in the comform of your own home</p>
+						<a href="/home-pilates" class="btn btn-primary">Learn more &gt;</a>
 					</div><!-- .service -->
 					<div class="servicePreview">
 						<a href="/studio-massage">
 							<img src="/images/service-studio-massage.jpg" alt="" />
-							<div class="service_name">Studio massage</div><!-- .service_name -->
+							<div class="service_name">Massage</div><!-- .service_name -->
 						</a><!-- .service -->
-						<p>Ease aches and pains with a remedial massage, tailored to your needs. Appointments available at A Body of Work, Brookvale</p>
-					</div><!-- .service -->
-					<div class="servicePreview">
-						<a href="/home-massage">
-							<img src="/images/service-home-massage.jpg" alt="" />
-							<div class="service_name">Home massage</div><!-- .service_name -->
-						</a><!-- .service -->
-						<p>Can't get to the clinic? Live in the Manly area? Limited mobile massage therapy appointments are also available </p>
+						<p>Ease aches and pains with a remedial massage, tailored to your needs.</p>
+						<a href="/studio-massage" class="btn btn-primary">Learn more &gt;</a>
 					</div><!-- .service -->
 				</div>
 			</div><!-- .col-sm-12 -->

@@ -303,8 +303,9 @@ a:hover {
 	.product_services {
 		margin: 40px 0;
 		> h3 {
-			color: $brand-primary;
+			// color: $brand-primary;
 			margin-bottom: 15px;
+			color: $gray-light;
 		}
 	}
 }
@@ -350,13 +351,16 @@ a:hover {
 	img {
 		width: $size;
 		height: $size;
-		opacity: 0.5;
-		transition: opacity 0.5s;
+		// opacity: 0.5;
+		// transition: opacity 0.5s;
 	}
 	.service_name {
-		background-color: $brand-primary;
-		color: $brand-primary-compliment;
-		padding: 5px 0;
+		font-size: 14pt;
+		font-weight: 800;
+		margin: 5px 0;
+		// background-color: $brand-primary;
+		// color: $brand-primary-compliment;
+		// padding: 5px 0;
 	}
 	&:hover {
 		img {
@@ -364,7 +368,9 @@ a:hover {
 		}
 	}
 	p {
-		color: $gray-light;
+		color: #aaa;
+		font-size: 10pt;
+		min-height: 4em;
 	}
 }
 

@@ -8302,8 +8302,8 @@ a:hover {
   .section-product .product_services {
     margin: 40px 0; }
     .section-product .product_services > h3 {
-      color: #6fbc46;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      color: #bbb; }
 
 .btn-outline {
   border: 1px #000 solid;
@@ -8328,17 +8328,17 @@ a:hover {
     margin-bottom: 5px; }
   .servicePreview img {
     width: 180px;
-    height: 180px;
-    opacity: 0.5;
-    transition: opacity 0.5s; }
+    height: 180px; }
   .servicePreview .service_name {
-    background-color: #6fbc46;
-    color: #fff;
-    padding: 5px 0; }
+    font-size: 14pt;
+    font-weight: 800;
+    margin: 5px 0; }
   .servicePreview:hover img {
     opacity: 1; }
   .servicePreview p {
-    color: #bbb; }
+    color: #aaa;
+    font-size: 10pt;
+    min-height: 4em; }
 
 article.post {
   padding: 50px 0; }
