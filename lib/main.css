@@ -8246,7 +8246,7 @@ a:hover {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
   .section-splash > .container-fluid,
   .section-splash > .container {
-    padding-top: 450px;
+    padding-top: 400px;
     padding-bottom: 40px; }
     @media (max-width: 767px) {
       .section-splash > .container-fluid,
@@ -8262,7 +8262,8 @@ a:hover {
         margin-left: 0px; } }
   .section-splash h1 {
     font-size: 50pt;
-    line-height: 1em; }
+    line-height: 1em;
+    margin-bottom: 20px; }
     @media (max-width: 767px) {
       .section-splash h1 {
         font-size: 30pt; } }

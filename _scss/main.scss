@@ -233,7 +233,7 @@ a:hover {
 }
 
 .section-splash {
-	@include padSection(450px, 40px);
+	@include padSection(400px, 40px);
 	text-shadow: 0 0 4px rgba(#000,0.5);
 	
 	.logo {
@@ -249,6 +249,7 @@ a:hover {
 	h1 {
 		font-size: 50pt;
 		line-height: 1em;
+		margin-bottom: 20px;
 		// border-bottom: 1px solid rgba(#fff,0.6);
 		
 		@media (max-width: $screen-xs-max) {
