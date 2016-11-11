@@ -339,15 +339,10 @@ a:hover {
 .servicePreview {
 	$size: 180px;
 	display: inline-block;
-	margin: 0 5px 10px 5px;
+	margin: 0 5px 25px 5px;
 	width: $size;
 	vertical-align: top;
-	// box-shadow: 0 0 5px rgba(#000,0.3);
-	// border: 3px solid #fff;
-	a {
-		display: block;
-		margin-bottom: 5px;
-	}
+
 	.preview_img {
 		width: $size;
 		height: $size;
@@ -355,6 +350,7 @@ a:hover {
 		background-position: 50%;
 		background-color: $brand-primary;
 		position: relative;
+		display: inline-block;
 
 		&:after {
 			content: '>';
@@ -376,6 +372,16 @@ a:hover {
 		// opacity: 0.5;
 		// transition: opacity 0.5s;
 	}
+
+	@media (max-width: $screen-xs-max) {
+		width: 240px;
+
+		.preview_img {
+			width: 240px;
+			height: 240px;
+		}
+	}
+
 	.service_name {
 		font-size: 14pt;
 		font-weight: 800;
@@ -392,7 +398,9 @@ a:hover {
 	p {
 		color: #aaa;
 		font-size: 10pt;
-		min-height: 4em;
+		@media (min-width: $screen-sm-min) {
+			min-height: 4em;
+		}
 	}
 }
 

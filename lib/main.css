@@ -8323,19 +8323,17 @@ a:hover {
 
 .servicePreview {
   display: inline-block;
-  margin: 0 5px 10px 5px;
+  margin: 0 5px 25px 5px;
   width: 180px;
   vertical-align: top; }
-  .servicePreview a {
-    display: block;
-    margin-bottom: 5px; }
   .servicePreview .preview_img {
     width: 180px;
     height: 180px;
     background-size: cover;
     background-position: 50%;
     background-color: #6fbc46;
-    position: relative; }
+    position: relative;
+    display: inline-block; }
     .servicePreview .preview_img:after {
       content: '>';
       width: 40px;
@@ -8351,6 +8349,12 @@ a:hover {
       line-height: 40px;
       vertical-align: middle;
       text-align: center; }
+  @media (max-width: 767px) {
+    .servicePreview {
+      width: 240px; }
+      .servicePreview .preview_img {
+        width: 240px;
+        height: 240px; } }
   .servicePreview .service_name {
     font-size: 14pt;
     font-weight: 800;
@@ -8359,8 +8363,10 @@ a:hover {
     opacity: 1; }
   .servicePreview p {
     color: #aaa;
-    font-size: 10pt;
-    min-height: 4em; }
+    font-size: 10pt; }
+    @media (min-width: 768px) {
+      .servicePreview p {
+        min-height: 4em; } }
 
 article.post {
   padding: 50px 0; }
