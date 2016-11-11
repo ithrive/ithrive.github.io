@@ -6,12 +6,13 @@ permalink: /home-pilates/
 
 <section class="section section-splash">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/shutterstock_50752900.jpg"></div>
+	<div class="layer layer-gradient layer-gradient-dark"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<h1>Pilates at Home</h1>
 				<p>Enjoy pilates in the comfort of your own home</p>
-				<img src="/images/logo-footer.png" class="logo" />
+				<img src="/images/logo-splash.png" class="logo" />
 			</div>
 		</div>
 	</div>

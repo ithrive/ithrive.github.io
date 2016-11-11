@@ -8242,47 +8242,43 @@ a:hover {
 .section-lightOnDark {
   background-color: #aaa; }
 
-.section-splash {
-  background-color: #aaa; }
-  .section-splash > .container-fluid,
-  .section-splash > .container {
-    padding-top: 460px;
-    padding-bottom: 40px; }
-    @media (max-width: 767px) {
-      .section-splash > .container-fluid,
-      .section-splash > .container {
-        padding-top: 90px;
-        padding-bottom: 80px; } }
+.section-splash > .container-fluid,
+.section-splash > .container {
+  padding-top: 460px;
+  padding-bottom: 40px; }
   @media (max-width: 767px) {
-    .section-splash {
-      text-align: center;
-      background-color: #6fbc46; } }
-  @media (min-width: 768px) {
-    .section-splash {
-      text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); } }
-  @media (min-width: 768px) {
-    .section-splash .layer-img {
-      opacity: 0.6; } }
-  .section-splash .logo {
-    width: 200px;
-    max-width: 100%;
-    margin-top: 20px; }
-    @media (max-width: 767px) {
-      .section-splash .logo {
-        margin-left: 0px;
-        max-width: 80px; } }
-  .section-splash h1 {
-    font-size: 50pt;
-    line-height: 1em;
-    margin-bottom: 20px; }
-    @media (max-width: 767px) {
-      .section-splash h1 {
-        font-size: 30pt; } }
-  .section-splash p {
-    font-size: 20pt; }
-    @media (max-width: 767px) {
-      .section-splash p {
-        font-size: 16pt; } }
+    .section-splash > .container-fluid,
+    .section-splash > .container {
+      padding-top: 90px;
+      padding-bottom: 80px; } }
+
+@media (max-width: 767px) {
+  .section-splash {
+    text-align: center;
+    background-color: #6fbc46; } }
+
+.section-splash .logo {
+  width: 200px;
+  max-width: 100%;
+  margin-top: 20px; }
+  @media (max-width: 767px) {
+    .section-splash .logo {
+      margin-left: 0px;
+      max-width: 80px; } }
+
+.section-splash h1 {
+  font-size: 50pt;
+  line-height: 1em;
+  margin-bottom: 20px; }
+  @media (max-width: 767px) {
+    .section-splash h1 {
+      font-size: 30pt; } }
+
+.section-splash p {
+  font-size: 20pt; }
+  @media (max-width: 767px) {
+    .section-splash p {
+      font-size: 16pt; } }
 
 .section-aboutMe {
   background-color: #e17d46; }

@@ -237,21 +237,22 @@ a:hover {
 .section-splash {
 	@include padSection(460px, 40px);
 	@extend %lightText;
-	background-color: #aaa;
+	// background-color: #aaa;
 
 	@media (max-width: $screen-xs-max) {
 		text-align: center;
 		background-color: $brand-primary;
 	}
-	@media (min-width: $screen-sm-min) {
-		text-shadow: 0 0 3px rgba(#000, 0.3);
-	}
+	
+	// @media (min-width: $screen-sm-min) {
+	// 	text-shadow: 0 0 3px rgba(#000, 0.3);
+	// }
 
-	.layer-img {
-		@media (min-width: $screen-sm-min) {
-			opacity: 0.6;
-		}
-	}
+	// .layer-img {
+	// 	@media (min-width: $screen-sm-min) {
+	// 		opacity: 0.6;
+	// 	}
+	// }
 	
 	.logo {
 		width: 200px;
