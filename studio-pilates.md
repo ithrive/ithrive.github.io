@@ -29,7 +29,6 @@ permalink: /studio-pilates/
 	</div>
 </section>
 
-
 <section class="section section-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0979.jpg"></div>
 	<div class="container">
@@ -93,6 +92,26 @@ permalink: /studio-pilates/
 				</div><!-- .well well-info -->
 			</div><!-- .col-sm-12 -->
 		</div><!-- .row -->
+	</div>
+</section>
+
+<section class="section section-lightOnDark">
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0864.jpg"></div>
+	<div class="layer layer-gradient layer-gradient-dark-reverse"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2985.256199602654!2d151.2617602337983!3d-33.76789214674836!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12aa442a17d733%3A0x31986960f9e930f2!2s117+Old+Pittwater+Rd%2C+Brookvale+NSW+2100%2C+Australia!5e0!3m2!1sen!2sau!4v1478847880543" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div><!-- .col-sm-4 -->
+			<div class="col-sm-4 col-sm-offset-2">
+				<h2>Where to find me</h2>
+				<p>The studio pilates classes are held in the <a href="http://www.abodyofwork.com.au/">A Body of Work</a> studio.</p>
+				<p class="address">
+					117 Old Pittwater Road<br> 
+					Brookvale nsw 2100 
+				</p>
+			</div>
+		</div>
 	</div>
 </section>
 

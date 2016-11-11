@@ -8134,7 +8134,7 @@ a:hover {
       .section > .container-fluid,
       .section > .container {
         padding-top: 40px;
-        padding-bottom: 60px; } }
+        padding-bottom: 50px; } }
   .section > * {
     position: relative; }
   .section .section_title {
@@ -8240,7 +8240,7 @@ a:hover {
       text-decoration: none; }
 
 .section-lightOnDark {
-  background-color: #888; }
+  background-color: #aaa; }
 
 .section-splash {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
@@ -8252,7 +8252,7 @@ a:hover {
       .section-splash > .container-fluid,
       .section-splash > .container {
         padding-top: 40px;
-        padding-bottom: 60px; } }
+        padding-bottom: 50px; } }
   .section-splash .logo {
     width: 200px;
     max-width: 100%;
@@ -8263,13 +8263,16 @@ a:hover {
         margin-left: 0px; } }
   .section-splash h1 {
     font-size: 50pt;
-    line-height: 1.2em;
+    line-height: 1em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
     @media (max-width: 767px) {
       .section-splash h1 {
-        font-size: 40pt; } }
+        font-size: 30pt; } }
   .section-splash p {
     font-size: 20pt; }
+    @media (max-width: 767px) {
+      .section-splash p {
+        font-size: 16pt; } }
 
 .section-aboutMe {
   background-color: #e17d46; }
@@ -8281,7 +8284,7 @@ a:hover {
       .section-aboutMe > .container-fluid,
       .section-aboutMe > .container {
         padding-top: 40px;
-        padding-bottom: 60px; } }
+        padding-bottom: 50px; } }
   .section-aboutMe > h3 {
     color: #6fbc46; }
 
@@ -8540,3 +8543,8 @@ blockquote {
     position: absolute;
     bottom: -20px;
     right: 20px; }
+
+.address {
+  font-size: 120%;
+  line-height: 1.4em;
+  padding: 20px 10px; }
