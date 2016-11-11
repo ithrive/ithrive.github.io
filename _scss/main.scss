@@ -70,6 +70,12 @@ $grid-gutter-width: 10px;
 body {
 	font-family: 'Quicksand', sans-serif;
 }
+h1, h2, h3 {
+	margin: 0;
+}
+h1 { font-size: 24pt; }
+h2 { font-size: 20pt; }
+h3 { font-size: 18pt; }
 
 .container {
 	padding-left: 30px;
