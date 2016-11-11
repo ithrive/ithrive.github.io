@@ -4,7 +4,7 @@ title: 'Studio Pilates'
 permalink: /studio-pilates/
 ---
 
-<section class="section section-lightOnDark section-splash">
+<section class="section section-splash">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0887.jpg"></div>
 	<!-- <div class="layer layer-gradient layer-gradient-light"></div> -->
 	<div class="container">
