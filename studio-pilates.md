@@ -4,7 +4,6 @@ title: 'Studio Pilates'
 permalink: /studio-pilates/
 ---
 
-
 <section class="section section-lightOnDark section-splash">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0887.jpg"></div>
 	<!-- <div class="layer layer-gradient layer-gradient-light"></div> -->
@@ -103,8 +102,8 @@ permalink: /studio-pilates/
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-			 <h3>Health Fund Rebates</h3>
-			 <p>Rebates for Pilates are available from some private health funds.  Please note, I am not a physiotherapist and as such, some funds will require written reccommendation from your physiotherapist, GP or other registered health professsional in order to pay the rebate. Information specifc to your fund can be <a target="_blank" href="http://www.pilates.org.au/health-funds/">found online</a>.</p> 
+				<h3 class="section_title">Health Fund Rebates</h3>
+				<p>Rebates for Pilates are available from some private health funds.  Please note, I am not a physiotherapist and as such, some funds will require written reccommendation from your physiotherapist, GP or other registered health professsional in order to pay the rebate. Information specifc to your fund can be <a target="_blank" href="http://www.pilates.org.au/health-funds/">found online</a>.</p> 
 			</div>
 		</div><!-- .col-sm-8 -->
 	</div><!-- .container -->

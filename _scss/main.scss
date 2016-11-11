@@ -45,19 +45,23 @@ h1 {
 	@extend %altFont;
 }
 
-p {
+p, li {
 	font-size: 12pt;
 	line-height: 1.1em;
-}
- 
-p {
+
 	em {
 		background: yellow;
 	}	
 	strong {
 		font-weight: 900;
-		text-decoration: underline;
 	}
+}
+
+ul {
+	margin: 2em 0;
+}
+li {
+	padding: 0.4em;
 }
 
 a:hover {
@@ -105,6 +109,7 @@ a:hover {
 		@extend %altFont;
 		font-size: 30pt;
 		margin-bottom: 20px;
+		margin-top: 0;
 		
 		@media (max-width: $screen-sm-max) {
 			font-size: 24pt;
@@ -436,6 +441,10 @@ article.post {
 	.well {
 		min-height: 300px;
 	}
+}
+
+.section-gray {
+	background: $gray-lighter;
 }
 
 // .control-label {

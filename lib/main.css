@@ -8093,16 +8093,19 @@ h1, .section .section_title, .cost .cost_price, .section-product .product_logo p
   letter-spacing: 0.02em;
   line-height: 1.0em; }
 
-p {
+p, li {
   font-size: 12pt;
   line-height: 1.1em; }
+  p em, li em {
+    background: yellow; }
+  p strong, li strong {
+    font-weight: 900; }
 
-p em {
-  background: yellow; }
+ul {
+  margin: 2em 0; }
 
-p strong {
-  font-weight: 900;
-  text-decoration: underline; }
+li {
+  padding: 0.4em; }
 
 a:hover {
   text-decoration: none; }
@@ -8133,7 +8136,8 @@ a:hover {
     position: relative; }
   .section .section_title {
     font-size: 30pt;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 0; }
     @media (max-width: 991px) {
       .section .section_title {
         font-size: 24pt; } }
@@ -8393,6 +8397,9 @@ article.post {
   background: #eeeeee; }
   .section-inquiry .well {
     min-height: 300px; }
+
+.section-gray {
+  background: #eeeeee; }
 
 .form_heading {
   font-size: 14pt;
