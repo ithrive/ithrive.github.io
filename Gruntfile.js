@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       },
       dev: {
         files: {
-          'lib/main.css': '_scss/main.scss'
+          '_includes/main.css': '_scss/main.scss'
         }
       },
     },
