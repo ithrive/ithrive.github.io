@@ -29,8 +29,8 @@ a[target="_blank"] {
 	color: $brand-danger;
 	&::after {
 		font-family: FontAwesome;
-		content: $fa-var-external-link;
-		margin-left: 0.2em;
+		content: '\00a0'+$fa-var-external-link;
+		// margin-left: 0.2em;
 		font-size: 80%;
 	}
 }
