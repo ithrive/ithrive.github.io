@@ -628,11 +628,16 @@ article.knowledgeBase {
 .well-announce {
 	font-size: 130%;
 	text-align: center;
+	border: solid 2px lighten($brand-primary, 30%);
+	background: transparent;
+	color: lighten($brand-primary, 15%);
+	box-shadow: none;
+	// background: lighten($brand-primary, 40%);
+
 	strong {
 		@extend %altFont;
 		font-size: 120%;
 	}
-	background: lighten($brand-primary, 40%);
 }
 .well {
 	> h3 {

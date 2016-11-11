@@ -8528,7 +8528,10 @@ article.knowledgeBase {
 .well-announce {
   font-size: 130%;
   text-align: center;
-  background: #e4f2dc; }
+  border: solid 2px #c6e5b6;
+  background: transparent;
+  color: #9bd07e;
+  box-shadow: none; }
   .well-announce strong {
     font-size: 120%; }
 
