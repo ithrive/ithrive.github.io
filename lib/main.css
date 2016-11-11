@@ -8009,7 +8009,7 @@ button.close {
   background-color: rgba(255, 255, 255, 0.9); }
   .navbar img.navbar_logo {
     height: 50px;
-    margin-right: 20px; }
+    margin-right: 10px; }
   .navbar a.navbar_blog {
     border: solid 1px #bbb;
     height: 40px;
@@ -8099,7 +8099,7 @@ h1, .section .section_title, .cost .cost_price, .section-product .product_logo p
 
 p, li {
   font-size: 12pt;
-  line-height: 1.1em; }
+  line-height: 1.2em; }
   p strong, li strong {
     font-weight: 900; }
 
