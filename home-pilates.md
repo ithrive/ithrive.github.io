@@ -50,7 +50,7 @@ permalink: /home-pilates/
 		<div class="col-sm-4">
 			<div class="well well-product">
 				<h3>Solo</h3>
-				<p>An hour just for you. Private lessons are reccommended for anyone with specific rehabilitation needs</p>
+				<p>An hour just for you. Private lessons are recommended for anyone with specific rehabilitation needs</p>
 				<div class="cost">
 					<div class="cost_price">$150</div>
 					<div class="cost_details">1 hour class</div>
@@ -103,7 +103,7 @@ permalink: /home-pilates/
 		</div>
 		<div class="col-sm-12">
 			<div class="well well-info well-announce">
-				Save <strong>$10/session</strong> if you book a regular weekly, fortnightly or monthly class.
+				Save <strong>$10</strong>/session if you book a regular weekly, fortnightly or monthly class.
 			</div><!-- .well well-info -->
 			<!-- <p><sup>*</sup> Regular classes can be booked weekly, fortnightly or monthly.</p> -->
 		</div><!-- .col-sm-12 -->

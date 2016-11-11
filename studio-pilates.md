@@ -67,7 +67,7 @@ permalink: /studio-pilates/
 				<h3>Solo sessions</h3>
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-2">
-						<p>Many people choose to continue on with regular private sessions.  Private tuition really allows you to fine tune your movement strategies, building strength, efficiency and robustness more quickly. If you are rehabiliating an injury or working toward a specific performance goal this is definitely the way to go.</p>
+						<p>Many people choose to continue on with regular private sessions.  Private tuition really allows you to fine tune your movement strategies, building strength, efficiency and robustness more quickly. If you are rehabilitating an injury or working toward a specific performance goal this is definitely the way to go.</p>
 					</div>
 				</div>
 				<h3>Pairs sessions</h3>
@@ -124,7 +124,8 @@ permalink: /studio-pilates/
 		<div class="row">
 			<div class="col-sm-6">
 				<h3 class="section_title">Health Fund Rebates</h3>
-				<p>Rebates for Pilates are available from some private health funds.  Please note, I am not a physiotherapist and as such, some funds will require written reccommendation from your physiotherapist, GP or other registered health professsional in order to pay the rebate. Information specifc to your fund can be <a target="_blank" href="http://www.pilates.org.au/health-funds/">found online</a>.</p> 
+				<p>Rebates for Pilates are available from some private health funds.</p>
+				<p>I am not a physiotherapist and as such, some funds will require written recommendation from your physiotherapist, GP or other registered health professional in order to pay the rebate. Information specific to your fund can be <a target="_blank" href="http://www.pilates.org.au/health-funds/">found online</a>.</p> 
 			</div>
 		</div><!-- .col-sm-8 -->
 	</div><!-- .container -->
