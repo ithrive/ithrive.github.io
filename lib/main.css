@@ -8006,8 +8006,7 @@ button.close {
   clip: auto; }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  background-color: rgba(255, 255, 255, 0.95); }
   .navbar img.navbar_logo {
     height: 50px;
     margin-right: 20px; }
@@ -8020,6 +8019,9 @@ button.close {
     padding: 0 20px; }
   .navbar a {
     color: #bbb; }
+  .navbar ul, .navbar li {
+    padding: 0;
+    margin: 0; }
   .navbar li.active a {
     color: #fff;
     background-color: #6fbc46; }
@@ -8096,8 +8098,6 @@ h1, .section .section_title, .cost .cost_price, .section-product .product_logo p
 p, li {
   font-size: 12pt;
   line-height: 1.1em; }
-  p em, li em {
-    background: yellow; }
   p strong, li strong {
     font-weight: 900; }
 
@@ -8487,6 +8487,28 @@ article.knowledgeBase {
 
 .well-announce {
   font-size: 130%;
-  text-align: center; }
+  text-align: center;
+  background: #e4f2dc; }
   .well-announce strong {
     font-size: 120%; }
+
+.well > h3 {
+  margin-top: 0; }
+
+blockquote {
+  font-style: italic;
+  padding: 2em;
+  position: relative; }
+  blockquote::before, blockquote::after {
+    font-size: 400%;
+    opacity: 0.5; }
+  blockquote::before {
+    content: "“";
+    position: absolute;
+    top: 0;
+    left: 0; }
+  blockquote::after {
+    content: "”";
+    position: absolute;
+    bottom: -20px;
+    right: 20px; }

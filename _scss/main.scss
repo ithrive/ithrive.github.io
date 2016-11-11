@@ -50,7 +50,7 @@ p, li {
 	line-height: 1.1em;
 
 	em {
-		background: yellow;
+		// background: yellow;
 	}	
 	strong {
 		font-weight: 900;
@@ -585,5 +585,35 @@ article.knowledgeBase {
 	text-align: center;
 	strong {
 		font-size: 120%;
+	}
+	background: lighten($brand-primary, 40%);
+}
+.well {
+	> h3 {
+		margin-top: 0;
+	}
+}
+
+blockquote {
+	font-style: italic;
+	padding: 2em;
+	position: relative;
+
+	&::before, &::after {
+		font-size: 400%;
+		opacity: 0.5;
+	}
+
+	&::before {
+		content: "“";
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&::after {
+		content: "”";
+		position: absolute;
+		bottom: -20px;
+		right: 20px;
 	}
 }
