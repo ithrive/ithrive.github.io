@@ -7,35 +7,29 @@ layout: default
 	<div class="container">
 		<div class="product_logo">
 			<img src="/images/ithrive-logo.jpg" />
-			 <p>Pilates | Massage</p>
+			<!-- <p>Pilates | Massage</p> -->
 		</div><!-- .product_logo -->
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="product_services">
 					<h3>My services</h3>
 					<div class="servicePreview">
-						<a href="/studio-pilates">
-							<img src="/images/service-studio-pilates.jpg" alt="" />
-							<div class="service_name">Studio pilates</div><!-- .service_name -->
-						</a><!-- .service -->
+						<a href="/studio-pilates" class="preview_img b-lazy" data-src="/images/service-studio-pilates.jpg"></a>
+						<div class="service_name">Studio pilates</div><!-- .service_name -->
 						<p>Enjoy pilates in a fully equipped studio located in Brookvale, NSW</p>
-						<a href="/studio-pilates" class="btn btn-primary">Learn more &gt;</a>
+						<p><a href="/studio-pilates">Learn more &gt;</a></p>
 					</div><!-- .service -->
 					<div class="servicePreview">
-						<a href="/home-pilates">
-							<img src="/images/service-home-pilates.jpg" alt="" />
-							<div class="service_name">Home pilates</div><!-- .service_name -->
-						</a><!-- .service -->
+						<a href="/home-pilates" class="preview_img b-lazy" data-src="/images/service-home-pilates.jpg"></a>
+						<div class="service_name">Home pilates</div><!-- .service_name -->
 						<p>Private pilates in the comform of your own home</p>
-						<a href="/home-pilates" class="btn btn-primary">Learn more &gt;</a>
+						<p><a href="/home-pilates">Learn more &gt;</a></p>
 					</div><!-- .service -->
 					<div class="servicePreview">
-						<a href="/studio-massage">
-							<img src="/images/service-studio-massage.jpg" alt="" />
-							<div class="service_name">Massage</div><!-- .service_name -->
-						</a><!-- .service -->
+						<a href="/massage" class="preview_img b-lazy" data-src="/images/service-studio-massage.jpg"></a>
+						<div class="service_name">Massage</div><!-- .service_name -->
 						<p>Ease aches and pains with a remedial massage, tailored to your needs.</p>
-						<a href="/studio-massage" class="btn btn-primary">Learn more &gt;</a>
+						<p><a href="/massage">Learn more &gt;</a></p>
 					</div><!-- .service -->
 				</div>
 			</div><!-- .col-sm-12 -->

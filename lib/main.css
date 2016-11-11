@@ -8326,9 +8326,28 @@ a:hover {
   .servicePreview a {
     display: block;
     margin-bottom: 5px; }
-  .servicePreview img {
+  .servicePreview .preview_img {
     width: 180px;
-    height: 180px; }
+    height: 180px;
+    background-size: cover;
+    background-position: 50%;
+    background-color: #6fbc46;
+    position: relative; }
+    .servicePreview .preview_img:after {
+      content: '>';
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #6fbc46;
+      color: #fff;
+      position: absolute;
+      right: -7px;
+      bottom: -7px;
+      display: inline-block;
+      font-size: 28px;
+      line-height: 40px;
+      vertical-align: middle;
+      text-align: center; }
   .servicePreview .service_name {
     font-size: 14pt;
     font-weight: 800;

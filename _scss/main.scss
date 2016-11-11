@@ -348,9 +348,31 @@ a:hover {
 		display: block;
 		margin-bottom: 5px;
 	}
-	img {
+	.preview_img {
 		width: $size;
 		height: $size;
+		background-size: cover;
+		background-position: 50%;
+		background-color: $brand-primary;
+		position: relative;
+
+		&:after {
+			content: '>';
+			$btn-size: 40px;
+			width: $btn-size;
+			height: $btn-size;
+			border-radius: 50%;
+			background-color: $brand-primary;
+			color: #fff;
+			position: absolute;
+			right: -7px;
+			bottom: -7px;
+			display: inline-block;
+			font-size: $btn-size*0.7;
+			line-height: $btn-size;
+			vertical-align: middle;
+			text-align: center;
+		}
 		// opacity: 0.5;
 		// transition: opacity 0.5s;
 	}
