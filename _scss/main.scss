@@ -38,7 +38,7 @@ a[target="_blank"] {
 %altFont {
 	font-family: 'Gloria Hallelujah', serif;
 	letter-spacing: 0.02em;
-	line-height: 1.0em;
+	line-height: 1.2em;
 }
 
 h1 {
@@ -387,6 +387,7 @@ a:hover {
 	}
 
 	.service_name {
+		@extend %altFont;
 		font-size: 14pt;
 		font-weight: 800;
 		margin: 5px 0;
