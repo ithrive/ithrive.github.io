@@ -8521,7 +8521,8 @@ article.knowledgeBase {
   line-height: 1.4em;
   text-align: center; }
   .section-quote p {
-    font-size: 18pt; }
+    font-size: 18pt;
+    margin-bottom: 30px; }
 
 .well-announce {
   font-size: 130%;

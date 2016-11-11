@@ -21,9 +21,11 @@ permalink: /studio-pilates/
 <section class="section section-quote">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3">
+			<div class="col-sm-8 col-sm-offset-2">
 				<!-- <h2></h2> -->
-				<p>Studio Pilates is great for both beginners and regulars alike. For those new to Pilates, Studio Pilates introduces the foundations to you with the support and variety of all the wonderful Pilates equipment. Studio workouts are also a great opportunity for the more experienced to really push the boundaries of their strength, coordination and movement integration</p>
+				<p>Studio pilates is great for both <strong>beginners</strong> and <strong>regulars</strong> alike.</p>
+				<p>For those new to pilates, studio pilates introduces the foundations to you with the support and variety of all the wonderful pilates equipment.</p>
+				<p>Studio workouts are also a great opportunity for the more experienced to really push the boundaries of their <strong>strength</strong>, <strong>coordination</strong> and <strong>movement integration</strong>.</p>
 			</div>
 		</div>
 	</div>
