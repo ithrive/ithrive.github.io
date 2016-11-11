@@ -30,8 +30,18 @@ a[target="_blank"] {
 	&::after {
 		font-family: FontAwesome;
 		content: '\00a0'+$fa-var-external-link;
-		// margin-left: 0.2em;
 		font-size: 80%;
+	}
+}
+a[href^="mailto:"] {
+	text-decoration: none !important;
+	font-weight: 800;
+
+	&::after {
+		font-family: FontAwesome;
+		content: '\00a0'+$fa-var-envelope-o;
+		font-size: 80%;
+		position: relative;
 	}
 }
 
@@ -218,7 +228,8 @@ a:hover {
 }
 
 %lightText {
-	color: #fff;
+	color: rgba(#eee, 0.9);
+
 	a {
 		color: #fff;
 		text-decoration: underline;

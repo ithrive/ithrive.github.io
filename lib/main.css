@@ -8092,6 +8092,15 @@ a[target="_blank"] {
     content: " ";
     font-size: 80%; }
 
+a[href^="mailto:"] {
+  text-decoration: none !important;
+  font-weight: 800; }
+  a[href^="mailto:"]::after {
+    font-family: FontAwesome;
+    content: " ";
+    font-size: 80%;
+    position: relative; }
+
 h1, .section .section_title, .cost .cost_price, .section-product .product_logo p, .tagline, .servicePreview .service_name, .postSideBar .sideBar_heading, .well-announce strong {
   font-family: 'Gloria Hallelujah', serif;
   letter-spacing: 0.02em;
@@ -8232,7 +8241,7 @@ a:hover {
     color: rgba(255, 255, 255, 0.6); }
 
 .section-lightOnDark, .section-splash, .section-aboutMe {
-  color: #fff; }
+  color: rgba(238, 238, 238, 0.9); }
   .section-lightOnDark a, .section-splash a, .section-aboutMe a {
     color: #fff;
     text-decoration: underline; }
