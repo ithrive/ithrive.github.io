@@ -8293,11 +8293,20 @@ a:hover {
 
 .section-product {
   text-align: center; }
+  .section-product > .container-fluid,
+  .section-product > .container {
+    padding-top: 90px;
+    padding-bottom: 90px; }
+    @media (max-width: 767px) {
+      .section-product > .container-fluid,
+      .section-product > .container {
+        padding-top: 40px;
+        padding-bottom: 50px; } }
   .section-product .product_logo {
     text-align: center;
-    margin: 20px auto 40px auto; }
+    margin: 20px auto 20px auto; }
     .section-product .product_logo img {
-      width: 300px;
+      width: 260px;
       max-width: 100%;
       margin-bottom: 10px; }
     .section-product .product_logo p {
