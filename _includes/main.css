@@ -4686,7 +4686,7 @@ a[href^="mailto:"] {
     position: relative; }
 
 h1, .section .section_title, .cost .cost_price, .section-product .product_logo p, .tagline, .servicePreview .service_name, .postSideBar .sideBar_heading, .well-announce strong {
-  font-family: 'Gloria Hallelujah';
+  font-family: 'Gloria Hallelujah','Helvetica','Arial',sans-serif;
   letter-spacing: 0.02em;
   line-height: 1.2em; }
 
