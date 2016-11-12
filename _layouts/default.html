@@ -68,7 +68,8 @@ var knowledgeBaseLookup = {
   ga('send', 'pageview');
 </script>
 
-<script>
+<script type="text/javascript">
+  // Source: http://stackoverflow.com/questions/7718935/load-scripts-asynchronously
   function loadScript(src, callback) {
     var s,r,t;
     r = false;
@@ -76,7 +77,6 @@ var knowledgeBaseLookup = {
     s.type = 'text/javascript';
     s.src = src;
     s.onload = s.onreadystatechange = function() {
-      //console.log( this.readyState ); //uncomment this line to see which ready states are called.
       if ( !r && (!this.readyState || this.readyState == 'complete') ) {
         r = true;
         callback();
@@ -85,9 +85,21 @@ var knowledgeBaseLookup = {
     t = document.getElementsByTagName('script')[0];
     t.parentNode.insertBefore(s, t);
   }
-  loadScript('//cdn.jsdelivr.net/blazy/latest/blazy.min.js', function() {
-    var bLazy = new Blazy();
-  });
+  (function() {
+    WebFontConfig = {
+      google: { 
+        families: [ 
+          'Gloria+Hallelujah', 
+          'Quicksand:400,700',
+        ]
+      }
+    };
+    // See https://github.com/typekit/webfontloader
+    loadScript('//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js');
+    loadScript('//cdn.jsdelivr.net/blazy/latest/blazy.min.js', function() {
+      var bLazy = new Blazy();
+    });
+  })()
 </script>
 
     {% if page.dev %}

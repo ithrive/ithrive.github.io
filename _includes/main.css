@@ -4651,7 +4651,7 @@ footer {
       border: solid 1px #fff; }
 
 body {
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Quicksand','Helvetica','Arial',sans-serif; }
 
 h1, h2, h3 {
   margin: 0; }
@@ -4686,7 +4686,7 @@ a[href^="mailto:"] {
     position: relative; }
 
 h1, .section .section_title, .cost .cost_price, .section-product .product_logo p, .tagline, .servicePreview .service_name, .postSideBar .sideBar_heading, .well-announce strong {
-  font-family: 'Gloria Hallelujah', serif;
+  font-family: 'Gloria Hallelujah';
   letter-spacing: 0.02em;
   line-height: 1.2em; }
 
