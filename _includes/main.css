@@ -4761,11 +4761,6 @@ a:hover {
     background-position: 50% 50%; }
     .layer-img-inset {
       box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); }
-    @media (max-width: 767px) {
-      .layer-img {
-        position: relative;
-        width: 100%;
-        height: 200px; } }
   @media (min-width: 768px) {
     .layer-gradient-light {
       background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
@@ -4803,6 +4798,13 @@ a:hover {
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
       /* IE6-9 */ } }
+
+@media (max-width: 767px) {
+  section.section .layer-img {
+    position: relative;
+    width: 96%;
+    margin: 6px auto -20px auto;
+    height: 240px; } }
 
 .well-product {
   background: #6fbc46; }
@@ -5190,12 +5192,23 @@ blockquote {
   padding-top: 80px;
   min-height: 250px;
   text-align: center;
+  width: 25%;
   background-color: #6fbc46; }
+  @media (max-width: 767px) {
+    .images > div {
+      min-height: 200px;
+      width: 50%; } }
   .images > div p {
     position: relative;
     color: #fff;
     font-size: 20pt;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+    @media (max-width: 991px) {
+      .images > div p {
+        font-size: 16pt; } }
+    @media (max-width: 767px) {
+      .images > div p {
+        font-size: 12pt; } }
   .images > div:nth-child(1) {
     background-color: #7ec359; }
   .images > div:nth-child(2) {
@@ -5212,6 +5225,3 @@ blockquote {
     background-color: #8cca6b; }
   .images > div:nth-child(8) {
     background-color: #7ec359; }
-
-.images-4 > div {
-  width: 25%; }
