@@ -31,83 +31,85 @@ permalink: /home-pilates/
 </section>
 
 <section class="section section-lightOnDark">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0967.jpg"></div>
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/P1060469.jpg"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-8">
-				<h2 class="section_title">Getting started</h2>
-				<p>We will start by finding out about your goals whether they be fitness based or have more of a rehabilitation focus. Your session will then be tailored to your needs using either Pilates mat work, <a href="http://www.jemsmovement.com/" target="_blank">JEMS Movement ART</a> techniques and exercises, or a combination of both.</p>
+			<div class="col-sm-5 col-sm-offset-7">
+				<h2 class="section_title">What's involved?</h2>
+				<p>Each session is tailored to you and can take on either a <strong>fitness</strong> or <strong>rehabilitation</strong> focus. It may include pilates matwork or <a href="http://www.jemsmovement.com/" target="_blank">JEMS Movement ART</a> techniques and exercises, or a combination of both.</p>
+				<p>I'll also bring along a fun range of Pilates equipment to keep things interesting, including...</p>
 			</div>
 		</div>
+	</div>
+</section>
+
+<section class="images images-4">
+	<div>
+		<div class="layer layer-img b-lazy" data-src="/images/equipment-swiss-ball.jpg"></div>
+		<p>Swiss ball</p>
+	</div>
+	<div>
+		<div class="layer layer-img b-lazy" data-src="/images/equipment-magic-circle.jpg"></div>
+		<p>Magic Circle</p>
+	</div>
+	<div>
+		<div class="layer layer-img b-lazy" data-src="/images/equipment-theraband.jpg"></div>
+		<p>Theraband</p>
+	</div>
+	<div>
+		<div class="layer layer-img b-lazy" data-src="/images/equipment-foam-roller.jpg"></div>
+		<p>Foam roller</p>
 	</div>
 </section>
 
 
 <section class="section">
 	<div class="container">
-		<div class="col-sm-12">
-			<h2 class="section_title section_title-full">Options available</h2>
-		</div>
-		<div class="col-sm-4">
-			<div class="well well-product">
-				<h3>Solo</h3>
-				<p>An hour just for you. Private lessons are recommended for anyone with specific rehabilitation needs</p>
-				<div class="cost">
-					<div class="cost_price">$150</div>
-					<div class="cost_details">1 hour class</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="section_title section_title-full">Class options</h2>
+			</div>
+			<div class="col-sm-6">
+				<h3>Introduction session</h3>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						<p>We will start by finding out about your goals whether they be fitness based or have more of a rehabilitation focus. Your session will then be tailored to your needs.</p>
+					</div><!-- .col-sm-10 col-sm-offset-2 -->
+				</div><!-- .row -->
+				<h3>Solo session</h3>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						<p>An hour just for you. Private lessons are recommended for anyone with specific rehabilitation needs</p>
+					</div>
 				</div>
-				<!-- <div class="cost">
-					<div class="cost_price">$260</div>
-					<div class="cost_details">2 hour class</div>
+				<h3>Pairs session</h3>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						<p>If you are simply wanting to tone, strengthen and mobilise you might consider sharing your session with another family member or friend</p>
+					</div>
 				</div>
-				<div class="cost">
-					<div class="cost_price">$340</div>
-					<div class="cost_details">3 hour class</div>
-				</div> -->
-			</div><!-- .well -->
-		</div><!-- .col-sm-4 -->
-		<div class="col-sm-4">
-			<div class="well well-product">
-				<h3>Pairs</h3>
-				<p>If you are simply wanting to tone, strengthen and mobilise you might consider sharing your session with another family member or friend</p>
-				<div class="cost">
-					<div class="cost_price">$150</div>
-					<div class="cost_details">1 hour class</div>
-				</div>
-				<!-- <div class="cost">
-					<div class="cost_price">$260</div>
-					<div class="cost_details">2 hour class</div>
-				</div>
-				<div class="cost">
-					<div class="cost_price">$340</div>
-					<div class="cost_details">3 hour class</div>
-				</div> -->
-			</div><!-- .well -->
-		</div><!-- .col-sm-4 -->
-		<div class="col-sm-4">
-			<div class="well well-product">
 				<h3>Small groups</h3>
-				<p>If you have the space available, why not get a few friends together and host a pilates mat class in your home or garden!</p>
-				<div class="cost">
-					<div class="cost_price">$150</div>
-					<div class="cost_details">1 hour class</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						<p>If you have the space available, why not get a few friends together and host a pilates mat class in your home or garden!</p>
+					</div>
 				</div>
-				<!-- <div class="cost">
-					<div class="cost_price">$260</div>
-					<div class="cost_details">2 hour class</div>
-				</div>
-				<div class="cost">
-					<div class="cost_price">$340</div>
-					<div class="cost_details">3 hour class</div>
-				</div> -->
-			</div><!-- .well -->
-		</div>
-		<div class="col-sm-12">
-			<div class="well well-info well-announce">
-				Save <strong>$10</strong>/session if you book a regular weekly, fortnightly or monthly class.
-			</div><!-- .well well-info -->
-			<!-- <p><sup>*</sup> Regular classes can be booked weekly, fortnightly or monthly.</p> -->
-		</div><!-- .col-sm-12 -->
+			</div>
+			<div class="col-sm-4 col-sm-offset-1">
+				<br>
+				<div class="well well-product">
+					<h3>Cost</h3>
+					<p>All sessions are 60 minutes long. Please try to arrive at least 5 minutes early.</p>
+					<div class="cost">
+						<div class="cost_price">$150</div>
+						<!-- <div class="cost_details">1 hour session</div> -->
+					</div>
+				</div><!-- .well -->
+				<div class="well well-info well-announce">
+					Save <strong>$10</strong>/session if you book a regular weekly, fortnightly or monthly class.
+				</div><!-- .well well-info -->
+			</div>
+		</div><!-- .row -->
 	</div>
 </section>
 

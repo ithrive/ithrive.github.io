@@ -90,22 +90,22 @@ permalink: /studio-pilates/
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="section_title section_title-full">Available classes</h2>
+				<h2 class="section_title section_title-full">Class options</h2>
 			</div>
 			<div class="col-sm-6">
-				<h3>Initial Consultation</h3>
+				<h3>Introduction session</h3>
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-2">
 						<p>We will start with a chat about your goals and some movement and mobility assessments. We will develop your individual program and determine some benchmarks for us to measure your progress against. We will then move on to learn how to use your breath as a tool for movement, how to sense and use your abdominals effectively, as well as introducing you to your first repertoire on the equipment!</p>
 					</div><!-- .col-sm-10 col-sm-offset-2 -->
 				</div><!-- .row -->
-				<h3>Solo sessions</h3>
+				<h3>Solo session</h3>
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-2">
 						<p>Many people choose to continue on with regular private sessions.  Private tuition really allows you to fine tune your movement strategies, building strength, efficiency and robustness more quickly. If you are rehabilitating an injury or working toward a specific performance goal this is definitely the way to go.</p>
 					</div>
 				</div>
-				<h3>Pairs sessions</h3>
+				<h3>Pairs session</h3>
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-2">
 						<p>Book your workout with a friend, partner or family member. Your program will still be individually tailored to your goals and abilities. Share the cost and double the fun!</p>
@@ -115,11 +115,11 @@ permalink: /studio-pilates/
 			<div class="col-sm-4 col-sm-offset-1">
 				<br>
 				<div class="well well-product">
-					<h3>All classes</h3>
-					<p>Covers initial consults, solo and pair sessions.</p>
+					<h3>Cost</h3>
+					<p>All sessions are 60 minutes long. Please try to arrive at least 5 minutes early.</p>
 					<div class="cost">
 						<div class="cost_price">$110</div>
-						<div class="cost_details">1 hour session</div>
+						<!-- <div class="cost_details">1 hour session</div> -->
 					</div>
 				</div><!-- .well -->
 				<div class="well well-info well-announce">
