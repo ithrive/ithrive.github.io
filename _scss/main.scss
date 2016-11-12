@@ -68,7 +68,7 @@ $grid-gutter-width: 10px;
 @import "footer";
 
 body {
-	font-family: 'Quicksand','Helvetica','Arial',sans-serif;
+	font-family: 'Helvetica','Arial',sans-serif;
 }
 h1, h2, h3 {
 	margin: 0;
@@ -76,6 +76,21 @@ h1, h2, h3 {
 h1 { font-size: 24pt; }
 h2 { font-size: 20pt; }
 h3 { font-size: 18pt; }
+
+
+// WebFonts:
+.wf-loading {
+/* styles to use when web fonts are loading */
+}
+ 
+.wf-active {
+	body { font-family: 'Quicksand'; }
+	%altFont { font-family: 'Gloria Hallelujah'; }
+}
+ 
+.wf-inactive {
+/* styles to use when web fonts are inactive */
+}
 
 .container {
 	padding-left: 30px;
@@ -103,7 +118,7 @@ a[href^="mailto:"] {
 }
 
 %altFont {
-	font-family: 'Gloria Hallelujah','Helvetica','Arial',sans-serif;
+	font-family: 'Helvetica','Arial',sans-serif;
 	letter-spacing: 0.02em;
 	line-height: 1.2em;
 }

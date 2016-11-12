@@ -4651,7 +4651,7 @@ footer {
       border: solid 1px #fff; }
 
 body {
-  font-family: 'Quicksand','Helvetica','Arial',sans-serif; }
+  font-family: 'Helvetica','Arial',sans-serif; }
 
 h1, h2, h3 {
   margin: 0; }
@@ -4664,6 +4664,18 @@ h2 {
 
 h3 {
   font-size: 18pt; }
+
+.wf-loading {
+  /* styles to use when web fonts are loading */ }
+
+.wf-active body {
+  font-family: 'Quicksand'; }
+
+.wf-active h1, .wf-active .section .section_title, .section .wf-active .section_title, .wf-active .cost .cost_price, .cost .wf-active .cost_price, .wf-active .section-product .product_logo p, .section-product .product_logo .wf-active p, .wf-active .tagline, .wf-active .servicePreview .service_name, .servicePreview .wf-active .service_name, .wf-active .postSideBar .sideBar_heading, .postSideBar .wf-active .sideBar_heading, .wf-active .well-announce strong, .well-announce .wf-active strong {
+  font-family: 'Gloria Hallelujah'; }
+
+.wf-inactive {
+  /* styles to use when web fonts are inactive */ }
 
 .container {
   padding-left: 30px;
@@ -4686,7 +4698,7 @@ a[href^="mailto:"] {
     position: relative; }
 
 h1, .section .section_title, .cost .cost_price, .section-product .product_logo p, .tagline, .servicePreview .service_name, .postSideBar .sideBar_heading, .well-announce strong {
-  font-family: 'Gloria Hallelujah','Helvetica','Arial',sans-serif;
+  font-family: 'Helvetica','Arial',sans-serif;
   letter-spacing: 0.02em;
   line-height: 1.2em; }
 
