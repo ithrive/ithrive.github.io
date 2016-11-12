@@ -68,38 +68,21 @@ var knowledgeBaseLookup = {
 </script>
 
 <script type="text/javascript">
-  // Source: http://stackoverflow.com/questions/7718935/load-scripts-asynchronously
-  function loadScript(src, callback) {
-    var s,r,t;
-    r = false;
-    s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.src = src;
-    s.onload = s.onreadystatechange = function() {
-      if ( !r && (!this.readyState || this.readyState == 'complete') ) {
-        r = true;
-        callback();
-      }
-    };
-    t = document.getElementsByTagName('script')[0];
-    t.parentNode.insertBefore(s, t);
+  function loadBlazy() {
+    var bLazy = new Blazy();
   }
-  (function() {
-    WebFontConfig = {
-      google: { 
-        families: [ 
-          'Gloria+Hallelujah', 
-          'Quicksand:400,700',
-        ]
-      }
-    };
-    // See https://github.com/typekit/webfontloader
-    loadScript('//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js');
-    loadScript('//cdn.jsdelivr.net/blazy/latest/blazy.min.js', function() {
-      var bLazy = new Blazy();
-    });
-  })()
+  WebFontConfig = {
+    google: { 
+      families: [ 
+        'Gloria+Hallelujah', 
+        'Quicksand:400,700',
+      ]
+    }
+  };
 </script>
+<script defer src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js" onload="loadBlazy()"></script>
+<script defer src="//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+
 
     {% if page.dev %}
 		  <!-- build:js(.) main.js -->
