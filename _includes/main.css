@@ -5176,3 +5176,42 @@ blockquote {
     top: 0;
     width: 100%;
     height: 100%; }
+
+.images:before, .images:after {
+  content: " ";
+  display: table; }
+
+.images:after {
+  clear: both; }
+
+.images > div {
+  float: left;
+  position: relative;
+  padding-top: 80px;
+  min-height: 250px;
+  text-align: center;
+  background-color: #6fbc46; }
+  .images > div p {
+    position: relative;
+    color: #fff;
+    font-size: 20pt;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+  .images > div:nth-child(1) {
+    background-color: #7ec359; }
+  .images > div:nth-child(2) {
+    background-color: #8cca6b; }
+  .images > div:nth-child(3) {
+    background-color: #9bd07e; }
+  .images > div:nth-child(4) {
+    background-color: #a9d791; }
+  .images > div:nth-child(5) {
+    background-color: #a9d791; }
+  .images > div:nth-child(6) {
+    background-color: #9bd07e; }
+  .images > div:nth-child(7) {
+    background-color: #8cca6b; }
+  .images > div:nth-child(8) {
+    background-color: #7ec359; }
+
+.images-4 > div {
+  width: 25%; }

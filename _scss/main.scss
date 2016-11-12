@@ -772,3 +772,41 @@ blockquote {
 		height:100%;
 	}
 }
+
+.images {
+	@include clearfix;
+
+	> div {
+		float: left;
+		position: relative;
+		padding-top: 80px;
+		min-height: 250px;
+		text-align: center;
+
+		p {
+			position: relative;
+			color: #fff;
+			font-size: 20pt;
+			text-shadow: 0 0 3px rgba(#000,0.3);
+		}
+
+		background-color: $brand-primary;
+		&:nth-child(1) { background-color: lighten($brand-primary, 5%); }
+		&:nth-child(2) { background-color: lighten($brand-primary, 10%); }
+		&:nth-child(3) { background-color: lighten($brand-primary, 15%); }
+		&:nth-child(4) { background-color: lighten($brand-primary, 20%); }
+		&:nth-child(5) { background-color: lighten($brand-primary, 20%); }
+		&:nth-child(6) { background-color: lighten($brand-primary, 15%); }
+		&:nth-child(7) { background-color: lighten($brand-primary, 10%); }
+		&:nth-child(8) { background-color: lighten($brand-primary, 5%); }
+	}
+	&-4 {
+		> div { 
+			width: 25%; 
+		}
+	}
+}
+
+.section-sm {
+	// @include padSection(100px, 50px);
+}
