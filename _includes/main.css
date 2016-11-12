@@ -4917,7 +4917,7 @@ a:hover {
       font-size: 14pt;
       color: #bbb; }
   .section-product .product_services {
-    margin: 40px 0; }
+    margin: 10px 0; }
     .section-product .product_services > h3 {
       margin-bottom: 15px;
       color: #bbb; }
@@ -4940,14 +4940,25 @@ a:hover {
   margin: 0 5px 25px 5px;
   width: 180px;
   vertical-align: top; }
+  .servicePreview:nth-child(1) .preview_img {
+    background-color: #6fbc46; }
+  .servicePreview:nth-child(2) .preview_img {
+    background-color: #8cca6b; }
+  .servicePreview:nth-child(3) .preview_img {
+    background-color: #a9d791; }
   .servicePreview .preview_img {
     width: 180px;
     height: 180px;
-    background-size: cover;
-    background-position: 50%;
-    background-color: #6fbc46;
     position: relative;
     display: inline-block; }
+    .servicePreview .preview_img > div {
+      background-size: cover;
+      background-position: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; }
     .servicePreview .preview_img:after {
       content: '>';
       width: 40px;

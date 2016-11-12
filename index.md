@@ -11,22 +11,28 @@ layout: default
 		</div><!-- .product_logo -->
 		<div class="row">
 			<div class="col-sm-12">
+				<h3>My services</h3>
 				<div class="product_services">
-					<h3>My services</h3>
 					<div class="servicePreview">
-						<a href="/studio-pilates" class="preview_img b-lazy" data-src="/images/service-studio-pilates.jpg"></a>
+						<a href="/studio-pilates" class="preview_img">
+							<div class="b-lazy" data-src="/images/service-studio-pilates.jpg"></div>
+						</a>
 						<div class="service_name">Studio pilates</div><!-- .service_name -->
 						<p>Enjoy pilates in a fully equipped studio located in Brookvale, NSW</p>
 						<p><a href="/studio-pilates">Learn more &gt;</a></p>
 					</div><!-- .service -->
 					<div class="servicePreview">
-						<a href="/home-pilates" class="preview_img b-lazy" data-src="/images/service-home-pilates.jpg"></a>
+						<a href="/home-pilates" class="preview_img">
+							<div class="b-lazy" data-src="/images/service-home-pilates.jpg"></div>
+						</a>
 						<div class="service_name">Home pilates</div><!-- .service_name -->
 						<p>Pilates in the comfort of your own home</p>
 						<p><a href="/home-pilates">Learn more &gt;</a></p>
 					</div><!-- .service -->
 					<div class="servicePreview">
-						<a href="/massage" class="preview_img b-lazy" data-src="/images/service-studio-massage.jpg"></a>
+						<a href="/massage" class="preview_img">
+							<div class="b-lazy" data-src="/images/service-studio-massage.jpg"></div>
+						</a>
 						<div class="service_name">Massage</div><!-- .service_name -->
 						<p>Ease aches and pains with a remedial massage, tailored to your needs.</p>
 						<p><a href="/massage">Learn more &gt;</a></p>
