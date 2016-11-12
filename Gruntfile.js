@@ -4,7 +4,9 @@ module.exports = function(grunt) {
 
   var pkgConfig = grunt.file.readJSON('package.json');
 
-  require('jit-grunt')(grunt);
+  require('jit-grunt')(grunt, {
+    useminPrepare: 'grunt-usemin',
+  });
 
   // Project configuration.
   grunt.initConfig({
@@ -17,7 +19,11 @@ module.exports = function(grunt) {
       },
       bower: {
         files: ['bower.json'],
-        tasks: ['wiredep']
+        tasks: ['wiredep', 'build:css']
+      },
+      js: {
+        files: ['scripts/*'],
+        tasks: ['build:css']
       },
     },
 
@@ -39,24 +45,24 @@ module.exports = function(grunt) {
         src: [
           '_layouts/default.html'
         ],
-        ignorePath: '../bower_components/',
-        exclude: [],
-        onPathInjected: function(fileObject) {
-          var folder = fileObject.path.match(/\.js$/) ? 'scripts' : 'styles';
-          console.log();
-          console.log('# RUN:');
-          console.log('mkdir -p '+folder+'/'+fileObject.path.replace(/\/[^\/]+$/, ''));
-          console.log('cp bower_components/'+fileObject.path+' '+folder+'/'+fileObject.path);
-        },
+        ignorePath: '..',
+        // exclude: [],
+        // onPathInjected: function(fileObject) {
+        //   var folder = fileObject.path.match(/\.js$/) ? 'scripts' s';
+        //   console.log();
+        //   console.log('# RUN:');
+        //   console.log('mkdir -p '+folder+'/'+fileObject.path.replace(/\/[^\/]+$/, ''));
+        //   console.log('cp bower_components/'+fileObject.path+' '+folder+'/'+fileObject.path);
+        // },
         // defaults:
-        fileTypes: {
-          html: {
-            replace: {
-              js: '<script src="/scripts/{{filePath}}"></script>',
-              css: '<link rel="stylesheet" href="/styles/{{filePath}}" />'
-            }
-          },
-        },
+        // fileTypes: {
+        //   html: {
+        //     replace: {
+        //       js: '<script src="/scripts/{>',
+        //       css: '<link rel="stylesheet" href="/styles/{{filePath}}" />'
+        //     }
+        //   },
+        // },
       },
       sass: {
         src: ['./_scss/*.{scss,sass}'],
@@ -66,6 +72,42 @@ module.exports = function(grunt) {
         ],
       },
     },
+
+    // Reads HTML for usemin blocks to enable smart builds that automatically
+    // concat, minify and revision files. Creates configurations in memory so
+    // additional tasks can operate on them
+    useminPrepare: {
+      html: '_layouts/default.html',
+      options: {
+        dest: 'build',
+        flow: {
+          html: {
+            steps: {
+              js: ['concat'], //, 'uglify'],
+              css: ['cssmin']
+            },
+            post: {}
+          }
+        }
+      }
+    },
+
+    // Performs rewrites based on filerev and the useminPrepare configuration
+    // usemin: {
+    //   // html: ['build/{,*/}*.html'],
+    //   // css: ['build/styles/{,*/}*.css'],
+    //   js: ['build/{,*/}*.js'],
+    //   options: {
+    //     assetsDirs: [
+    //       'build',
+    //       'build/images',
+    //       'build/styles'
+    //     ],
+    //     patterns: {
+    //       js: [[/(images\/[^''""]*\.(png|jpg|jpeg|gif|webp|svg))/g, 'Replacing references to images']]
+    //     }
+    //   }
+    // },
 
     jekyll: {
       options: {
@@ -97,10 +139,16 @@ module.exports = function(grunt) {
     },
   });
 
+  grunt.registerTask('build:css', [
+      'wiredep',
+      'useminPrepare',
+      'concat:generated',
+      // 'uglify:generated', // Need to put in Angular module name fix
+    ]);
   
   grunt.registerTask('serve', [
   		'sass:dev',
-      'wiredep',
+      'build:css',
       'concurrent:serve',
     ]);
 };

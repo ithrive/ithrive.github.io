@@ -9,7 +9,6 @@ angular.module('App', [
 	.run(function() {
 		// Provides a way to hide angular logic before angular is ready.
 		$('.tmp-hide').removeClass('tmp-hide');
-		
 		_.each(knowledgeBaseLookup, function(val, key) {
 			val.regex = new RegExp('('+key+')', 'i');
 		});

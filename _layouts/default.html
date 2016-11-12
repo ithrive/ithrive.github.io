@@ -68,23 +68,44 @@ var knowledgeBaseLookup = {
   ga('send', 'pageview');
 </script>
 
-		<script src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+<script>
+  function loadScript(src, callback) {
+    var s,r,t;
+    r = false;
+    s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.src = src;
+    s.onload = s.onreadystatechange = function() {
+      //console.log( this.readyState ); //uncomment this line to see which ready states are called.
+      if ( !r && (!this.readyState || this.readyState == 'complete') ) {
+        r = true;
+        callback();
+      }
+    };
+    t = document.getElementsByTagName('script')[0];
+    t.parentNode.insertBefore(s, t);
+  }
+  loadScript('http://cdn.jsdelivr.net/blazy/latest/blazy.min.js', function() {
+    var bLazy = new Blazy();
+  });
+</script>
 
-		<!-- bower:js -->
-		<script src="/scripts/jquery/dist/jquery.js"></script>
-		<script src="/scripts/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
-		<script src="/scripts/angular/angular.js"></script>
-		<script src="/scripts/spin.js/spin.js"></script>
-		<script src="/scripts/angular-spinner/angular-spinner.js"></script>
-		<script src="/scripts/lodash/lodash.js"></script>
-		<script src="/scripts/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-		<!-- endbower -->
-		<script src="/scripts/app.js"></script>
+    {% if page.dev %}
+		  <!-- build:js(.) main.js -->
+      <!-- bower:js -->
+      <script src="/bower_components/jquery/dist/jquery.js"></script>
+      <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+      <script src="/bower_components/angular/angular.js"></script>
+      <script src="/bower_components/spin.js/spin.js"></script>
+      <script src="/bower_components/angular-spinner/angular-spinner.js"></script>
+      <script src="/bower_components/lodash/lodash.js"></script>
+      <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <!-- endbower -->
 
-		<script>
-			;(function() {
-	      var bLazy = new Blazy();
-	  	})();
-	  </script>
+      <script src="/scripts/app.js"></script>
+      <!-- endbuild -->
+    {% else %}
+      <script src="/build/main.js" async></script>
+    {% endif %}
 	</body>
 </html>
