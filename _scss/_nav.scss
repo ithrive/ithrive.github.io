@@ -20,9 +20,14 @@
 	a {
 		color: $gray;
 	}
-	.navbar-toggle .icon-bar {
-		background-color: $gray;
+	button.navbar-toggle {
+		padding: 9px 0;
 		margin-right: 0;
+
+		.icon-bar {
+			background-color: $gray;
+			margin-right: 0;
+		}
 	}
 	ul, li {
 		padding: 0;

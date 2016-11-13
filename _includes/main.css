@@ -4591,9 +4591,12 @@ tbody.collapse.in {
     padding: 0 20px; }
   .navbar a {
     color: #555555; }
-  .navbar .navbar-toggle .icon-bar {
-    background-color: #555555;
+  .navbar button.navbar-toggle {
+    padding: 9px 0;
     margin-right: 0; }
+    .navbar button.navbar-toggle .icon-bar {
+      background-color: #555555;
+      margin-right: 0; }
   .navbar ul, .navbar li {
     padding: 0;
     margin: 0; }
