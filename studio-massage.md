@@ -2,6 +2,7 @@
 layout: info
 title: 'Remedial Massage Therapy'
 permalink: /massage/
+description: 'Ease work or sports related pain and tension, improve posture and feel better with a remedial massage. Fully qualified and experienced therapist. Brookvale location or home visits available'
 ---
 
 <section class="section section-splash">
@@ -35,7 +36,7 @@ permalink: /massage/
 		<div class="row">
 			<div class="col-sm-6">
 				<h2 class="section_title">Techniques</h2>
-				<p>Your session may use any of the following techniques:</p>
+				<p>Your session may include any of the following techniques:</p>
 				<ul>
 					<li>Broad-handed Swedish techniques, myofascial release, trigger point therapy, deep ischaemic pressure, frictions, active and passive tissue tension, manual lymphatic drainage (MLD)</li>
 					<li>Stretching techniques such as PNF (proprioceptive neuromuscular facilitation),  MET (muscle energy technique), static stretches</li>
@@ -56,16 +57,16 @@ permalink: /massage/
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
 				<h2 class="section_title section_title-full">Your session</h2><!-- .section_title -->
-				<p>Laura will take your case history, conduct a postural analysis and use range of motion and other orthopaedic assessments appropriate to your presenting complaint.  We will then devise a treatment strategy tailored to you that may incorporate a range of techniques</p>
+				<p>At your initial session, Laura will take your case history, conduct a postural analysis and use range of motion and other orthopaedic assessments appropriate to your presenting complaint.  We will then devise a treatment strategy tailored to you that may incorporate any of the above techniques. One hour is reccommended for your first appointment.</p>
 				<hr />
 			</div><!-- .col-sm-8 -->
 		</div>
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="well well-product">
-						<h3>30 minutes</h3>
+						<h3>1 hour</h3>
 					<div class="cost">
-						<div class="cost_price">$65</div>
+						<div class="cost_price">$1005</div>
 					</div><!-- .cost -->
 				</div><!-- .well -->
 			</div><!-- .col-sm-8 -->
@@ -79,9 +80,9 @@ permalink: /massage/
 			</div><!-- .col-sm-8 -->
 			<div class="col-sm-4">
 				<div class="well well-product">
-					<h3>1 hour session</h3>
+					<h3>30 minutes</h3>
 					<div class="cost">
-						<div class="cost_price">$100</div>
+						<div class="cost_price">$65</div>
 					</div><!-- .cost -->
 				</div><!-- .well -->
 			</div><!-- .col-sm-8 -->
