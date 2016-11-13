@@ -1,8 +1,14 @@
 ---
 title: Pilates
 keywords: 'Pilates'
-description: "Pilates is a physical fitness system developed in the early 20th century by Joseph Pilates."
+description: 'Pilates is a system of physical fitness with an emphasis on core strength, spinal mobility and the mind-body connection.'
 ---
-Pilates is a physical fitness system developed in the early 20th century by Joseph Pilates. Pilates called his method "Contrology." It is practiced worldwide, and especially in western countries such as Canada, the United States and the United Kingdom. As of 2005, there were 11 million people practicing the discipline regularly and 14,000 instructors in the United States.
+Pilates was originally developed in the early 20th century by Joseph Pilates, who called his method "Contrology". 
 
-There is limited evidence to support the use of Pilates to alleviate low back pain, improve strength, and prevent elderly people from falling. It has not been shown to be an effective treatment for any medical condition.
+Pilates lineage
+
+Classical Pilates
+
+Modern or clinical Pilates
+
+Polestar Pilates
