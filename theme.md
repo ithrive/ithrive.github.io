@@ -2,6 +2,7 @@
 layout: info
 title: 'Theme'
 permalink: /theme/
+sitemap: false
 ---
 
 <section class="section section-lightOnDark">
