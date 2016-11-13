@@ -13,7 +13,9 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 			<div class="col-sm-6">
 				<h1>Studio Pilates</h1>
 				<p>Gain strength, coordination and control on a variety of equipment</p>
-				<img src="/images/logo-splash.png" class="logo" />
+				<p>
+					<img src="/images/logo-splash.png" class="logo" />
+				</p>
 			</div>
 		</div>
 	</div>
@@ -51,39 +53,15 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 	</div>
 </section>
 
-<section class="images images-4">
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-reformer.jpg"></div>
-		<p>Reformer</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-trapeze-table.jpg"></div>
-		<p>Trapeze Table</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-wunda-chair.jpg"></div>
-		<p>Wunda chair</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-spine-corrector.jpg"></div>
-		<p>Spine corrector</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-swiss-ball.jpg"></div>
-		<p>Swiss ball</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-magic-circle.jpg"></div>
-		<p>Magic Circle</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-theraband.jpg"></div>
-		<p>Theraband</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-foam-roller.jpg"></div>
-		<p>Foam roller</p>
-	</div>
+<section class="blockGrid">
+	{% include equipment-block.html title="Reformer" %}
+	{% include equipment-block.html title="Trapeze table" %}
+	{% include equipment-block.html title="Wunda chair" %}
+	{% include equipment-block.html title="Spine corrector" %}
+	{% include equipment-block.html title="Swiss ball" %}
+	{% include equipment-block.html title="Magic circle" %}
+	{% include equipment-block.html title="Theraband" %}
+	{% include equipment-block.html title="Foam roller" %}
 </section>
 
 

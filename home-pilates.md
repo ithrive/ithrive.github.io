@@ -13,7 +13,9 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 			<div class="col-sm-12">
 				<h1>Pilates at Home</h1>
 				<p>Enjoy pilates in the comfort of your own home</p>
-				<img src="/images/logo-splash.png" class="logo" />
+				<p>
+					<img src="/images/logo-splash.png" class="logo" />
+				</p>
 			</div>
 		</div>
 	</div>
@@ -44,23 +46,11 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 	</div>
 </section>
 
-<section class="images images-4">
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-swiss-ball.jpg"></div>
-		<p>Swiss ball</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-magic-circle.jpg"></div>
-		<p>Magic Circle</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-theraband.jpg"></div>
-		<p>Theraband</p>
-	</div>
-	<div>
-		<div class="layer layer-img b-lazy" data-src="/images/equipment-foam-roller.jpg"></div>
-		<p>Foam roller</p>
-	</div>
+<section class="blockGrid">
+	{% include equipment-block.html title="Swiss ball" %}
+	{% include equipment-block.html title="Magic circle" %}
+	{% include equipment-block.html title="Theraband" %}
+	{% include equipment-block.html title="Foam roller" %}
 </section>
 
 

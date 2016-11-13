@@ -2,25 +2,24 @@
 layout: default
 ---
 
-<div class="navbar-offset"></div><!-- .navbar-offset -->
 
-<div class="container">
+<div class="container-fluid knowledgeBase">
 	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2">
-			<article class="knowledgeBase">
-				{% if page.includeImage %}
-					<img src="/images{{ page.url }}article.jpg" alt="" class="img-responsive" />
+		<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+			<article>
+				{% if page.image %}
+					<img src="{{ page.image }}" class="entry_image" />
 				{% endif %}
 				<header>
-					<h1 class="article_heading">{{ page.title }}</h1>
+					<h1 class="entry_title">{{ page.title }}</h1>
+					<div class="entry_defintion">
+						{{ page.description }}
+					</div><!-- .acticle_defintion -->
 				</header>
-				<div class="article_shortVersion">
-					<label>Short version:</label> {{ page.description }}
-				</div><!-- .acticle_shortVersion -->
-				<div class="article_excerpt">
+				<div class="entry_body">
 					{{ content }}
-				</div><!-- .article_excerpt -->
-			</article>
-		</div><!-- .col-sm-8 col-sm-2 -->
-	</div><!-- .row -->
-</div><!-- .container -->
+				</div><!-- .article_body -->
+			</div><!-- .col-sm-8 col-sm-2 -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+</article>

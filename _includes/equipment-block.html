@@ -1,0 +1,11 @@
+{% include find_knowlegde_base_item.html %}
+<div class="equipmentBlock">
+  <div class="layer layer-img b-lazy" data-src="{{ item.image }}"></div>
+  <div class="block_inner">
+    <h3 class="block_title">{{ item.title }}</h3>
+    <p class="block_description">
+      {{ item.description }} 
+      <a href="{{ item.url }}" target="knowledgebase">&gt;</a>
+    </p>
+  </div>
+</div>

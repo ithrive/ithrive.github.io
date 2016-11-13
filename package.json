@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-concurrent": "^2.3.1",
@@ -12,6 +13,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-jekyll": "^0.4.4",
     "grunt-ng-annotate": "^3.0.0",
+    "grunt-postcss": "^0.8.0",
     "grunt-sass": "^1.2.0",
     "grunt-usemin": "^3.1.1",
     "grunt-wiredep": "^3.0.1",

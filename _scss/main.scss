@@ -101,6 +101,10 @@ body {
 	padding-left: 30px;
 	padding-right: 30px;
 }
+.container-fluid {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 a[target="_blank"] {
 	color: $brand-danger;
@@ -448,6 +452,23 @@ section.section {
 	}
 }
 
+@mixin info-btn($btn-size) {
+	width: $btn-size;
+	height: $btn-size;
+	border-radius: 50%;
+	color: #fff;
+	font-size: $btn-size*0.7;
+	line-height: $btn-size;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	background-color: $brand-primary;
+	transition: background-color 0.5s;
+	&:hover {
+		background-color: lighten($brand-primary,10%);
+	}
+}
+
 // Preview of the service, as displayed on the homepage
 .servicePreview {
 	$size: 180px;
@@ -477,21 +498,12 @@ section.section {
 		}
 
 		&:after {
+			@include info-btn(40px);
 			content: '>';
-			$btn-size: 40px;
-			width: $btn-size;
-			height: $btn-size;
-			border-radius: 50%;
-			background-color: $brand-primary;
-			color: #fff;
 			position: absolute;
 			right: -7px;
 			bottom: -7px;
 			display: inline-block;
-			font-size: $btn-size*0.7;
-			line-height: $btn-size;
-			vertical-align: middle;
-			text-align: center;
 		}
 		// opacity: 0.5;
 		// transition: opacity 0.5s;
@@ -670,35 +682,59 @@ aside.block {
 	}
 }
 
-article.knowledgeBase {
-	padding: 50px 0 100px 0;
+@mixin sideImg($size) {
+	article {
+		padding-left: $size+20px;
+	}
+	.entry_image {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: $size;
+	}
+}
 
-	.article_heading {
+.knowledgeBase {
+	padding-top: 70px;
+	padding-bottom: 60px;
+
+	@media (min-width: $screen-sm-min) {
+		padding-top: 120px;
+		@include sideImg(200px);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include sideImg(260px);
+	}
+
+	article {
+		min-height: 500px;
+		position: relative;
+	}
+
+	header {
+	}
+
+	.entry_title {
 		font-size: 30pt;
-		padding-bottom: 20px;
-		margin-bottom: 10px;
-		border-bottom: 1px solid $gray-lighter;
+		margin: 0 0 5px 0;
 	}
-	.article_excerpt {
-		font-size: 14pt;
+		
+	.entry_image {
+		max-width: 100%;
+		margin-bottom: 20px;
 	}
-	.article_shortVersion {
-		text-style: italic;
-		font-size: 18pt;
-		padding: 10px 0;
-		border-bottom: 1px solid $gray-lighter;
-		margin-bottom: 40px;
 
-		label {
-			font-size: 10pt;
-			margin-right: 15px;
-			font-weight: 800;
-			// line-height: 1.5em;
-			vertical-align: middle;
-			// text-decoration: underline;
-			padding-bottom: 3px;
-			color: $gray-light;
-		}
+	.entry_defintion {
+		text-style: italic;
+		font-size: 16pt;
+		padding: 10px 0;
+		// border-top: 1px solid $gray-lighter;
+		// border-bottom: 1px solid $gray-lighter;
+		// margin-bottom: 40px;
+		font-style: italic;
+	}
+	.entry_body {
+		font-size: 14pt;
 	}
 }
 
@@ -815,33 +851,21 @@ blockquote {
 	}
 }
 
-.images {
+// Use for showing the equipment
+.blockGrid {
 	@include clearfix;
 
 	> div {
 		float: left;
 		position: relative;
-		padding-top: 80px;
 		min-height: 250px;
-		text-align: center;
 		width: 25%; // assumes 4
 
+		@media (max-width: $screen-sm-max) {
+		}
 		@media (max-width: $screen-xs-max) {
 			min-height: 200px;
 			width: 50%;
-		}
-		p {
-			position: relative;
-			color: #fff;
-			font-size: 20pt;
-			text-shadow: 0 0 3px rgba(#000,0.3);
-
-			@media (max-width: $screen-sm-max) {
-				font-size: 16pt;
-			}
-			@media (max-width: $screen-xs-max) {
-				font-size: 12pt;
-			}
 		}
 
 		background-color: $brand-primary;
@@ -853,6 +877,56 @@ blockquote {
 		&:nth-child(6) { background-color: lighten($brand-primary, 15%); }
 		&:nth-child(7) { background-color: lighten($brand-primary, 10%); }
 		&:nth-child(8) { background-color: lighten($brand-primary, 5%); }
+	}
+}
+
+.equipmentBlock {
+	@extend %lightText;
+
+	.block_inner {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		background-color: transparent;
+		padding: 90px 20px 0 20px;
+		transition: background-color 0.5s, padding-top 0.5s;
+
+		&:hover {
+			background-color: rgba(#000, 0.5);
+			padding-top: 40px;
+
+			.block_description {
+				opacity: 1;
+			}
+		}
+	}
+
+	.block_title {
+		@extend %altFont;
+		font-size: 24pt;
+		color: #fff;
+		text-shadow: 0 0 3px rgba(#000,0.3);
+
+		@media (max-width: $screen-sm-max) {
+			font-size: 16pt;
+		}
+		@media (max-width: $screen-xs-max) {
+			font-size: 12pt;
+		}
+	}
+	.block_description {
+		opacity: 0;
+		transition: opacity 0.5s;
+		font-size: 9pt;
+
+		a {
+			@include info-btn(40px);
+			display: block;
+			margin: 20px auto 0 auto;
+		}
 	}
 }
 

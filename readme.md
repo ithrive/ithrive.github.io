@@ -5,6 +5,10 @@ iThrive website developed using [Jekyll](jekyllrb.com) and hosted on [GitHub pag
 
 ## Creating
 
+### New knowledge base item
+
+Run: `./_gen-knowledge-base.sh`
+
 
 ## Development
 
@@ -25,5 +29,9 @@ bundle install
 
 Run:
 ```
+# Jekyll and grunt watch
 grunt serve
+
+# Jekyll only
+bundle exec jekyll serve --watch
 ```
