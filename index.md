@@ -5,13 +5,13 @@ layout: default
 
 <section class="section section-product">
 	<div class="container">
-		<div class="product_logo">
-			<img src="/images/ithrive-logo.jpg" />
-			<!-- <p>Pilates | Massage</p> -->
+		<div class="productLogo">
+			<div class="layer layer-img b-lazy" data-src="/images/ithrive-logo.jpg"></div>
 		</div><!-- .product_logo -->
+		<!-- <p>Pilates | Massage</p> -->
 		<div class="row">
 			<div class="col-sm-12">
-				<h3>My services</h3>
+				<h3 class="product_heading">My services</h3>
 				<div class="product_services">
 					<div class="servicePreview">
 						<a href="/studio-pilates" class="preview_img">
