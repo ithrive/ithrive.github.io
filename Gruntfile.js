@@ -19,11 +19,11 @@ module.exports = function(grunt) {
       },
       bower: {
         files: ['bower.json'],
-        tasks: ['wiredep', 'build:css']
+        tasks: ['wiredep', 'build:js']
       },
       js: {
         files: ['scripts/*'],
-        tasks: ['build:css']
+        tasks: ['build:js']
       },
     },
 
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       },
       dev: {
         files: {
-          '_includes/main.css': '_scss/main.scss'
+          'dist/main.css': '_scss/main.scss'
         }
       },
     },
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
     useminPrepare: {
       html: '_layouts/default.html',
       options: {
-        dest: 'build',
+        dest: '.',
         flow: {
           html: {
             steps: {
@@ -121,6 +121,23 @@ module.exports = function(grunt) {
     //     }
     //   }
     // },
+    
+    // Add vendor prefixed styles
+    postcss: {
+      options: {
+        processors: [
+          require('autoprefixer-core')({browsers: ['last 1 version']})
+        ]
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '.tmp/styles/',
+          src: '{,*/}*.css',
+          dest: '.tmp/styles/'
+        }]
+      }
+    },
 
     jekyll: {
       options: {
@@ -152,17 +169,35 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.registerTask('build:css', [
+  grunt.registerTask('build:js', [
       'wiredep',
       'useminPrepare',
-      'concat:generated',
+      'concat',
       'ngAnnotate',
-      'uglify:generated',
+      'uglify',
+    ]);
+
+  grunt.registerTask('build:css', [
+      'sass',
+      'useminPrepare',
+      'postcss',
+      'cssmin',
+    ]);
+
+  grunt.registerTask('build', [
+      'wiredep',
+      'sass',
+      'useminPrepare',
+      'concat',
+      'ngAnnotate',
+      'uglify',
+      'postcss',
+      'cssmin',
     ]);
   
   grunt.registerTask('serve', [
   		'sass:dev',
-      'build:css',
+      'build',
       'concurrent:serve',
     ]);
 };

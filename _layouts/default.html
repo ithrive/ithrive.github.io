@@ -7,9 +7,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<title>iThrive | {{ page.title }}</title>
-		<style>
-			{% include main.css %}
-		</style>
+
+    {% if page.dev %}
+  		<!-- build:css(.) _includes/main.min.css -->
+      <link rel="stylesheet" href="dist/main.css">
+      <!-- endbuild -->
+    {% else %}
+      <style>{% include main.min.css %}</style>
+    {% endif %}
 
 		<!-- bower:css -->
 		<!-- endbower -->
@@ -85,7 +90,6 @@ var knowledgeBaseLookup = {
       ]
     }
   };
-
   (function(d) {
     var wf = d.createElement('script'), s = d.scripts[0];
     wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
@@ -95,7 +99,7 @@ var knowledgeBaseLookup = {
 
 
     {% if page.dev %}
-		  <!-- build:js(.) main.js -->
+		  <!-- build:js(.) build/main.min.js -->
       <!-- bower:js -->
       <script src="/bower_components/jquery/dist/jquery.js"></script>
       <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
@@ -109,7 +113,7 @@ var knowledgeBaseLookup = {
       <script src="/scripts/app.js"></script>
       <!-- endbuild -->
     {% else %}
-      <script src="/build/main.js" async></script>
+      <script src="/build/main.min.js" async></script>
     {% endif %}
 	</body>
 </html>
