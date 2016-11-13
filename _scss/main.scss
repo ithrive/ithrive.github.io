@@ -67,9 +67,7 @@ $grid-gutter-width: 10px;
 @import "nav";
 @import "footer";
 
-body {
-	font-family: 'Helvetica','Arial',sans-serif;
-}
+
 h1, h2, h3 {
 	margin: 0;
 }
@@ -83,6 +81,13 @@ h3 { font-size: 18pt; }
 /* styles to use when web fonts are loading */
 }
  
+body {
+	font-family: 'Helvetica','Arial',sans-serif;
+}
+%altFont {
+	letter-spacing: 0.02em;
+	line-height: 1.2em;
+}
 .wf-active {
 	body { font-family: 'Quicksand'; }
 	%altFont { font-family: 'Gloria Hallelujah'; }
@@ -107,7 +112,6 @@ a[target="_blank"] {
 }
 a[href^="mailto:"] {
 	text-decoration: none !important;
-	font-weight: 800;
 
 	&::after {
 		font-family: FontAwesome;
@@ -115,12 +119,6 @@ a[href^="mailto:"] {
 		font-size: 80%;
 		position: relative;
 	}
-}
-
-%altFont {
-	font-family: 'Helvetica','Arial',sans-serif;
-	letter-spacing: 0.02em;
-	line-height: 1.2em;
 }
 
 h1 {
@@ -313,9 +311,11 @@ section.section {
 	a {
 		color: #fff;
 		text-decoration: underline;
+		font-weight: 700;
 
 		&.btn {
 			text-decoration: none;
+			font-weight: normal;
 		}
 	}
 }

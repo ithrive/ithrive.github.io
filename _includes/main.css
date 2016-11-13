@@ -4650,9 +4650,6 @@ footer {
     footer .footer_mailingList .btn {
       border: solid 1px #fff; }
 
-body {
-  font-family: 'Helvetica','Arial',sans-serif; }
-
 h1, h2, h3 {
   margin: 0; }
 
@@ -4667,6 +4664,13 @@ h3 {
 
 .wf-loading {
   /* styles to use when web fonts are loading */ }
+
+body {
+  font-family: 'Helvetica','Arial',sans-serif; }
+
+h1, .section .section_title, .cost .cost_price, .section-product .product_logo p, .tagline, .servicePreview .service_name, .postSideBar .sideBar_heading, .well-announce strong {
+  letter-spacing: 0.02em;
+  line-height: 1.2em; }
 
 .wf-active body {
   font-family: 'Quicksand'; }
@@ -4689,18 +4693,12 @@ a[target="_blank"] {
     font-size: 80%; }
 
 a[href^="mailto:"] {
-  text-decoration: none !important;
-  font-weight: 800; }
+  text-decoration: none !important; }
   a[href^="mailto:"]::after {
     font-family: FontAwesome;
     content: " ";
     font-size: 80%;
     position: relative; }
-
-h1, .section .section_title, .cost .cost_price, .section-product .product_logo p, .tagline, .servicePreview .service_name, .postSideBar .sideBar_heading, .well-announce strong {
-  font-family: 'Helvetica','Arial',sans-serif;
-  letter-spacing: 0.02em;
-  line-height: 1.2em; }
 
 p, li {
   font-size: 12pt;
@@ -4843,9 +4841,11 @@ a:hover {
   color: rgba(238, 238, 238, 0.9); }
   .section-lightOnDark a, .section-splash a, .section-aboutMe a {
     color: #fff;
-    text-decoration: underline; }
+    text-decoration: underline;
+    font-weight: 700; }
     .section-lightOnDark a.btn, .section-splash a.btn, .section-aboutMe a.btn {
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: normal; }
 
 .section-lightOnDark {
   background-color: #aaa; }
