@@ -4932,6 +4932,9 @@ a:hover {
   position: relative; }
   .productLogo .layer-img {
     background-size: contain; }
+  .productLogo img {
+    max-width: 100%;
+    max-height: 100%; }
 
 .tagline {
   font-size: 14pt;
