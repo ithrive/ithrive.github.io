@@ -73,7 +73,11 @@ var knowledgeBaseLookup = {
   function loadBlazy() {
     var bLazy = new Blazy();
   }
-  WebFontConfig = {
+</script>
+<script defer src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js" onload="loadBlazy()"></script>
+
+<script>
+   WebFontConfig = {
     google: { 
       families: [ 
         'Gloria+Hallelujah', 
@@ -81,9 +85,13 @@ var knowledgeBaseLookup = {
       ]
     }
   };
+
+  (function(d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+    s.parentNode.insertBefore(wf, s);
+  })(document);
 </script>
-<script async defer src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js" onload="loadBlazy()"></script>
-<script async defer src="//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 
 
     {% if page.dev %}
