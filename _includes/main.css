@@ -4688,6 +4688,10 @@ h1, .section .section_title, .cost .cost_price, .tagline, .servicePreview .servi
   padding-left: 30px;
   padding-right: 30px; }
 
+.container-fluid {
+  padding-left: 20px;
+  padding-right: 20px; }
+
 a[target="_blank"] {
   color: #d9534f; }
   a[target="_blank"]::after {
@@ -5120,28 +5124,43 @@ aside.block {
     color: #bbb;
     font-size: 12pt; }
 
-article.knowledgeBase {
-  padding: 50px 0 100px 0; }
-  article.knowledgeBase .article_heading {
+.knowledgeBase {
+  padding-top: 70px;
+  padding-bottom: 60px; }
+  @media (min-width: 768px) {
+    .knowledgeBase {
+      padding-top: 120px; }
+      .knowledgeBase article {
+        padding-left: 220px; }
+      .knowledgeBase .entry_image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px; } }
+  @media (min-width: 1200px) {
+    .knowledgeBase article {
+      padding-left: 280px; }
+    .knowledgeBase .entry_image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 260px; } }
+  .knowledgeBase article {
+    min-height: 500px;
+    position: relative; }
+  .knowledgeBase .entry_title {
     font-size: 30pt;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #eeeeee; }
-  article.knowledgeBase .article_excerpt {
-    font-size: 14pt; }
-  article.knowledgeBase .article_shortVersion {
+    margin: 0 0 5px 0; }
+  .knowledgeBase .entry_image {
+    max-width: 100%;
+    margin-bottom: 20px; }
+  .knowledgeBase .entry_defintion {
     text-style: italic;
-    font-size: 18pt;
+    font-size: 16pt;
     padding: 10px 0;
-    border-bottom: 1px solid #eeeeee;
-    margin-bottom: 40px; }
-    article.knowledgeBase .article_shortVersion label {
-      font-size: 10pt;
-      margin-right: 15px;
-      font-weight: 800;
-      vertical-align: middle;
-      padding-bottom: 3px;
-      color: #bbb; }
+    font-style: italic; }
+  .knowledgeBase .entry_body {
+    font-size: 14pt; }
 
 .keyword {
   color: #57a6bf; }

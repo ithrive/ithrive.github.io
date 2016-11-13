@@ -101,6 +101,10 @@ body {
 	padding-left: 30px;
 	padding-right: 30px;
 }
+.container-fluid {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 a[target="_blank"] {
 	color: $brand-danger;
@@ -678,35 +682,59 @@ aside.block {
 	}
 }
 
-article.knowledgeBase {
-	padding: 50px 0 100px 0;
+@mixin sideImg($size) {
+	article {
+		padding-left: $size+20px;
+	}
+	.entry_image {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: $size;
+	}
+}
 
-	.article_heading {
+.knowledgeBase {
+	padding-top: 70px;
+	padding-bottom: 60px;
+
+	@media (min-width: $screen-sm-min) {
+		padding-top: 120px;
+		@include sideImg(200px);
+	}
+	@media (min-width: $screen-lg-min) {
+		@include sideImg(260px);
+	}
+
+	article {
+		min-height: 500px;
+		position: relative;
+	}
+
+	header {
+	}
+
+	.entry_title {
 		font-size: 30pt;
-		padding-bottom: 20px;
-		margin-bottom: 10px;
-		border-bottom: 1px solid $gray-lighter;
+		margin: 0 0 5px 0;
 	}
-	.article_excerpt {
-		font-size: 14pt;
+		
+	.entry_image {
+		max-width: 100%;
+		margin-bottom: 20px;
 	}
-	.article_shortVersion {
-		text-style: italic;
-		font-size: 18pt;
-		padding: 10px 0;
-		border-bottom: 1px solid $gray-lighter;
-		margin-bottom: 40px;
 
-		label {
-			font-size: 10pt;
-			margin-right: 15px;
-			font-weight: 800;
-			// line-height: 1.5em;
-			vertical-align: middle;
-			// text-decoration: underline;
-			padding-bottom: 3px;
-			color: $gray-light;
-		}
+	.entry_defintion {
+		text-style: italic;
+		font-size: 16pt;
+		padding: 10px 0;
+		// border-top: 1px solid $gray-lighter;
+		// border-bottom: 1px solid $gray-lighter;
+		// margin-bottom: 40px;
+		font-style: italic;
+	}
+	.entry_body {
+		font-size: 14pt;
 	}
 }
 

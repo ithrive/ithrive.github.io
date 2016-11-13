@@ -2,7 +2,6 @@
 layout: info
 title: 'Studio Pilates'
 permalink: /studio-pilates/
-description: 'Hello world'
 ---
 
 <section class="section section-splash">
