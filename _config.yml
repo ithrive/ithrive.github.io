@@ -15,14 +15,25 @@
 # in the templates via {{ site.myvariable }}.
 title: iThrive
 email: laura@ithrive.net.au
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >
+  iThrive provides pilates and massage service to the Manly and Sydney northern beaches.
+  Both home and studio options available.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ithrive
+url: "https://ithrive.net.au" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter:
+#   username: ...
+# facebook:
+#   app_id: 1234
+#   publisher: 1234
+#   admins: 1234
+logo: "https://ithrive.net.au/images/site-logo.jpg"
 github_username:  ithrive
+author: Laura Kavanagh
+social:
+  name: Laura Kavanagh
+  links:
+    - http://fb.me/ITHRIVEMANLY
+google_site_verification: RhF5lLeJQO2xlrXR7urKO_RlcoKB8CyFBn6xbGwBLdE    
 paginate: 10
 paginate_path: "/posts/page:num/"
 permalink: "/posts/:year/:month/:day/:title.html"
@@ -32,6 +43,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
 exclude:
   - Gemfile
