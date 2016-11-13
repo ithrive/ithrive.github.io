@@ -1,6 +1,6 @@
 ---
 title: Pilates
-terms: pilates
+keywords: 'Pilates'
 description: "Pilates is a physical fitness system developed in the early 20th century by Joseph Pilates."
 ---
 

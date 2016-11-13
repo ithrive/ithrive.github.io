@@ -33,7 +33,7 @@
 <script>
 var knowledgeBaseLookup = {
 	{% for entry in site.knowledge_base %}
-		{% for term in entry.terms | split:',' %}
+		{% for term in entry.keywords | split:',' %}
 			"{{ term }}": {
 				term: "{{ term }}",
 				description: "{{ entry.description }}",
