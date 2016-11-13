@@ -13,7 +13,9 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 			<div class="col-sm-12">
 				<h1>Pilates at Home</h1>
 				<p>Enjoy pilates in the comfort of your own home</p>
-				<img src="/images/logo-splash.png" class="logo" />
+				<p>
+					<img src="/images/logo-splash.png" class="logo" />
+				</p>
 			</div>
 		</div>
 	</div>

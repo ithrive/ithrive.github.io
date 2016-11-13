@@ -63,4 +63,9 @@ defaults:
     collection: knowledge_base
   values:
     layout: knowledge-base
-
+# https://github.com/penibelst/jekyll-compress-html
+# http://rich-knight.com/articles/compressing-html-in-jekyll/
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all

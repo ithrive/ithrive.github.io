@@ -13,7 +13,9 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 			<div class="col-sm-6">
 				<h1>Studio Pilates</h1>
 				<p>Gain strength, coordination and control on a variety of equipment</p>
-				<img src="/images/logo-splash.png" class="logo" />
+				<p>
+					<img src="/images/logo-splash.png" class="logo" />
+				</p>
 			</div>
 		</div>
 	</div>
