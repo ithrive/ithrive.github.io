@@ -1,7 +1,7 @@
 ---
 title: 'Wunda chair'
 keywords: 'Wunda chair'
-description: 'Compact and versatile, you'll be surprised by the diversity of exercises possible on the Wunda Chair'
+description: "Compact and versatile, you'll be surprised by the diversity of exercises possible on the Wunda Chair"
 image: '/images/knowledge-base/wunda-chair.jpg'
 ---
 Initially designed by Joseph Pilates as a piece of lounge furniture that converted into an exercise machine, the wunda chair has undergone a number of re-designs over the years. These days there are a number of different versions available.
