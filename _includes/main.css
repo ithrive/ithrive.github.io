@@ -4671,14 +4671,14 @@ h3 {
 body {
   font-family: 'Helvetica','Arial',sans-serif; }
 
-h1, .section .section_title, .cost .cost_price, .tagline, .servicePreview .service_name, .postSideBar .sideBar_heading, .well-announce strong {
+h1, .section .section_title, .cost .cost_price, .tagline, .servicePreview .service_name, .postSideBar .sideBar_heading, .well-announce strong, .equipmentBlock .block_title {
   letter-spacing: 0.02em;
   line-height: 1.2em; }
 
 .wf-active body {
   font-family: 'Quicksand'; }
 
-.wf-active h1, .wf-active .section .section_title, .section .wf-active .section_title, .wf-active .cost .cost_price, .cost .wf-active .cost_price, .wf-active .tagline, .wf-active .servicePreview .service_name, .servicePreview .wf-active .service_name, .wf-active .postSideBar .sideBar_heading, .postSideBar .wf-active .sideBar_heading, .wf-active .well-announce strong, .well-announce .wf-active strong {
+.wf-active h1, .wf-active .section .section_title, .section .wf-active .section_title, .wf-active .cost .cost_price, .cost .wf-active .cost_price, .wf-active .tagline, .wf-active .servicePreview .service_name, .servicePreview .wf-active .service_name, .wf-active .postSideBar .sideBar_heading, .postSideBar .wf-active .sideBar_heading, .wf-active .well-announce strong, .well-announce .wf-active strong, .wf-active .equipmentBlock .block_title, .equipmentBlock .wf-active .block_title {
   font-family: 'Gloria Hallelujah'; }
 
 .wf-inactive {
@@ -4846,13 +4846,13 @@ a:hover {
     line-height: 1em;
     color: rgba(255, 255, 255, 0.6); }
 
-.section-lightOnDark, .section-splash, .section-aboutMe {
+.section-lightOnDark, .section-splash, .section-aboutMe, .equipmentBlock {
   color: rgba(238, 238, 238, 0.9); }
-  .section-lightOnDark a, .section-splash a, .section-aboutMe a {
+  .section-lightOnDark a, .section-splash a, .section-aboutMe a, .equipmentBlock a {
     color: #fff;
     text-decoration: underline;
     font-weight: 700; }
-    .section-lightOnDark a.btn, .section-splash a.btn, .section-aboutMe a.btn {
+    .section-lightOnDark a.btn, .section-splash a.btn, .section-aboutMe a.btn, .equipmentBlock a.btn {
       text-decoration: none;
       font-weight: normal; }
 
@@ -4986,20 +4986,24 @@ a:hover {
       width: 100%;
       height: 100%; }
     .servicePreview .preview_img:after {
-      content: '>';
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: #6fbc46;
       color: #fff;
-      position: absolute;
-      right: -7px;
-      bottom: -7px;
-      display: inline-block;
       font-size: 28px;
       line-height: 40px;
       vertical-align: middle;
-      text-align: center; }
+      text-align: center;
+      text-decoration: none;
+      background-color: #6fbc46;
+      transition: background-color 0.5s;
+      content: '>';
+      position: absolute;
+      right: -7px;
+      bottom: -7px;
+      display: inline-block; }
+      .servicePreview .preview_img:after:hover {
+        background-color: #8cca6b; }
   @media (max-width: 767px) {
     .servicePreview {
       width: 240px; }
@@ -5216,49 +5220,84 @@ blockquote {
     width: 100%;
     height: 100%; }
 
-.images:before, .images:after {
+.blockGrid:before, .blockGrid:after {
   content: " ";
   display: table; }
 
-.images:after {
+.blockGrid:after {
   clear: both; }
 
-.images > div {
+.blockGrid > div {
   float: left;
   position: relative;
-  padding-top: 80px;
   min-height: 250px;
-  text-align: center;
   width: 25%;
   background-color: #6fbc46; }
   @media (max-width: 767px) {
-    .images > div {
+    .blockGrid > div {
       min-height: 200px;
       width: 50%; } }
-  .images > div p {
-    position: relative;
+  .blockGrid > div:nth-child(1) {
+    background-color: #7ec359; }
+  .blockGrid > div:nth-child(2) {
+    background-color: #8cca6b; }
+  .blockGrid > div:nth-child(3) {
+    background-color: #9bd07e; }
+  .blockGrid > div:nth-child(4) {
+    background-color: #a9d791; }
+  .blockGrid > div:nth-child(5) {
+    background-color: #a9d791; }
+  .blockGrid > div:nth-child(6) {
+    background-color: #9bd07e; }
+  .blockGrid > div:nth-child(7) {
+    background-color: #8cca6b; }
+  .blockGrid > div:nth-child(8) {
+    background-color: #7ec359; }
+
+.equipmentBlock .block_inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  padding: 90px 20px 0 20px;
+  transition: background-color 0.5s, padding-top 0.5s; }
+  .equipmentBlock .block_inner:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 40px; }
+    .equipmentBlock .block_inner:hover .block_description {
+      opacity: 1; }
+
+.equipmentBlock .block_title {
+  font-size: 24pt;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+  @media (max-width: 991px) {
+    .equipmentBlock .block_title {
+      font-size: 16pt; } }
+  @media (max-width: 767px) {
+    .equipmentBlock .block_title {
+      font-size: 12pt; } }
+
+.equipmentBlock .block_description {
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 9pt; }
+  .equipmentBlock .block_description a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     color: #fff;
-    font-size: 20pt;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
-    @media (max-width: 991px) {
-      .images > div p {
-        font-size: 16pt; } }
-    @media (max-width: 767px) {
-      .images > div p {
-        font-size: 12pt; } }
-  .images > div:nth-child(1) {
-    background-color: #7ec359; }
-  .images > div:nth-child(2) {
-    background-color: #8cca6b; }
-  .images > div:nth-child(3) {
-    background-color: #9bd07e; }
-  .images > div:nth-child(4) {
-    background-color: #a9d791; }
-  .images > div:nth-child(5) {
-    background-color: #a9d791; }
-  .images > div:nth-child(6) {
-    background-color: #9bd07e; }
-  .images > div:nth-child(7) {
-    background-color: #8cca6b; }
-  .images > div:nth-child(8) {
-    background-color: #7ec359; }
+    font-size: 28px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    background-color: #6fbc46;
+    transition: background-color 0.5s;
+    display: block;
+    margin: 20px auto 0 auto; }
+    .equipmentBlock .block_description a:hover {
+      background-color: #8cca6b; }
