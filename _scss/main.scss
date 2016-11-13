@@ -110,6 +110,13 @@ a[target="_blank"] {
 		font-size: 80%;
 	}
 }
+a[href*="facebook"] {
+	&::after {
+		font-family: FontAwesome;
+		content: '\00a0'+$fa-var-facebook-square;
+		font-size: 80%;
+	}
+}
 a[href^="mailto:"] {
 	text-decoration: none !important;
 

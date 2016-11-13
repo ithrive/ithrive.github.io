@@ -4695,6 +4695,11 @@ a[target="_blank"] {
     content: " ";
     font-size: 80%; }
 
+a[href*="facebook"]::after {
+  font-family: FontAwesome;
+  content: " ";
+  font-size: 80%; }
+
 a[href^="mailto:"] {
   text-decoration: none !important; }
   a[href^="mailto:"]::after {
