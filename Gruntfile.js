@@ -73,6 +73,19 @@ module.exports = function(grunt) {
       },
     },
 
+    // ng-annotate tries to make the code safe for minification automatically
+    // by using the Angular long form for dependency injection.
+    ngAnnotate: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '.tmp/concat/',
+          src: '*.js',
+          dest: '.tmp/concat/'
+        }]
+      }
+    },
+
     // Reads HTML for usemin blocks to enable smart builds that automatically
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
@@ -83,7 +96,7 @@ module.exports = function(grunt) {
         flow: {
           html: {
             steps: {
-              js: ['concat'], //, 'uglify'],
+              js: ['concat', 'uglify'],
               css: ['cssmin']
             },
             post: {}
@@ -143,7 +156,8 @@ module.exports = function(grunt) {
       'wiredep',
       'useminPrepare',
       'concat:generated',
-      // 'uglify:generated', // Need to put in Angular module name fix
+      'ngAnnotate',
+      'uglify:generated',
     ]);
   
   grunt.registerTask('serve', [
