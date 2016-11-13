@@ -66,7 +66,7 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 				<div class="well well-product">
 						<h3>1 hour</h3>
 					<div class="cost">
-						<div class="cost_price">$1005</div>
+						<div class="cost_price">$100</div>
 					</div><!-- .cost -->
 				</div><!-- .well -->
 			</div><!-- .col-sm-8 -->
