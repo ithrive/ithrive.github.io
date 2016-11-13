@@ -2,6 +2,7 @@
 layout: info
 title: 'Studio Pilates'
 permalink: /studio-pilates/
+description: 'Private and duo Pilates classes in a fully equipped studio located in Brookvale'
 ---
 
 <section class="section section-splash">
@@ -72,7 +73,7 @@ permalink: /studio-pilates/
 				<h3>Introduction session</h3>
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-2">
-						<p>We will start with a chat about your goals and some movement and mobility assessments. We will develop your individual program and determine some benchmarks for us to measure your progress against. We will then move on to learn how to use your breath as a tool for movement, how to sense and use your abdominals effectively, as well as introducing you to your first repertoire on the equipment!</p>
+						<p>We will start with a chat about your goals and then some movement and mobility assessments. This allows us to develop your individual program and determine some benchmarks to measure your progress against. We will then move on to learn how to use your breath as a tool for movement, how to sense and use your abdominals effectively, as well as introducing you to your first repertoire on the equipment!</p>
 					</div><!-- .col-sm-10 col-sm-offset-2 -->
 				</div><!-- .row -->
 				<h3>Solo session</h3>
@@ -113,7 +114,7 @@ permalink: /studio-pilates/
 		<div class="row">
 			<div class="col-sm-5 col-sm-offset-2 col-sm-push-5">
 				<h2 class="section_title">Where to find me...</h2>
-				<p>The studio pilates classes at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale, NSW.</p>
+				<p>For studio pilates and massage you'll fine me at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale, NSW.</p>
 				<p class="address">
 					117 Old Pittwater Road<br>
 					Brookvale NSW 2100 
