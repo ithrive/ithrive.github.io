@@ -11,12 +11,12 @@ layout: compress
 
 		<title>iThrive | {{ page.title }}</title>
 
-    {% if page.dev %}
+    {% if jekyll.environment == "production" %}
+      <style>{% include main.min.css %}</style>
+    {% else %}
   		<!-- build:css(.) _includes/main.min.css -->
       <link rel="stylesheet" href="dist/main.css">
       <!-- endbuild -->
-    {% else %}
-      <style>{% include main.min.css %}</style>
     {% endif %}
 
 		<!-- bower:css -->
@@ -101,7 +101,9 @@ var knowledgeBaseLookup = {
 </script>
 
 
-    {% if page.dev %}
+    {% if jekyll.environment == "production" %}
+      <script src="/build/main.min.js" async></script>
+    {% else %}
 		  <!-- build:js(.) build/main.min.js -->
       <!-- bower:js -->
       <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -115,8 +117,6 @@ var knowledgeBaseLookup = {
 
       <script src="/scripts/app.js"></script>
       <!-- endbuild -->
-    {% else %}
-      <script src="/build/main.min.js" async></script>
     {% endif %}
 	</body>
 </html>

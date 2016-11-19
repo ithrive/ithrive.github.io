@@ -29,9 +29,13 @@ bundle install
 
 Run:
 ```
-# Jekyll and grunt watch
+# Single command
 grunt serve
 
-# Jekyll only
+# Or...
 bundle exec jekyll serve --watch
+grunt watch
 ```
+
+Build production via: `JEKYLL_ENV=production jekyll build`
+

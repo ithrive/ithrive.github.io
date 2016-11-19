@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['_scss/*.{scss,sass}'],
-        tasks: ['sass:dev']
+        tasks: ['build:css']
       },
       bower: {
         files: ['bower.json'],
