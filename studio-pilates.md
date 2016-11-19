@@ -57,7 +57,7 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 	{% include equipment-block.html title="Reformer" %}
 	{% include equipment-block.html title="Trapeze table" %}
 	{% include equipment-block.html title="Wunda chair" %}
-	{% include equipment-block.html title="Spine corrector" %}
+	{% include equipment-block.html title="Pilates arc" %}
 	{% include equipment-block.html title="Swiss ball" %}
 	{% include equipment-block.html title="Magic circle" %}
 	{% include equipment-block.html title="Theraband" %}
