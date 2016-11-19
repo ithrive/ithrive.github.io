@@ -26,7 +26,7 @@ $grid-gutter-width: 10px;
 // @import "bootstrap-sass/assets/stylesheets/bootstrap/type";
 // @import "bootstrap-sass/assets/stylesheets/bootstrap/code";
 @import "bootstrap-sass/assets/stylesheets/bootstrap/grid";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/tables";
 @import "bootstrap-sass/assets/stylesheets/bootstrap/forms";
 @import "bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
@@ -235,10 +235,9 @@ a:hover {
 		background-size: cover;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
-
-		&-inset {
-			box-shadow: inset 0 0 5px rgba(#000,0.1);
-		}
+	}
+	&-inset {
+		box-shadow: inset 0 0 5px rgba(#000, 0.2);
 	}
 
 	@media (min-width: $screen-sm-min) {
@@ -930,6 +929,67 @@ blockquote {
 	}
 }
 
-.section-sm {
-	// @include padSection(100px, 50px);
+.section-tight {
+	@include padSection(70px, 70px);
+}
+
+// ul.locationList {
+// 	list-style: none;
+// 	display: block;
+
+// 	li {
+// 		padding: 0;
+// 		display: inline;
+// 		font-weight: 700;
+// 		&::after {
+// 			content: ' - ';
+// 			font-weight: 400;
+// 		}
+// 		&:last-child::after {
+// 			display: none;
+// 		}
+// 	}
+// }
+
+.locations {
+	strong {
+		font-size: 120%;
+		font-weight: 400;
+		line-height: 1.5em;
+	}
+}
+
+.availability {
+	// border-bottom: 1px solid $gray;
+	border: solid 2px lighten($brand-primary, 30%);
+	color: $brand-primary;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+
+	table {
+		width: 340px;
+		max-width: 100%;
+	}
+
+	tr {
+		// border-top: 1px solid $gray;
+		
+		td {
+			font-size: 12pt;
+			line-height: 1.3em;
+			padding: 0.4em 0;
+
+			&:last-child {
+				text-align: right;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.indent-sm {
+		padding-left: 40px;
+	}
+
 }

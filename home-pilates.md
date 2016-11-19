@@ -104,4 +104,54 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 	</div>
 </section>
 
+<section class="section section-tight">
+	<div class="layer layer-img layer-inset b-lazy" data-src="/images/section-bgs/home-availability-map.jpg"></div>
+	<div class="layer layer-gradient-light"></div><!-- .layer layer-gradient-light -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="section_title section_title-full">Where and when</h2>
+			</div>
+			<div class="col-sm-6">
+				<!-- <h2 class="section_title">Where and when...</h2> -->
+				<br />
+				<p>Home Pilates is available in North Sydney including:</p>
+				<p class="indent-sm locations">
+					<strong>Manly</strong>, <strong>Fairstrongght</strong>, <strong>Balgowlah</strong>, <strong>Balgowlah Heights</strong>, <strong>Clontarf</strong>, <strong>Seaforth</strong>, <strong>North Balgowlah</strong>, <strong>Manly Vale</strong>, <strong>Queenscstrongff</strong>, <strong>Freshwater</strong>, <strong>Curl Curl</strong> and <strong>Brookvale</strong>
+				</p>
+				<!-- <ul class="locationList">
+					<li>Manly</li>
+					<li>Fairlight</li>
+					<li>Balgowlah</li>
+					<li>Balgowlah Heights</li>
+					<li>Clontarf</li>
+					<li>Seaforth</li>
+					<li>North Balgowlah</li>
+					<li>Manly Vale</li>
+					<li>Queenscliff</li>
+					<li>Freshwater</li>
+					<li>Curl Curl</li>
+					<li>Brookvale</li>
+				</ul> -->
+				<!-- <h2 class="section_title">When...</h2> -->
+				<br />
+				<p>Classes are available at the following times:</p>
+				<div class="indent-sm">
+					<div class="availability">
+						<table>
+							<tbody>
+								<tr><td>Monday</td><td>7am - 8pm</td></tr>
+								<tr><td>Tuesday</td><td>4pm - 8pm</td></tr>
+								<tr><td>Wednesday</td><td>7am - 11am</td></tr>
+								<tr><td>Thursday</td><td>7am - 8pm</td></tr>
+								<tr><td>Friday</td><td>3pm - 6pm</td></tr>
+							</tbody>
+						</table><!-- .table -->
+					</div><!-- .availability -->
+				</div><!-- .indent-sm -->
+			</div>
+		</div>
+	</div>
+</section>
+
 {% include mailing-list.html interest="pilates" %}
