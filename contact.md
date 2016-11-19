@@ -1,7 +1,7 @@
 ---
-title: 'Contact me'
+title: 'About me'
 layout: info
-permalink: /contact/
+permalink: /about/
 ---
 
 <section class="section section-splash">
