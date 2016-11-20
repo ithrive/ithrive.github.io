@@ -89,8 +89,7 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 			<div class="col-sm-4 col-sm-offset-1">
 				<br>
 				<div class="well well-product">
-					<h3>Cost</h3>
-					<p>All sessions are 60 minutes long.</p>
+					<h3>1 hour session</h3>
 					<div class="cost">
 						<div class="cost_price">$150</div>
 						<!-- <div class="cost_details">1 hour session</div> -->
@@ -104,52 +103,25 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 	</div>
 </section>
 
-<section class="section section-tight">
-	<div class="layer layer-img layer-inset b-lazy" data-src="/images/section-bgs/home-availability-map.jpg"></div>
-	<div class="layer layer-gradient-light"></div><!-- .layer layer-gradient-light -->
+<section class="section">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<h2 class="section_title section_title-full">Where and when</h2>
 			</div>
-			<div class="col-sm-6">
-				<!-- <h2 class="section_title">Where and when...</h2> -->
-				<br />
-				<p>Home Pilates is available in North Sydney including:</p>
-				<p class="indent-sm locations">
-					<strong>Manly</strong>, <strong>Fairstrongght</strong>, <strong>Balgowlah</strong>, <strong>Balgowlah Heights</strong>, <strong>Clontarf</strong>, <strong>Seaforth</strong>, <strong>North Balgowlah</strong>, <strong>Manly Vale</strong>, <strong>Queenscstrongff</strong>, <strong>Freshwater</strong>, <strong>Curl Curl</strong> and <strong>Brookvale</strong>
+			<div class="col-sm-5 col-sm-push-7">
+				{% include availability-map.html %}
+			</div><!-- .col-sm-6 -->
+			<div class="col-sm-7 col-sm-pull-5">
+				<p>The iThrive home pilates service is available in North Sydney including:</p>
+				<p class="indent-sm strong">
+					Manly, Fairlight, Balgowlah, Balgowlah Heights, Clontarf, Seaforth, North Balgowlah, Manly Vale, Queenscliff, Freshwater, Curl Curl <small>and</small> Brookvale
 				</p>
-				<!-- <ul class="locationList">
-					<li>Manly</li>
-					<li>Fairlight</li>
-					<li>Balgowlah</li>
-					<li>Balgowlah Heights</li>
-					<li>Clontarf</li>
-					<li>Seaforth</li>
-					<li>North Balgowlah</li>
-					<li>Manly Vale</li>
-					<li>Queenscliff</li>
-					<li>Freshwater</li>
-					<li>Curl Curl</li>
-					<li>Brookvale</li>
-				</ul> -->
-				<!-- <h2 class="section_title">When...</h2> -->
-				<br />
-				<p>Classes are available at the following times:</p>
+				<p>Home classes are available between the following times:</p>
 				<div class="indent-sm">
-					<div class="availability">
-						<table>
-							<tbody>
-								<tr><td>Monday</td><td>7am - 8pm</td></tr>
-								<tr><td>Tuesday</td><td>4pm - 8pm</td></tr>
-								<tr><td>Wednesday</td><td>7am - 11am</td></tr>
-								<tr><td>Thursday</td><td>7am - 8pm</td></tr>
-								<tr><td>Friday</td><td>3pm - 6pm</td></tr>
-							</tbody>
-						</table><!-- .table -->
-					</div><!-- .availability -->
+					{% include hours-home.html %}
 				</div><!-- .indent-sm -->
-			</div>
+			</div><!-- .col-sm -->
 		</div>
 	</div>
 </section>

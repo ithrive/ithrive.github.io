@@ -116,8 +116,8 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 		<div class="row">
 			<div class="col-sm-5 col-sm-offset-2 col-sm-push-5">
 				<h2 class="section_title">Where to find me...</h2>
-				<p>For studio pilates and massage you'll fine me at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale, NSW.</p>
-				<p class="address">
+				<p>For studio pilates and massage you'll find me at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale, NSW:</p>
+				<p class="strong">
 					117 Old Pittwater Road<br>
 					Brookvale NSW 2100 
 				</p>

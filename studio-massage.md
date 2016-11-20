@@ -25,6 +25,7 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 			<div class="col-sm-8 col-sm-offset-2">
 				<p>Remedial massage therapy is an <em>evidence-based</em> form of massage that may be used to <strong>reduce pain</strong> and <strong>restore function</strong> to your muscles, nerves and fascia.</p>
 				<p>Massage therapy can also be used as a <strong>preventative strategy</strong> - helping you stay mobile and structurally balanced whatever the demands on your body</p>
+				<p>The service is available as both a <strong>home service</strong> on the Sydney's northern beaches or available in a <strong>Brookvale studio</strong>.</p>
 				<!-- <p>Pregnancy, post-natal, aged care and sports (pre and post event) massage are also available</p> -->
 			</div>
 		</div>
@@ -55,44 +56,92 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 <section class="section">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3">
-				<h2 class="section_title section_title-full">Your session</h2><!-- .section_title -->
+			<!-- <div class="col-sm-12">
+				<h2 class="section_title section_title-full">Your session</h2>
+			</div> -->
+			<div class="col-sm-6">
+				<h2 class="section_title">Your session</h2>
 				<p>At your initial session, Laura will take your case history, conduct a postural analysis and use range of motion and other orthopaedic assessments appropriate to your presenting complaint.  We will then devise a treatment strategy tailored to you that may incorporate any of the above techniques. One hour is reccommended for your first appointment.</p>
-				<hr />
 			</div><!-- .col-sm-8 -->
-		</div>
+		</div><!-- .row -->
+		<div class="row"><hr /></div><!-- .row -->
 		<div class="row">
-			<div class="col-sm-4">
-				<div class="well well-product">
-						<h3>1 hour</h3>
-					<div class="cost">
-						<div class="cost_price">$100</div>
-					</div><!-- .cost -->
-				</div><!-- .well -->
-			</div><!-- .col-sm-8 -->
-			<div class="col-sm-4">
-				<div class="well well-product">
-					<h3>45 minutes</h3>
-					<div class="cost">
-						<div class="cost_price">$80</div>
-					</div><!-- .cost -->
-				</div><!-- .well -->
-			</div><!-- .col-sm-8 -->
-			<div class="col-sm-4">
-				<div class="well well-product">
-					<h3>30 minutes</h3>
-					<div class="cost">
-						<div class="cost_price">$65</div>
-					</div><!-- .cost -->
-				</div><!-- .well -->
-			</div><!-- .col-sm-8 -->
-			<div class="col-sm-12">
+			<div class="col-sm-8 col-sm-offset-4">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="well well-product">
+							<h3>1 hour</h3>
+							<div class="cost">
+								<div class="cost_price">$100</div>
+							</div><!-- .cost -->
+						</div><!-- .well -->
+					</div><!-- .col-sm-4 -->
+					<div class="col-sm-4">
+						<div class="well well-product">
+							<h3>45 minutes</h3>
+							<div class="cost">
+								<div class="cost_price">$80</div>
+							</div><!-- .cost -->
+						</div><!-- .well -->
+					</div><!-- .col-sm-4 -->
+					<div class="col-sm-4">
+						<div class="well well-product">
+							<h3>30 minutes</h3>
+							<div class="cost">
+								<div class="cost_price">$65</div>
+							</div><!-- .cost -->
+						</div><!-- .well -->
+					</div><!-- .col-sm-4 -->
+				</div><!-- .row -->
 				<div class="well well-announce">
 					Pregnancy, post-natal, aged care and sports massage are also available
 				</div>
 			</div><!-- .col-sm-12 -->
 		</div>
 	</div><!-- .container -->
+</section>
+
+
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="section_title section_title-full">Availability</h2>
+			</div>
+			<div class="col-sm-12">
+				<h3>At home</h3>
+			</div><!-- .col-sm-12 -->
+			<div class="col-sm-7">
+				<p>The iThrive massage service is available at home. I service most of the Northern Sydney beaches including:</p>
+				<p class="indent-sm strong">
+					Manly, Fairlight, Balgowlah, Balgowlah Heights, Clontarf, Seaforth, North Balgowlah, Manly Vale, Queenscliff, Freshwater, Curl Curl <small>and</small> Brookvale
+				</p>
+			</div>
+			<div class="col-sm-4 col-sm-offset-1">
+				<!-- <p>Home classes are available between the following times:</p> -->
+				<div class="indent-sm">
+					{% include hours-home.html %}
+				</div><!-- .indent-sm -->
+			</div>
+			<div class="col-sm-12">
+				<hr />
+				<h3>In studio</h3>
+			</div>
+			<div class="col-sm-7">
+				<p>For studio massage you'll find me at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale:</p>
+				<p class="indent-sm strong">
+					117 Old Pittwater Road<br>
+					Brookvale NSW 2100 
+				</p>
+			</div>
+			<div class="col-sm-4 col-sm-offset-1">
+				<!-- <p>Studio classes are available between the following times:</p> -->
+				<div class="indent-sm">
+					{% include hours-studio.html %}
+				</div><!-- .indent-sm -->
+			</div>
+		</div>
+	</div>
 </section>
 
 {% include mailing-list.html interest="massage" %}
