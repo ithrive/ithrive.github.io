@@ -3,11 +3,25 @@
 iThrive website developed using [Jekyll](jekyllrb.com) and hosted on [GitHub pages](https://pages.github.com/).
 
 
-## Creating
+## Editing notes
 
-### New knowledge base item
+### Get the latest changes
 
-Run: `./_gen-knowledge-base.sh`
+- Run `git pull`
+
+### Create new knowledge base item:
+
+- Run `./_gen-knowledge-base.sh`
+- The file will automatically be added to your Git project
+
+### Submit changes
+
+- Run `git commit -am "Describe the change"`
+
+### Publish changes
+
+- Run `git push`
+
 
 
 ## Development
