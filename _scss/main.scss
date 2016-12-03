@@ -695,25 +695,13 @@ aside.block {
 	}
 }
 
-.knowledgeBase {
-	padding-top: 70px;
-	padding-bottom: 60px;
+article {
+	padding-top: 120px;
+	min-height: 700px;
+	position: relative;
+}
 
-	@media (min-width: $screen-sm-min) {
-		padding-top: 120px;
-		@include sideImg(200px);
-	}
-	@media (min-width: $screen-lg-min) {
-		@include sideImg(260px);
-	}
-
-	article {
-		min-height: 500px;
-		position: relative;
-	}
-
-	header {
-	}
+article.knowledgeBase {
 
 	.entry_title {
 		font-size: 30pt;
