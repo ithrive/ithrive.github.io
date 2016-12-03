@@ -761,6 +761,14 @@ a.keyword {
 }
 
 .keywordPopover {
+	.popover_title {
+		font-size: 13pt;
+		font-weight: 500;
+		margin: 5px 0;
+		border-bottom: 1px solid $gray-light;
+		padding-bottom: 5px;
+		color: $gray;
+	}
 	.popover_image {
 		height: 70px;
 		background-size: contain;

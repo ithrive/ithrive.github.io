@@ -61,6 +61,7 @@ var knowledgeBaseLookup = {
 	{% for entry in site.knowledge_base %}
 		{% for term in entry.keywords | split:',' %}
 			"{{ term }}": {
+        title: "{{ entry.title }}",
 				description: "{{ entry.description }}",
 				url: "{{ entry.url }}",
 			{% if entry.image %}
@@ -76,6 +77,7 @@ var knowledgeBaseLookup = {
   {% raw %}
   <div class="keywordPopover">
 	  <div class="popover_image" style="background-image: url('{{ popover.image }}');" ng-if="popover.image"></div>
+    <h2 class="popover_title">{{ popover.title }}</h2>
 	  <div>{{ popover.description }}</div>
     <p class="subtle">
       Click link for more details.
