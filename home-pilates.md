@@ -91,7 +91,7 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 				<div class="well well-product">
 					<h3>1 hour session</h3>
 					<div class="cost">
-						<div class="cost_price">$150</div>
+						<div class="cost_price">$130</div>
 						<!-- <div class="cost_details">1 hour session</div> -->
 					</div>
 				</div><!-- .well -->
