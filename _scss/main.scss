@@ -57,7 +57,7 @@ $grid-gutter-width: 10px;
 // Components w/ JavaScript
 // @import "bootstrap-sass/assets/stylesheets/bootstrap/modals";
 // @import "bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/popovers";
 // @import "bootstrap-sass/assets/stylesheets/bootstrap/carousel";
 
 // Utility classes
@@ -739,7 +739,8 @@ aside.block {
 	}
 }
 
-.keyword {
+.keyword,
+a.keyword {
 	$color: #57a6bf;
 	color: $color;
 	
@@ -765,6 +766,12 @@ aside.block {
 		background-size: contain;
 		background-position: 50%;
 		background-repeat: no-repeat;
+	}
+	.subtle {
+		text-align: right;
+		color: $gray-light;
+		text-transform: uppercase;
+		font-size: 7pt;
 	}
 }
 

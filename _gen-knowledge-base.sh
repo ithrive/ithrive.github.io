@@ -18,3 +18,8 @@ echo "description: 'ADD SHORT DESCRIPTION HERE (10-20 words)'" >> $filename
 echo "image: '/images/knowledge-base/$name.jpg'" >> $filename
 echo "---" >> $filename
 echo "ADD FULL DESCRIPTION HERE..." >> $filename
+
+echo "Please fill in the details in: _knowledge_base/$filename"
+
+git add $filename
+echo "The file has been added to your Git repo"

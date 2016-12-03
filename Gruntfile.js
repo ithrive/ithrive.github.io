@@ -178,7 +178,7 @@ module.exports = function(grunt) {
     ]);
 
   grunt.registerTask('build:css', [
-      'sass',
+      'sass:dev',
       'useminPrepare',
       'postcss',
       'cssmin',
@@ -186,7 +186,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
       'wiredep',
-      'sass',
+      'sass:dev',
       'useminPrepare',
       'concat',
       'ngAnnotate',
@@ -196,8 +196,7 @@ module.exports = function(grunt) {
     ]);
   
   grunt.registerTask('serve', [
-  		'sass:dev',
-      'build',
+  		'build',
       'concurrent:serve',
     ]);
 };

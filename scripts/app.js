@@ -16,15 +16,24 @@ angular.module('App', [
 	/*
 	 * Add a popover to highlighted keywords.
 	 */
-	.directive('keyword', function($compile, $rootScope) {
+	.directive('a', function($compile, $rootScope) {
 		return {
 			restrict: 'E',
 			link: function(scope, element, attrs) {
+				// Look for knowledge base links only
+				if ( !attrs.href.match(/knowledge-base/) ) {
+					return;
+				}
+				// Don't process the link we inject
+				if ( element.hasClass('keyword') ) {
+					return;
+				}
 
-				var details = knowledgeBaseLookup[attrs.value];
+				var link = ('/'+attrs.href+'/').replace(/\/+/g, '/'),
+						details = _.keyBy(knowledgeBaseLookup, 'url')[link];
 
 				if ( !details ) {
-					console.warn('unknown keyword', attrs.value);
+					console.warn('unknown keyword', link);
 					return;
 				}
 
@@ -34,7 +43,7 @@ angular.module('App', [
 				  templateUrl: 'knowledgePopover.html',
 				}, details);
 
-				var $html = $('<span class="keyword" uib-popover-template="popover.templateUrl" popover-append-to-body="true">'+element.text()+'</span>');
+				var $html = $('<a class="keyword" uib-popover-template="popover.templateUrl" popover-append-to-body="true" popover-trigger="\'mouseenter\'" href="'+details.url+'" target="_blank">'+element.text()+'</a>');
 				element.replaceWith($html);
 				$compile($html)(popoverScope);
 			}
@@ -65,7 +74,7 @@ angular.module('App', [
 						val.found = true;
 
 						subsituteHtml = subsituteHtml.replace(val.regex, function myFunction(match) {
-							return '<keyword value="'+key+'">'+match+'</keyword>';
+							return '<a href="'+key+'">'+match+'</a>';
 						});
 					});
 

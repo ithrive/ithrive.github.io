@@ -39,7 +39,15 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 				<h2 class="section_title">Techniques</h2>
 				<p>Your session may include any of the following techniques:</p>
 				<ul>
-					<li>Broad-handed Swedish techniques, myofascial release, trigger point therapy, deep ischaemic pressure, frictions, active and passive tissue tension, manual lymphatic drainage (MLD)</li>
+					<li>
+						Broad-handed Swedish techniques, 
+						<a href="knowledge-base/myofascial-release">myofascial release</a>, 
+						<a href="knowledge-base/trigger-point-therapy">trigger point therapy</a>, 
+						<a href="knowledge-base/deep-ischaemic-pressure">deep ischaemic pressure</a>, 
+						<a href="knowledge-base/frictions">frictions</a>, 
+						<a href="knowledge-base/tissue-tension">active and passive tissue tension</a>, 
+						<a href="knowledge-base/manual-lymphatic-drainage">manual lymphatic drainage (MLD)</a>
+					</li>
 					<li>Stretching techniques such as PNF (proprioceptive neuromuscular facilitation),  MET (muscle energy technique), static stretches</li>
 					<li>Neurodynamic techniques such as neural glides and neural tensioners</li>
 					<li>Specific remedial exercises may then be recommended to enhance and maintain the results of your treatment or prevent re-occurrence</li>
