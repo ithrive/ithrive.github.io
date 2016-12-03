@@ -25,7 +25,7 @@ angular.module('App', [
 					return;
 				}
 				// Don't process the link we inject
-				if ( element.hasClass('keyword') ) {
+				if ( element.hasClass('keyword') || _.has(attrs, 'noPopup') ) {
 					return;
 				}
 
