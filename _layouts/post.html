@@ -4,11 +4,17 @@ layout: 'default'
 
 <div class="navbar-offset"></div><!-- .navbar-offset -->
 
+{% if page.image %}
+	<section class="postHeader">
+	  <div class="layer layer-img b-lazy" data-src="{{ page.image }}"></div>
+	</section>
+{% endif %}
+
 <div class="container">
 	<div class="row">
-		<div class="col-sm-8">
+		<div class="col-sm-8 col-sm-offset-1">
 			<article class="post">
-				<a href="/posts" class="btn btn-outline btn-primary"><i class="fa fa-angle-left"></i> Back</a>
+				<!-- <a href="/posts" class="btn btn-outline btn-primary"><i class="fa fa-angle-left"></i> Back</a> -->
 				<header>
 					<h1>{{ page.title }}</h1>
 					<p class="post_details">
@@ -21,8 +27,8 @@ layout: 'default'
 			</article>
 			{% include comments.html %}
 		</div><!-- .col-sm-8 -->
-		<div class="col-sm-4 postSideBar">
-			<h3 class="sideBar_heading">Read more</h3>
+		<div class="col-sm-1 postSideBar">
+			<!-- <h3 class="sideBar_heading">Read more</h3> -->
 			{% if page.next %}
 				<aside class="block">
 					<h4 class="block_heading"><i class="fa fa-angle-up"></i> More recent</h4>

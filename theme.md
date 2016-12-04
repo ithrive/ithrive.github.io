@@ -5,6 +5,80 @@ permalink: /theme/
 sitemap: false
 ---
 
+<section class="section">
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-1.jpg"></div>
+	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Lorem ipsum In nostrud</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt recusandae aperiam eveniet ipsa, maxime nobis. Mollitia debitis quidem quaerat reprehenderit magni. Obcaecati optio dolor dolorem veniam, vero consequuntur accusamus!</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-lightOnDark">
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-2.jpg"></div>
+	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Lorem ipsum In nostrud</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt recusandae aperiam eveniet ipsa, maxime nobis. Mollitia debitis quidem quaerat reprehenderit magni. Obcaecati optio dolor dolorem veniam, vero consequuntur accusamus!</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section">
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-3.jpg"></div>
+	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Lorem ipsum In nostrud</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt recusandae aperiam eveniet ipsa, maxime nobis. Mollitia debitis quidem quaerat reprehenderit magni. Obcaecati optio dolor dolorem veniam, vero consequuntur accusamus!</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section">
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-4.jpg"></div>
+	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Lorem ipsum In nostrud</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt recusandae aperiam eveniet ipsa, maxime nobis. Mollitia debitis quidem quaerat reprehenderit magni. Obcaecati optio dolor dolorem veniam, vero consequuntur accusamus!</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-lightOnDark">
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/beach-1.jpg"></div>
+	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Lorem ipsum In nostrud</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt recusandae aperiam eveniet ipsa, maxime nobis. Mollitia debitis quidem quaerat reprehenderit magni. Obcaecati optio dolor dolorem veniam, vero consequuntur accusamus!</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-lightOnDark">
+	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/beach-2.jpg"></div>
+	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Lorem ipsum In nostrud</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt recusandae aperiam eveniet ipsa, maxime nobis. Mollitia debitis quidem quaerat reprehenderit magni. Obcaecati optio dolor dolorem veniam, vero consequuntur accusamus!</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
 <section class="section section-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0887.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark-reverse"></div>

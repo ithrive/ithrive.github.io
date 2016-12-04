@@ -74,6 +74,7 @@ h1, h2, h3 {
 h1 { font-size: 24pt; }
 h2 { font-size: 20pt; }
 h3 { font-size: 18pt; }
+h4 { font-size: 14pt; }
 
 
 // WebFonts:
@@ -146,6 +147,9 @@ p, li {
 	strong {
 		font-weight: 900;
 	}
+}
+p.lead {
+	font-size: 14pt;
 }
 
 ul {
@@ -339,7 +343,7 @@ section.section {
 }
 
 .section-splash {
-	@include padSection(460px, 40px);
+	@include padSection(400px, 40px);
 	@extend %lightText;
 
 	@media (max-width: $screen-xs-max) {
@@ -1006,4 +1010,12 @@ blockquote {
 	border: solid 1px rgba(#000, 0.1);
 	max-width: 100%;
 	display: block;
+}
+
+.postHeader {
+	position: relative;
+	height: 500px;
+	@media (max-width: $screen-xs-max) {
+		height: 200px;
+	}
 }
