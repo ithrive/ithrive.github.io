@@ -65,6 +65,7 @@ layout: default
 				<h1>About me</h1>
 				<p>Hi there! My name is Laura, I'm a pilates instructor and massage therapist on Sydney's beautiful northern beaches. I operate out of A Body of Work in Brookvale, and also as a mobile business in the Manly area, bringing massage and pilates to you at your convenience.
          </p>
+        <p><a class="btn btn-outline btn-light" href="/about">Learn more &gt;</a></p>
 			</div><!-- .col-sm-4 -->
 		</div><!-- .row col-sm-8 -->
 	</div><!-- .container -->

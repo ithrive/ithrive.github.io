@@ -71,7 +71,9 @@ permalink: /about/
         <p>
           I think a lot of people share a similar story to my own. I encourage you to read my full story. If you're interested in using any of these systems yourself, <a class="mailto" href="mailto:laura@ithrive.net.au">reach out to me</a> - I would love to hear from you.
         </p>
-        <p><a class="btn btn-outline btn-light" href="http://localhost:4000/posts/2016/12/03/my-story.html">Read my story &gt;</a></p>
+        <p style="padding-top:10px;">
+          <a class="btn btn-outline btn-light" href="/posts/2016/12/03/my-story.html">My full story &gt;</a>
+        </p>
       </div>
     </div>
   </div>
