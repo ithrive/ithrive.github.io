@@ -113,11 +113,12 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 				{% include availability-map.html %}
 			</div><!-- .col-sm-6 -->
 			<div class="col-sm-7 col-sm-pull-5">
-				<p>The iThrive home pilates service is available in North Sydney including:</p>
+				<p>The ithrive home pilates service is available in the following North Sydney suburbs:</p>
 				<p class="indent-sm strong">
 					Manly, Fairlight, Balgowlah, Balgowlah Heights, Clontarf, Seaforth, North Balgowlah, Manly Vale, Queenscliff, Freshwater, Curl Curl <small>and</small> Brookvale
 				</p>
-				<p>Home classes are available between the following times:</p>
+				<p>Home visits outside these areas may be arranged, however an additional travel surcharge will apply</p>
+				<p>Appointments can be made between the following times:</p>
 				<div class="indent-sm">
 					{% include hours-home.html %}
 				</div><!-- .indent-sm -->

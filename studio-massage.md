@@ -25,7 +25,7 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 			<div class="col-sm-8 col-sm-offset-2">
 				<p>Remedial massage therapy is an <em>evidence-based</em> form of massage that may be used to <strong>reduce pain</strong> and <strong>restore function</strong> to your muscles, nerves and fascia.</p>
 				<p>Massage therapy can also be used as a <strong>preventative strategy</strong> - helping you stay mobile and structurally balanced whatever the demands on your body</p>
-				<p>The service is available as both a <strong>home service</strong> on the Sydney's northern beaches or available in a <strong>Brookvale studio</strong>.</p>
+				<p>Massage is available as a <strong>mobile service</strong> in select Northern beaches suburbs or at the <strong>Brookvale studio</strong>.</p>
 				<!-- <p>Pregnancy, post-natal, aged care and sports (pre and post event) massage are also available</p> -->
 			</div>
 		</div>
@@ -39,6 +39,7 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 				<h2 class="section_title">Techniques</h2>
 				<p>Your session may include any of the following techniques:</p>
 				<ul>
+					<!-- <li>Broad-handed Swedish techniques, myofascial release, trigger point therapy, deep ischaemic pressure, frictions, active and passive tissue tension, manual lymphatic drainage (MLD)</li> -->
 					<li>
 						Broad-handed Swedish techniques, 
 						<a href="knowledge-base/myofascial-release">myofascial release</a>, 
