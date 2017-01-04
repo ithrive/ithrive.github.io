@@ -97,7 +97,7 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 					<h3>Cost</h3>
 					<p>All sessions are 60 minutes long. Please try to arrive at least 5 minutes early.</p>
 					<div class="cost">
-						<div class="cost_price">$110</div>
+						<div class="price">$110</div>
 						<!-- <div class="cost_details">1 hour session</div> -->
 					</div>
 				</div><!-- .well -->

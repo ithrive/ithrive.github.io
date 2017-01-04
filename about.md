@@ -10,7 +10,7 @@ permalink: /about/
     <div class="row">
       <div class="col-sm-8">
         <h2 class="section_title">I'm Laura.</h2>
-        <p>I'm a passionate therapist who works closely with people to take them beyond rehabilitation, to place where movement is both efficient and joyful.</p>
+        <p>I'm a passionate therapist who works closely with people to take them beyond rehabilitation, to a place where movement is both efficient and joyful.</p>
         <p>If you have any questions please <a class="mailto" href="mailto:laura@ithrive.net.au">contact me</a>.</p>
         <p>
           <img src="/images/logo-splash.png" class="logo" />
@@ -29,7 +29,7 @@ permalink: /about/
           With over 10 years of experience in manual therapy and 6 years instructing movement, my natural skills and interests have led me to specialise in clientele with chronic conditions requiring a postural and movement strategy overhaul.
         </p><!-- .lead -->
         <p class="lead">
-          I'm always furthering my practice to make sure I have the most up to date tools and knowledge we need to help you move forward. I currently hold qualifications in Soft Tissue Therapy, Remedial Massage and Pilates, both studio and Mat-work.
+          I'm always furthering my practice to make sure I have the most up to date tools and knowledge we need to help you move forward. I currently hold qualifications in Soft Tissue Therapy, Remedial Massage and Pilates - both studio and mat.
         </p>
       </div>
       <div class="col-sm-5 col-sm-offset-1">
@@ -63,7 +63,7 @@ permalink: /about/
           A lot of what I know and teach has come from searching for solutions to my own injuries and issues.
         </p>
         <p>
-          I used to suffer from a lot of lower back issues. My journey in addressing these issues lead me to Pilates, soft-tissue therapy and, more recently, GEMS.
+          I used to suffer from a lot of lower back issues. My journey in addressing these issues lead me to Pilates, soft-tissue therapy and, more recently, JEMS.
         </p>
         <p>
           These systems have hugely helped me in achieving a sense of comfort in my body I hadn't experienced for years.

@@ -25,14 +25,14 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 			<div class="col-sm-8 col-sm-offset-2">
 				<p>Remedial massage therapy is an <em>evidence-based</em> form of massage that may be used to <strong>reduce pain</strong> and <strong>restore function</strong> to your muscles, nerves and fascia.</p>
 				<p>Massage therapy can also be used as a <strong>preventative strategy</strong> - helping you stay mobile and structurally balanced whatever the demands on your body</p>
-				<p>Massage is available as a <strong>mobile service</strong> in select Northern beaches suburbs or at the <strong>Brookvale studio</strong>.</p>
+				<p>Massage is available as a <strong>mobile service</strong> in select Northern beaches suburbs or at the <strong>Brookvale clinic</strong>.</p>
 				<!-- <p>Pregnancy, post-natal, aged care and sports (pre and post event) massage are also available</p> -->
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="section section-gray">
+<section class="section section-gray hide">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
@@ -70,40 +70,52 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 			</div> -->
 			<div class="col-sm-6">
 				<h2 class="section_title">Your session</h2>
-				<p>At your initial session, Laura will take your case history, conduct a postural analysis and use range of motion and other orthopaedic assessments appropriate to your presenting complaint.  We will then devise a treatment strategy tailored to you that may incorporate any of the above techniques. One hour is reccommended for your first appointment.</p>
+				<p>Whatever brings you for treatment - whether it be injury management and prevention, to improve mobility and posture, to gain relief from aches and pains, or simply to relax, unwind and de-stress, Laura will listen to your needs and work with you to achieve your goals</p>
 			</div><!-- .col-sm-8 -->
 		</div><!-- .row -->
 		<div class="row"><hr /></div><!-- .row -->
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-4">
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-6">
 						<div class="well well-product">
-							<h3>1 hour</h3>
+							<h3>In clinic</h3>
 							<div class="cost">
-								<div class="cost_price">$100</div>
-							</div><!-- .cost -->
+								30 minutes
+								<span class="price">$65</span>
+							</div>
+							<div class="cost">
+								45 minutes
+								<span class="price">$80</span>
+							</div>
+							<div class="cost">
+								1 hour
+								<span class="price">$100</span>
+							</div>
 						</div><!-- .well -->
 					</div><!-- .col-sm-4 -->
-					<div class="col-sm-4">
+					<!-- PRICE: home -->
+					<div class="col-sm-6">
 						<div class="well well-product">
-							<h3>45 minutes</h3>
+							<h3>Mobile</h3>
 							<div class="cost">
-								<div class="cost_price">$80</div>
-							</div><!-- .cost -->
+								1 hour
+								<span class="price">$130</span>
+							</div>
+							<div class="cost">
+								2 hours
+								<span class="price">$230</span>
+							</div>
+							<div class="cost">
+								3 hours
+								<span class="price">$300</span>
+							</div>
 						</div><!-- .well -->
 					</div><!-- .col-sm-4 -->
-					<div class="col-sm-4">
-						<div class="well well-product">
-							<h3>30 minutes</h3>
-							<div class="cost">
-								<div class="cost_price">$65</div>
-							</div><!-- .cost -->
-						</div><!-- .well -->
-					</div><!-- .col-sm-4 -->
+
 				</div><!-- .row -->
 				<div class="well well-announce">
-					Pregnancy, post-natal, aged care and sports massage are also available
+					As a Soft Tissue Therapist Laura is trained to assess and treat a broad range of musculoskeletal issues. She specialises in posture related pain and injury but is also skilled in pregnancy, aged care and sports massage.
 				</div>
 			</div><!-- .col-sm-12 -->
 		</div>
@@ -118,13 +130,14 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 				<h2 class="section_title section_title-full">Availability</h2>
 			</div>
 			<div class="col-sm-12">
-				<h3>At home</h3>
+				<h3>Mobile</h3>
 			</div><!-- .col-sm-12 -->
 			<div class="col-sm-7">
-				<p>The iThrive massage service is available at home. I service most of the Northern Sydney beaches including:</p>
+				<p>The ithrive mobile massage service is available at your home, workplace, nursing home or event in the following North Sydney suburbs:</p>
 				<p class="indent-sm strong">
 					Manly, Fairlight, Balgowlah, Balgowlah Heights, Clontarf, Seaforth, North Balgowlah, Manly Vale, Queenscliff, Freshwater, Curl Curl <small>and</small> Brookvale
 				</p>
+				<p>Home visits outside these areas may be arranged, however an additional travel surcharge will apply</p>
 			</div>
 			<div class="col-sm-4 col-sm-offset-1">
 				<!-- <p>Home classes are available between the following times:</p> -->
@@ -134,10 +147,10 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 			</div>
 			<div class="col-sm-12">
 				<hr />
-				<h3>In studio</h3>
+				<h3>Brookvale clinic</h3>
 			</div>
 			<div class="col-sm-7">
-				<p>For studio massage you'll find me at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale:</p>
+				<p>Appointments are available Thursdays only at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale:</p>
 				<p class="indent-sm strong">
 					117 Old Pittwater Road<br>
 					Brookvale NSW 2100 

@@ -16,8 +16,8 @@
 title: iThrive
 email: laura@ithrive.net.au
 description: >
-  iThrive provides pilates and massage service to the Manly and Sydney northern beaches.
-  Both home and studio options available.
+  iThrive provides pilates and massage service to Manly and the greater Sydney Northern Beaches.
+  Both home visit and studio options available.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ithrive.net.au" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter:

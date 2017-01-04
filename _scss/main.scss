@@ -296,29 +296,31 @@ section.section {
 }
 
 .cost {
-	text-align: right;
-	font-size: 12pt;
-	margin-top: 20px;
+	@include clearfix;
+	// text-align: right;
+	font-size: 15pt;
+	margin-top: 40px;
 	// border-top: 1px solid rgba(#fff,0.1);
 
 	& + .cost {
-		margin-top: 15px;
-	}
-
-	.cost_price {
-		@extend %altFont;
-		font-size: 30pt;
-		font-weight: 600;
-		// color: $brand-primary;
-
-		small {
-			font-size: 12pt;
-		}
+		margin-top: 20px;
 	}
 	.cost_details {
 		// color: $gray-light;
 		line-height: 1em;
 		color: rgba(#fff,0.6);
+	}
+}
+
+.price {
+	@extend %altFont;
+	font-size: 30pt;
+	font-weight: 600;
+	float: right;
+	// padding-top: 0.2em;
+
+	small {
+		font-size: 12pt;
 	}
 }
 
