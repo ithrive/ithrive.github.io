@@ -51,5 +51,9 @@ bundle exec jekyll serve --watch
 grunt watch
 ```
 
-Build production via: `JEKYLL_ENV=production jekyll build`
+## Production
 
+```
+JEKYLL_ENV=production jekyll build
+static -p 8080 _site/
+```
