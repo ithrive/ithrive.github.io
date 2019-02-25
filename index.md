@@ -12,34 +12,8 @@ layout: default
 		<!-- <p>Pilates | Massage</p> -->
 		<div class="row">
 			<div class="col-sm-12">
-				<h3 class="product_heading">My services</h3>
-				<div class="product_services">
-					<div class="servicePreview">
-						<a href="/studio-pilates" class="preview_img">
-							<div class="b-lazy" data-src="/images/service-studio-pilates.jpg"></div>
-						</a>
-						<div class="service_name">Studio pilates</div><!-- .service_name -->
-						<p>Enjoy pilates in a fully equipped studio located in Brookvale, NSW</p>
-						<p><a href="/studio-pilates">Learn more &gt;</a></p>
-					</div><!-- .service -->
-					<div class="servicePreview">
-						<a href="/home-pilates" class="preview_img">
-							<div class="b-lazy" data-src="/images/service-home-pilates.jpg"></div>
-						</a>
-						<div class="service_name">Home pilates</div><!-- .service_name -->
-						<p>Pilates in the comfort of your own home</p>
-						<p><a href="/home-pilates">Learn more &gt;</a></p>
-					</div><!-- .service -->
-					<div class="servicePreview">
-						<a href="/massage" class="preview_img">
-							<div class="b-lazy" data-src="/images/service-studio-massage.jpg"></div>
-						</a>
-						<div class="service_name">Massage</div><!-- .service_name -->
-						<p>Ease aches and pains with a remedial massage, tailored to your needs.</p>
-						<p><a href="/massage">Learn more &gt;</a></p>
-					</div><!-- .service -->
-				</div>
-			</div><!-- .col-sm-12 -->
+				<h1 style="text-align:center;padding-bottom:50px;">Coming soon to Manly</h1>
+			</div><!-- .col-sm-4 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
 </section><!-- .section -->
@@ -56,17 +30,3 @@ layout: default
 		</div>
 	</div>
 </section> -->
-
-<section class="section section-aboutMe">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/laura-desert.jpg"></div><!-- .layer layer-img -->
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
-				<h1>About me</h1>
-				<p>Hi there! My name is Laura, I'm a pilates instructor and massage therapist on Sydney's beautiful northern beaches. I operate out of A Body of Work in Brookvale, and also as a mobile business in the Manly area, bringing massage and pilates to you at your convenience.
-         </p>
-        <p><a class="btn btn-outline btn-light" href="/about">Learn more &gt;</a></p>
-			</div><!-- .col-sm-4 -->
-		</div><!-- .row col-sm-8 -->
-	</div><!-- .container -->
-</section><!-- .section section-welcome -->
