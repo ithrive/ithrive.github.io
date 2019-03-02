@@ -103,9 +103,6 @@ body {
   body {
     font-family: "Quicksand";
   }
-  %altFont {
-    font-family: "Gloria Hallelujah";
-  }
 }
 
 .wf-inactive {
@@ -208,7 +205,6 @@ a:hover {
 }
 
 .sectionHeading {
-  @extend %altFont;
   font-size: 30pt;
   margin-bottom: 20px;
   margin-top: 0;
@@ -1094,4 +1090,8 @@ blockquote {
 }
 h4 + ul {
   margin-top: -10px;
+}
+
+.businessFeature {
+  // text-align: center;
 }
