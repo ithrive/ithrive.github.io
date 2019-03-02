@@ -39,7 +39,7 @@ description: "Private and duo Pilates classes in a fully equipped studio located
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-6">
-				<h2 class="section_title">The equipment</h2>
+				<h2>The equipment</h2>
 				<p>Your workout may incorporate a fun range of Pilates equipment to keep things interesting, including...</p>
 				<!-- <ul>
 					<li>Reformer</li>
@@ -68,7 +68,7 @@ description: "Private and duo Pilates classes in a fully equipped studio located
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="section_title section_title-full">Class options</h2>
+				<h2>Class options</h2>
 			</div>
 			<div class="col-sm-6">
 				<h3>Introduction session</h3>
@@ -114,7 +114,7 @@ description: "Private and duo Pilates classes in a fully equipped studio located
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-5 col-sm-offset-2 col-sm-push-5">
-				<h2 class="section_title">Where to find me...</h2>
+				<h2>Where to find me...</h2>
 				<p>For studio pilates and massage you'll find me at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale, NSW:</p>
 				<p class="strong">
 					117 Old Pittwater Road<br>
@@ -139,7 +139,7 @@ description: "Private and duo Pilates classes in a fully equipped studio located
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<h3 class="section_title">Health Fund Rebates</h3>
+				<h3>Health Fund Rebates</h3>
 				<p>Rebates for Pilates are available from some private health funds.</p>
 				<p>I am not a physiotherapist and as such, some funds will require written recommendation from your physiotherapist, GP or other registered health professional in order to pay the rebate. Information specific to your fund can be <a target="_blank" href="http://www.pilates.org.au/health-funds/">found online</a>.</p> 
 			</div>

@@ -1,104 +1,171 @@
 <section class="section section-inquiry tmp-hide">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3">
-				<h2 class="section_title section_title-full">Express your interest</h2>
-				<!-- <p>If you would like more information, please leave your details via the provided form.</p> -->
-				<br>
-				<div class="well" mailchimp-form source="section" interest="{{ include.interest }}">
-					<form name="form" novalidate ng-submit="submit(form)" class="form-horizontal">
-					  <span us-spinner="{radius:20, width:1, length:12}" spinner-on="processing"></span>
-						
-						<div class="alert alert-warning" ng-show="msgs.error">
-							<h4>Unfortunately, an error occurred</h4>
-							<p>
-								If you continue to have problems please <a href="mailto:laura@ithrive.net.au">contact me.</a>
-							</p>
-						</div><!-- .alert alert-warning -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h2>Express your interest</h2>
+        <!-- <p>If you would like more information, please leave your details via the provided form.</p> -->
+        <br />
+        <div
+          class="well"
+          mailchimp-form
+          source="section"
+          interest="{{ include.interest }}"
+        >
+          <form
+            name="form"
+            novalidate
+            ng-submit="submit(form)"
+            class="form-horizontal"
+          >
+            <span
+              us-spinner="{radius:20, width:1, length:12}"
+              spinner-on="processing"
+            ></span>
 
-						<div class="alert alert-success" ng-show="msgs.success">
-							<h4>Thank you for expressing your interest!</h4>
-							<p>Laura will contact you shortly with more information.</p>
-						</div><!-- .alert alert-warning -->
-						
-						<fieldset>
-							<!-- <h4 class="form_heading">Your details</h4> -->
-							<div class="form-group">
-							  <!-- <label class="control-label col-sm-12">Name</label> -->
-							  <div class="col-sm-6">
-							    <input type="text" class="form-control" name="firstName" placeholder="First name" ng-model="formModel.merge_fields.FNAME" />
-							  </div>
-							  <div class="col-sm-6">
-							    <input type="text" class="form-control" name="lastName" placeholder="Last name" ng-model="formModel.merge_fields.LNAME" />
-							  </div>
-							</div>
+            <div class="alert alert-warning" ng-show="msgs.error">
+              <h4>Unfortunately, an error occurred</h4>
+              <p>
+                If you continue to have problems please
+                <a href="mailto:laura@ithrive.net.au">contact me.</a>
+              </p>
+            </div>
+            <!-- .alert alert-warning -->
 
-							<div class="form-group" ng-class="{'has-error': form.$submitted && form.email.$invalid}">
-							  <!-- <label class="control-label col-sm-12">Email</label> -->
-							  <div class="col-sm-12">
-							    <input type="email" class="form-control" name="email" placeholder="email@example.com" 
-							    		ng-model="formModel.email_address" required />
-							  </div>
-						    <p class="help-block col-sm-12" ng-show="form.$submitted && form.email.$error.required">
-						      Please enter your email address
-						    </p>
-						    <p class="help-block col-sm-12" ng-show="form.$submitted && form.email.$error.email">
-						      The value you entered is not a valid email address
-						    </p>
-							</div>
+            <div class="alert alert-success" ng-show="msgs.success">
+              <h4>Thank you for expressing your interest!</h4>
+              <p>Laura will contact you shortly with more information.</p>
+            </div>
+            <!-- .alert alert-warning -->
 
-							<div class="form-group">
-							  <!-- <label class="control-label col-sm-12">Phone (optional)</label> -->
-							  <div class="col-sm-12">
-							    <input type="text" class="form-control" name="firstName" 
-							    		placeholder="0400 123 123 (optional)" 
-							    		ng-model="formModel.merge_fields.PHONE" />
-							  </div>
-							</div>
-						</fieldset>
+            <fieldset>
+              <!-- <h4 class="form_heading">Your details</h4> -->
+              <div class="form-group">
+                <!-- <label class="control-label col-sm-12">Name</label> -->
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="firstName"
+                    placeholder="First name"
+                    ng-model="formModel.merge_fields.FNAME"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lastName"
+                    placeholder="Last name"
+                    ng-model="formModel.merge_fields.LNAME"
+                  />
+                </div>
+              </div>
 
-						<fieldset>
-							<!-- <h4 class="form_heading">Comments</h4> -->
+              <div
+                class="form-group"
+                ng-class="{'has-error': form.$submitted && form.email.$invalid}"
+              >
+                <!-- <label class="control-label col-sm-12">Email</label> -->
+                <div class="col-sm-12">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="email@example.com"
+                    ng-model="formModel.email_address"
+                    required
+                  />
+                </div>
+                <p
+                  class="help-block col-sm-12"
+                  ng-show="form.$submitted && form.email.$error.required"
+                >
+                  Please enter your email address
+                </p>
+                <p
+                  class="help-block col-sm-12"
+                  ng-show="form.$submitted && form.email.$error.email"
+                >
+                  The value you entered is not a valid email address
+                </p>
+              </div>
 
-							<div class="form-group">
-							  <label class="control-label col-sm-4">Interested in</label>
-							  <div class="col-sm-8">
-								  <!-- <div class="col-sm-10"> -->
-							   	<select class="form-control" ng-model="formModel.merge_fields.INTEREST">
-							   		<option value="">Unspecified</option>
-							   		<option value="pilates">Pilates</option>
-							   		<option value="massage">Massage</option>
-							   		<option value="pilates,massage">Pilates &amp; Massage</option>
-							   		<option value="walk-group">Walking Group</option>
-							   	</select>
-								  <!-- </div> -->
-								</div><!-- .col-sm-8 -->
-							</div>
-							<div class="form-group">
-							  <!-- <label class="control-label col-sm-12">Comment/special request</label> -->
-							  <div class="col-sm-12">
-							    <textarea type="text" class="form-control" name="firstName" placeholder="Comments (optional)"
-							    		ng-model="formModel.merge_fields.COMMENT"></textarea>
-							  </div>
-							</div>
+              <div class="form-group">
+                <!-- <label class="control-label col-sm-12">Phone (optional)</label> -->
+                <div class="col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="firstName"
+                    placeholder="0400 123 123 (optional)"
+                    ng-model="formModel.merge_fields.PHONE"
+                  />
+                </div>
+              </div>
+            </fieldset>
 
-							<!-- <div class="form-group">
+            <fieldset>
+              <!-- <h4 class="form_heading">Comments</h4> -->
+
+              <div class="form-group">
+                <label class="control-label col-sm-4">Interested in</label>
+                <div class="col-sm-8">
+                  <!-- <div class="col-sm-10"> -->
+                  <select
+                    class="form-control"
+                    ng-model="formModel.merge_fields.INTEREST"
+                  >
+                    <option value="">Unspecified</option>
+                    <option value="pilates">Pilates</option>
+                    <option value="massage">Massage</option>
+                    <option value="pilates,massage"
+                      >Pilates &amp; Massage</option
+                    >
+                    <option value="walk-group">Walking Group</option>
+                  </select>
+                  <!-- </div> -->
+                </div>
+                <!-- .col-sm-8 -->
+              </div>
+              <div class="form-group">
+                <!-- <label class="control-label col-sm-12">Comment/special request</label> -->
+                <div class="col-sm-12">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    name="firstName"
+                    placeholder="Comments (optional)"
+                    ng-model="formModel.merge_fields.COMMENT"
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- <div class="form-group">
 							  <label class="control-label col-sm-12">Phone number</label>
 							  <input type="text" class="form-control" name="phone" placeholder="0404 123 123" ng-model="formModel.merge_fields.PHONE" />
 							</div> -->
-						</fieldset>
-						<fieldset>
-					    <div class="form-group">
-					    	<div class="col-sm-12">
-					        <button type="submit" class="btn btn-primary btn-block" ng-disabled="processing">
-									  Submit
-									</button>
-					    	</div><!-- .col-sm-8 col-sm-offset-4 -->
-					    </div>
-					  </fieldset>
-					</form>
-				</div><!-- .well -->
-			</div><!-- .col-sm-8 -->
-		</div><!-- .row -->
-	</div><!-- .container -->
+            </fieldset>
+            <fieldset>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block"
+                    ng-disabled="processing"
+                  >
+                    Submit
+                  </button>
+                </div>
+                <!-- .col-sm-8 col-sm-offset-4 -->
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <!-- .well -->
+      </div>
+      <!-- .col-sm-8 -->
+    </div>
+    <!-- .row -->
+  </div>
+  <!-- .container -->
 </section>

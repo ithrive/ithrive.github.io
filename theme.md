@@ -1,11 +1,11 @@
 ---
 layout: info
-title: 'Theme'
+title: "Theme"
 permalink: /theme/
 sitemap: false
 ---
 
-<section class="section">
+<section>
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-1.jpg"></div>
 	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
 	<div class="container">
@@ -17,7 +17,8 @@ sitemap: false
 		</div>
 	</div>
 </section>
-<section class="section section-lightOnDark">
+
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-2.jpg"></div>
 	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
 	<div class="container">
@@ -29,7 +30,8 @@ sitemap: false
 		</div>
 	</div>
 </section>
-<section class="section">
+
+<section>
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-3.jpg"></div>
 	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
 	<div class="container">
@@ -41,7 +43,8 @@ sitemap: false
 		</div>
 	</div>
 </section>
-<section class="section">
+
+<section>
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-4.jpg"></div>
 	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
 	<div class="container">
@@ -53,7 +56,8 @@ sitemap: false
 		</div>
 	</div>
 </section>
-<section class="section section-lightOnDark">
+
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/beach-1.jpg"></div>
 	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
 	<div class="container">
@@ -65,7 +69,8 @@ sitemap: false
 		</div>
 	</div>
 </section>
-<section class="section section-lightOnDark">
+
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/beach-2.jpg"></div>
 	<!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
 	<div class="container">
@@ -78,8 +83,7 @@ sitemap: false
 	</div>
 </section>
 
-
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0887.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark-reverse"></div>
 	<div class="container">
@@ -92,7 +96,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0919.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark-reverse"></div>
 	<div class="container">
@@ -105,7 +109,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0947.jpg"></div>
 	<div class="container">
 		<div class="row">
@@ -117,7 +121,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0959.jpg"></div>
 	<div class="container">
 		<div class="row">
@@ -129,7 +133,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0961.jpg"></div>
 	<div class="container">
 		<div class="row">
@@ -141,7 +145,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0963.jpg"></div>
 	<div class="container">
 		<div class="row">
@@ -153,7 +157,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0965.jpg"></div>
 	<div class="container">
 		<div class="row">
@@ -165,7 +169,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0967.jpg"></div>
 	<div class="container">
 		<div class="row">
@@ -177,7 +181,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0973.jpg"></div>
 	<div class="container">
 		<div class="row">
@@ -189,7 +193,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0979.jpg"></div>
 	<div class="container">
 		<div class="row">
@@ -201,7 +205,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0980.jpg"></div>
 	<div class="container">
 		<div class="row">
@@ -213,7 +217,7 @@ sitemap: false
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0996.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark-reverse"></div>
 	<div class="container">

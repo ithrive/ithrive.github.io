@@ -9,7 +9,7 @@ permalink: /about/
   <div class="container">
     <div class="row">
       <div class="col-sm-8">
-        <h2 class="section_title">I'm Laura.</h2>
+        <h2>I'm Laura.</h2>
         <p>I'm a passionate therapist who works closely with people to take them beyond rehabilitation, to a place where movement is both efficient and joyful.</p>
         <p>If you have any questions please <a class="mailto" href="mailto:laura@ithrive.net.au">contact me</a>.</p>
         <p>
@@ -23,7 +23,7 @@ permalink: /about/
 <section class="section">
   <div class="container">
     <div class="row">
-      <h2 class="section_title">My background</h2>
+      <h2>My background</h2>
       <div class="col-sm-6">
         <p class="lead">
           With over 10 years of experience in manual therapy and 6 years instructing movement, my natural skills and interests have led me to specialise in clientele with chronic conditions requiring a postural and movement strategy overhaul.
@@ -57,7 +57,7 @@ permalink: /about/
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <h2 class="section_title">My story</h2>
+        <h2>My story</h2>
         <p class="lead">
           A lot of what I know and teach has come from searching for solutions to my own injuries and issues.
         </p>

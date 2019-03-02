@@ -36,7 +36,7 @@ description: "Ease work or sports related pain and tension, improve posture and 
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<h2 class="section_title">Techniques</h2>
+				<h2>Techniques</h2>
 				<p>Your session may include any of the following techniques:</p>
 				<ul>
 					<!-- <li>Broad-handed Swedish techniques, myofascial release, trigger point therapy, deep ischaemic pressure, frictions, active and passive tissue tension, manual lymphatic drainage (MLD)</li> -->
@@ -66,10 +66,10 @@ description: "Ease work or sports related pain and tension, improve posture and 
 	<div class="container">
 		<div class="row">
 			<!-- <div class="col-sm-12">
-				<h2 class="section_title section_title-full">Your session</h2>
+				<h2>Your session</h2>
 			</div> -->
 			<div class="col-sm-6">
-				<h2 class="section_title">Your session</h2>
+				<h2>Your session</h2>
 				<p>Whatever brings you for treatment - whether it be injury management and prevention, to improve mobility and posture, to gain relief from aches and pains, or simply to relax, unwind and de-stress, Laura will listen to your needs and work with you to achieve your goals</p>
 			</div><!-- .col-sm-8 -->
 		</div><!-- .row -->
@@ -127,7 +127,7 @@ description: "Ease work or sports related pain and tension, improve posture and 
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="section_title section_title-full">Availability</h2>
+				<h2>Availability</h2>
 			</div>
 			<div class="col-sm-12">
 				<h3>Mobile</h3>
@@ -174,7 +174,7 @@ description: "Ease work or sports related pain and tension, improve posture and 
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-			 <h3 class="section_title">Health Fund Rebates</h3>
+			 <h3>Health Fund Rebates</h3>
 			 <p>As a certified member of Massage & Myotherapy Australia, Laura is registered with all major health funds for rebates. Check with your fund for level of coverage you can expect</p> 
 			</div>
 		</div><!-- .col-sm-8 -->

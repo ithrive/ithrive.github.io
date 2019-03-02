@@ -38,7 +38,7 @@ description: "All the benefits of Pilates practice, in the comfort of your own h
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-5 col-sm-offset-7">
-				<h2 class="section_title">What's involved?</h2>
+				<h2>What's involved?</h2>
 				<p>Each session is tailored to you and can take on either a <strong>fitness</strong> or <strong>rehabilitation</strong> focus. Your session may include pilates matwork or <a href="http://www.jemsmovement.com/" target="_blank">JEMS Movement ART</a> techniques and exercises, or a combination of both.</p>
 				<p>I'll also bring along a fun range of Pilates equipment to keep things interesting, including...</p>
 			</div>
@@ -57,7 +57,7 @@ description: "All the benefits of Pilates practice, in the comfort of your own h
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="section_title section_title-full">Class options</h2>
+				<h2>Class options</h2>
 			</div>
 			<div class="col-sm-6">
 				<h3>Introduction session</h3>
@@ -106,7 +106,7 @@ description: "All the benefits of Pilates practice, in the comfort of your own h
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="section_title section_title-full">Where and when</h2>
+				<h2>Where and when</h2>
 			</div>
 			<div class="col-sm-5 col-sm-push-7">
 				{% include availability-map.html %}
