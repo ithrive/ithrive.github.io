@@ -1,8 +1,8 @@
 ---
 layout: info
-title: 'Remedial Massage Therapy'
+title: "Remedial Massage Therapy"
 permalink: /massage/
-description: 'Ease work or sports related pain and tension, improve posture and feel better with a remedial massage. Fully qualified and experienced therapist. Brookvale location or home visits available'
+description: "Ease work or sports related pain and tension, improve posture and feel better with a remedial massage. Fully qualified and experienced therapist. Brookvale location or home visits available"
 ---
 
 <section class="section section-splash">
@@ -113,15 +113,15 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 						</div><!-- .well -->
 					</div><!-- .col-sm-4 -->
 
-				</div><!-- .row -->
-				<div class="well well-announce">
-					As a Soft Tissue Therapist Laura is trained to assess and treat a broad range of musculoskeletal issues. She specialises in posture related pain and injury but is also skilled in pregnancy, aged care and sports massage.
-				</div>
-			</div><!-- .col-sm-12 -->
-		</div>
-	</div><!-- .container -->
-</section>
+    			</div><!-- .row -->
+    			<div class="well well-announce">
+    				As a Soft Tissue Therapist Laura is trained to assess and treat a broad range of musculoskeletal issues. She specialises in posture related pain and injury but is also skilled in pregnancy, aged care and sports massage.
+    			</div>
+    		</div><!-- .col-sm-12 -->
+    	</div>
+    </div><!-- .container -->
 
+</section>
 
 <section class="section">
 	<div class="container">
@@ -166,7 +166,7 @@ description: 'Ease work or sports related pain and tension, improve posture and 
 	</div>
 </section>
 
-{% include mailing-list.html interest="massage" %}
+{% include sections/mailing-list.html interest="massage" %}
 
 <section class="section section-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0961.jpg"></div>

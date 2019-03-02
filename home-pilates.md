@@ -1,8 +1,8 @@
 ---
 layout: info
-title: 'At Home Pilates'
+title: "At Home Pilates"
 permalink: /home-pilates/
-description: 'All the benefits of Pilates practice, in the comfort of your own home.'
+description: "All the benefits of Pilates practice, in the comfort of your own home."
 ---
 
 <section class="section section-splash">
@@ -52,7 +52,6 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 	{% include equipment-block.html title="Theraband" %}
 	{% include equipment-block.html title="Foam roller" %}
 </section>
-
 
 <section class="section">
 	<div class="container">
@@ -127,4 +126,4 @@ description: 'All the benefits of Pilates practice, in the comfort of your own h
 	</div>
 </section>
 
-{% include mailing-list.html interest="pilates" %}
+{% include sections/mailing-list.html interest="pilates" %}

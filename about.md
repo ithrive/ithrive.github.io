@@ -1,5 +1,5 @@
 ---
-title: 'About me'
+title: "About me"
 layout: info
 permalink: /about/
 ---
@@ -51,7 +51,6 @@ permalink: /about/
   </div><!-- .container -->
 </section><!-- .section -->
 
-
 <section class="section section-lightOnDark">
   <div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-2.jpg"></div>
   <!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
@@ -79,5 +78,4 @@ permalink: /about/
   </div>
 </section>
 
-
-{% include mailing-list.html %}
+{% include sections/mailing-list.html %}

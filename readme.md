@@ -22,38 +22,40 @@ iThrive website developed using [Jekyll](jekyllrb.com) and hosted on [GitHub pag
 
 - Run `git push`
 
-
-
 ## Development
 
 Install rvm, npm (via nvm) and then:
 
-```
-npm install -g grunt-cli bower
+```bsh
+npm install -g grunt-cli
 rvm install 2.3
 gem install bundler
 ```
 
 Install:
-```
-npm install
+
+```bsh
+yarn
 bower install
 bundle install
 ```
 
-Run:
-```
-# Single command
-grunt serve
+Run - single command:
 
-# Or...
-bundle exec jekyll serve --watch
-grunt watch
+```bsh
+yarn dev
+```
+
+Run - split command:
+
+```bsh
+yarn serve
+yarn watch
 ```
 
 ## Production
 
-```
+```bsh
 JEKYLL_ENV=production jekyll build
 static -p 8080 _site/
 ```

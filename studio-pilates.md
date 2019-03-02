@@ -1,8 +1,8 @@
 ---
 layout: info
-title: 'Studio Pilates'
+title: "Studio Pilates"
 permalink: /studio-pilates/
-description: 'Private and duo Pilates classes in a fully equipped studio located in Brookvale'
+description: "Private and duo Pilates classes in a fully equipped studio located in Brookvale"
 ---
 
 <section class="section section-splash">
@@ -63,7 +63,6 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 	{% include equipment-block.html title="Theraband" %}
 	{% include equipment-block.html title="Foam roller" %}
 </section>
-
 
 <section class="section">
 	<div class="container">
@@ -132,7 +131,7 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 	</div>
 </section>
 
-{% include mailing-list.html interest="pilates" %}
+{% include sections/mailing-list.html interest="pilates" %}
 
 <section class="section section-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0961.jpg"></div>

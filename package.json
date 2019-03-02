@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "dev": "grunt serve",
+    "serve": "bundle exec jekyll serve --watch",
+    "watch": "grunt watch"
+  },
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
     "grunt": "^1.0.1",
