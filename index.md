@@ -15,27 +15,27 @@ layout: default
 				<h3 class="product_heading">My services</h3>
 				<div class="product_services">
 					<div class="servicePreview">
-						<a href="/studio-pilates" class="preview_img">
-							<div class="b-lazy" data-src="/images/service-studio-pilates.jpg"></div>
-						</a>
-						<div class="service_name">Studio pilates</div><!-- .service_name -->
-						<p>Enjoy pilates in a fully equipped studio located in Brookvale, NSW</p>
-						<p><a href="/studio-pilates">Learn more &gt;</a></p>
-					</div><!-- .service -->
-					<div class="servicePreview">
 						<a href="/home-pilates" class="preview_img">
-							<div class="b-lazy" data-src="/images/service-home-pilates.jpg"></div>
+							<div class="b-lazy" data-src="/images/service-soft-tissue-therapy.jpg"></div>
 						</a>
-						<div class="service_name">Home pilates</div><!-- .service_name -->
-						<p>Pilates in the comfort of your own home</p>
+						<div class="service_name">Soft Tissue Therapy</div><!-- .service_name -->
+						<p>Targeted, remedial manual therapy</p>
 						<p><a href="/home-pilates">Learn more &gt;</a></p>
 					</div><!-- .service -->
 					<div class="servicePreview">
-						<a href="/massage" class="preview_img">
-							<div class="b-lazy" data-src="/images/service-studio-massage.jpg"></div>
+						<a href="/jems" class="preview_img">
+							<div class="b-lazy" data-src="/images/service-jems.jpg"></div>
 						</a>
-						<div class="service_name">Massage</div><!-- .service_name -->
-						<p>Ease aches and pains with a remedial massage, tailored to your needs.</p>
+						<div class="service_name">JEMS<sup>&reg;</sup></div><!-- .service_name -->
+						<p>Holistic, functional movement assessment & movement education</p>
+						<p><a href="/jems">Learn more &gt;</a></p>
+					</div><!-- .service -->
+					<div class="servicePreview">
+						<a href="/massage" class="preview_img">
+							<div class="b-lazy" data-src="/images/service-pilates.jpg"></div>
+						</a>
+						<div class="service_name">Pilates</div><!-- .service_name -->
+						<p>Core strength and conditioning</p>
 						<p><a href="/massage">Learn more &gt;</a></p>
 					</div><!-- .service -->
 				</div>

@@ -1,7 +1,7 @@
 ---
 layout: info
-title: 'Studio Pilates'
-permalink: /studio-pilates/
+title: 'JEMS'
+permalink: /jems/
 description: 'Private and duo Pilates classes in a fully equipped studio located in Brookvale'
 ---
 
@@ -11,7 +11,7 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<h1>Studio Pilates</h1>
+				<h1>JEMS</h1>
 				<p>Gain strength, coordination and control on a variety of equipment</p>
 				<p>
 					<img src="/images/logo-splash.png" class="logo" />
@@ -26,8 +26,8 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
 				<!-- <h2></h2> -->
-				<p>Studio pilates is great for both <strong>beginners</strong> and <strong>regulars</strong> alike.</p>
-				<p>For those new to pilates, studio pilates introduces the foundations to you with the support and variety of all the wonderful pilates equipment.</p>
+				<p>JEMS is great for both <strong>beginners</strong> and <strong>regulars</strong> alike.</p>
+				<p>For those new to pilates, JEMS introduces the foundations to you with the support and variety of all the wonderful pilates equipment.</p>
 				<p>Studio workouts are also a great opportunity for the more experienced to really push the boundaries of their <strong>strength</strong>, <strong>coordination</strong> and <strong>movement integration</strong>.</p>
 			</div>
 		</div>
@@ -116,7 +116,7 @@ description: 'Private and duo Pilates classes in a fully equipped studio located
 		<div class="row">
 			<div class="col-sm-5 col-sm-offset-2 col-sm-push-5">
 				<h2 class="section_title">Where to find me...</h2>
-				<p>For studio pilates and massage you'll find me at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale, NSW:</p>
+				<p>For JEMS and massage you'll find me at <a href="http://www.abodyofwork.com.au/" target="_blank">A Body of Work</a> in Brookvale, NSW:</p>
 				<p class="strong">
 					117 Old Pittwater Road<br>
 					Brookvale NSW 2100 
