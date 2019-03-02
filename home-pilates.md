@@ -5,7 +5,7 @@ permalink: /home-pilates/
 description: "All the benefits of Pilates practice, in the comfort of your own home."
 ---
 
-<section class="section section-splash">
+<section class="-splash">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/shutterstock_50752900.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark"></div>
 	<div class="container">
@@ -21,7 +21,7 @@ description: "All the benefits of Pilates practice, in the comfort of your own h
 	</div>
 </section>
 
-<section class="section section-quote">
+<section class="-quote">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
@@ -33,7 +33,7 @@ description: "All the benefits of Pilates practice, in the comfort of your own h
 	</div>
 </section>
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/P1060469.jpg"></div>
 	<div class="container">
 		<div class="row">

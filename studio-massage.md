@@ -5,7 +5,7 @@ permalink: /massage/
 description: "Ease work or sports related pain and tension, improve posture and feel better with a remedial massage. Fully qualified and experienced therapist. Brookvale location or home visits available"
 ---
 
-<section class="section section-splash">
+<section class="-splash">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0947.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark"></div>
 	<div class="container">
@@ -19,7 +19,7 @@ description: "Ease work or sports related pain and tension, improve posture and 
 	</div>
 </section>
 
-<section class="section section-quote">
+<section class="-quote">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
@@ -32,7 +32,7 @@ description: "Ease work or sports related pain and tension, improve posture and 
 	</div>
 </section>
 
-<section class="section section-gray hide">
+<section class="-gray hide">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
@@ -168,7 +168,7 @@ description: "Ease work or sports related pain and tension, improve posture and 
 
 {% include sections/mailing-list.html interest="massage" %}
 
-<section class="section section-lightOnDark">
+<section class="-lightOnDark">
 	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0961.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark-reverse"></div>
 	<div class="container">
