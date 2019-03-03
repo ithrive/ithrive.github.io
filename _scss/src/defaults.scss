@@ -1,0 +1,57 @@
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h3 {
+  font-size: 18pt;
+}
+
+h4 {
+  font-size: 14pt;
+}
+
+section {
+  position: relative;
+}
+
+p,
+li {
+  font-size: 12pt;
+  line-height: 1.2em;
+
+  strong {
+    font-weight: 900;
+  }
+}
+
+p.lead {
+  font-size: 14pt;
+}
+
+ul {
+  margin: 2em 0;
+}
+
+li {
+  padding: 0.4em;
+}
+
+a:hover {
+  text-decoration: none;
+}

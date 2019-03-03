@@ -10,7 +10,7 @@ permalink: /about/
   <div class="container">
     <div class="row">
       <h2>My background</h2>
-      <div class="col-sm-6">
+      <div class="col col-sm-6">
         <p class="lead">
           I was not a confident mover growing up. I initially moved toward
           massage as a career, not because of an interest in sports or movement,
@@ -34,7 +34,7 @@ permalink: /about/
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col col-sm-6">
         <h4>Qualifications</h4>
         <ul>
           <li>Advanced Diploma Health Science (Soft Tissue Therapy)</li>

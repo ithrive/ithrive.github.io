@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iThrive | {{ page.title }}</title>
+  <style>
+    {% include build/main.css %}
+  </style>
+
+  {% include partials/favicon.html %}
+  {% include partials/shim.html %}
+  {% seo %}
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <script src="//cdn.rawgit.com/jpillora/xdomain/0.7.4/dist/xdomain.min.js" slave="http://tsko-mailchimp-service.herokuapp.com/ithrive.html"></script>
+  <![endif]-->
+  {{ content }}
+  {% include nav.html %}
+  {% include footer.html %}
+  {% include partials/blazy.html %}
+  {% include partials/webfonts.html %}
+  <script type="text/javascript" src="/build/scripts.js" async></script>
+</body>
+</html>

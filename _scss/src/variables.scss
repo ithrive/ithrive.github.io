@@ -1,0 +1,33 @@
+$icon-font-path: "/fonts/";
+$theme-font-path: "/fonts/";
+
+$primary: rgb(111, 188, 70);
+$primary-compliment: #fff;
+$info: yellow;
+$background: #fff;
+
+$gray-darker: #444;
+$gray-dark: #666;
+$gray: #999;
+$gray-light: #bbb;
+$gray-lighter: #eee;
+
+$theme-colors: ("primary": $primary,
+"primary-compliment": $primary-compliment,
+"info": $info,
+"background": $background,
+"gray-light": $gray-light,
+"gray": $gray,
+"gray-dark": $gray-dark);
+
+$font-name-body: "Helvetica";
+$font-name-heading: "Helvetica";
+
+$font-body: $font-name-body,
+Helvetica,
+sans-serif;
+$font-heading: $font-name-heading,
+Helvetica,
+sans-serif;
+
+$grid-gutter-width: 10px;

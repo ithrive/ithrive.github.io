@@ -1,50 +1,10 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-5">
+			<div class="col">
 				<a href="/"><img src="/images/logo-footer.png" class="footer_logo" alt="" /></a>
 			</div><!-- .col-sm-6 -->
-			<div class="col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
-				<div class="footer_mailingList tmp-hide" mailchimp-form source="footer">
-					<!-- <h3>Subscribe</h3> -->
-					<p>Join the mailing list.</p>
-					<form name="form" novalidate ng-submit="submit(form)" class="form-horizontal" >
-						<span us-spinner="{radius:8, width:1, length:6}" spinner-on="processing"></span>
-						<fieldset>
-							<div class="alert alert-warning tmp-hide" ng-show="msgs.error">
-								<h4>Unfortunately, an error occurred</h4>
-								<p>
-									If you continue to have problems please <a href="mailto:laura@ithrive.net.au">contact me.</a>
-								</p>
-							</div><!-- .alert alert-warning -->
-
-							<div class="alert alert-success" ng-show="msgs.success">
-								<h4>Thank you for expressing your interest!</h4>
-								<p>We will contact you shortly with more information.</p>
-							</div><!-- .alert alert-warning -->
-
-							<div class="form-group" ng-class="{'has-error': form.$submitted && form.email.$invalid}">
-							  <!-- <label class="control-label col-sm-2">Subscribe</label> -->
-							  <div class="col-xs-8">
-							    <input type="email" class="form-control" name="email" placeholder="laura@ithrive.net.au" ng-model="formModel.email_address" required />
-							  </div><!-- .col-xs-8 -->
-					    	<div class="col-xs-4">
-					        <button type="submit" class="btn btn-primary btn-block" ng-disabled="processing">
-									  Subscribe
-									</button>
-					    	</div><!-- .col-xs-8 col-sm-offset-4 -->
-					    	<div class="col-sm-12">
-							    <p class="help-block" ng-show="form.$submitted && form.email.$error.required">
-							      Please enter your email address
-							    </p>
-							    <p class="help-block" ng-show="form.$submitted && form.email.$error.email">
-							      The value you entered is not a valid email address
-							    </p>
-							  </div><!-- .col-sm-12 -->
-							</div>
-					  </fieldset>
-					</form>
-				</div><!-- .footer_mailingList -->
+			<div class="col">
 				<p class="footer_social">
 					<a href="mailto:laura@ithrive.net.au">laura@ithrive.net.au</a>
 					<a href="{{ site.social.links[0] }}" target="_blank">/iThriveManly</a>

@@ -1,0 +1,54 @@
+@import "./variables";
+
+$nav-padding: 10px;
+$navbar-height: 40px;
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-family: $font-heading;
+	background-color: rgba(map-get($theme-colors, background), 0.9);
+	padding: 0 $nav-padding;
+}
+
+.navbarBrand {
+	display: inline-block;
+	height: $navbar-height;
+	line-height: $navbar-height;
+
+	img {
+		height: $navbar-height;
+	}
+}
+
+ul.navbarLinks {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	>li {
+		padding: 0;
+		display: inline-block;
+
+		&::before {
+			display: none;
+		}
+
+		>a {
+			height: $navbar-height;
+			line-height: $navbar-height;
+			vertical-align: middle;
+			display: inline-block;
+			padding: 0 $nav-padding;
+		}
+
+		&+li {
+			>a {
+				border-left: 1px solid map-get($theme-colors, gray);
+			}
+		}
+	}
+}

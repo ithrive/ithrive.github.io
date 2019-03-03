@@ -1,102 +1,20 @@
-$icon-font-path: "/fonts/";
-$theme-font-path: "/fonts/";
+// @import "~font-awesome/scss/font-awesome.scss";
 
-$brand-primary: rgb(111, 188, 70);
-$brand-primary-compliment: #fff;
-$brand-info: yellow;
-$gray-light: #bbb;
+@import "src/variables";
+@import "src/defaults";
+@import "src/bootstrap";
+@import "src/blazy";
+@import "src/nav";
+@import "src/footer";
 
-$grid-gutter-width: 10px;
-
-// bower:scss
-@import "font-awesome/scss/font-awesome.scss";
-// endbower
-
-// Core variables and mixins
-@import "bootstrap-sass/assets/stylesheets/bootstrap/variables";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-
-// Reset and dependencies
-@import "bootstrap-sass/assets/stylesheets/bootstrap/normalize";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/print";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
-
-// Core CSS
-@import "bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/type";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/code";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/grid";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/tables";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/forms";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/buttons";
-
-// Components
-@import "bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/navs";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/navbar";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/pagination";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/pager";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/labels";
-
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/badges";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/alerts";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/media";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/list-group";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/panels";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/wells";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/close";
-
-// Components w/ JavaScript
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/modals";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/popovers";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap/carousel";
-
-// Utility classes
-@import "bootstrap-sass/assets/stylesheets/bootstrap/utilities";
-@import "bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
-
-@import "nav";
-@import "footer";
-
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-h1 {
-  font-size: 24pt;
-}
-h2 {
-  font-size: 20pt;
-}
-h3 {
-  font-size: 18pt;
-}
-h4 {
-  font-size: 14pt;
+%altFont {
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
 }
 
 // WebFonts:
 .wf-loading {
   /* styles to use when web fonts are loading */
-}
-
-body {
-  font-family: "Helvetica", "Arial", sans-serif;
-}
-
-%altFont {
-  letter-spacing: 0.02em;
-  line-height: 1.2em;
 }
 
 .wf-active {
@@ -109,94 +27,44 @@ body {
   /* styles to use when web fonts are inactive */
 }
 
-.container {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.container-fluid {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 a[target="_blank"] {
-  color: $brand-danger;
+  color: map-get($theme-colors, danger);
+
   &::after {
     font-family: FontAwesome;
-    content: "\00a0"+ $fa-var-external-link;
+    // content: "\00a0"+ $fa-var-external-link;
     font-size: 80%;
   }
 }
+
 a[href*="facebook"] {
   &::after {
     font-family: FontAwesome;
-    content: "\00a0"+ $fa-var-facebook-square;
+    // content: "\00a0"+ $fa-var-facebook-square;
     font-size: 80%;
   }
 }
+
 a[href^="mailto:"] {
   text-decoration: none !important;
 
   &::after {
     font-family: FontAwesome;
-    content: "\00a0"+ $fa-var-envelope-o;
+    // content: "\00a0"+ $fa-var-envelope-o;
     font-size: 80%;
     position: relative;
   }
 }
 
-h1 {
-  @extend %altFont;
-}
-
-p,
-li {
-  font-size: 12pt;
-  line-height: 1.2em;
-
-  em {
-    // background: yellow;
-  }
-  strong {
-    font-weight: 900;
-  }
-}
-p.lead {
-  font-size: 14pt;
-}
-
-ul {
-  margin: 2em 0;
-}
-li {
-  padding: 0.4em;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-// Hide conditional/angular elements until ready
-.tmp-hide {
-  display: none;
-}
-
-// Lazy load images
-.b-lazy {
-  transition: opacity 500ms ease-in-out;
-  opacity: 0;
-}
-.b-lazy.b-loaded {
-  opacity: 1;
-}
 
 @mixin padSection($top, $bottom) {
-  > .container-fluid,
-  > .container {
+
+  >.container-fluid,
+  >.container {
     padding-top: $top;
     padding-bottom: $bottom;
 
-    @media (max-width: $screen-xs-max) {
+    @include media-breakpoint-down(xs) {
       $minPad: 80px;
       padding-top: $minPad + 10px;
       padding-bottom: $minPad;
@@ -211,10 +79,11 @@ a:hover {
   opacity: 0.7;
   text-align: center;
 
-  @media (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     font-size: 24pt;
   }
-  @media (max-width: $screen-xs-max) {
+
+  @include media-breakpoint-down(xs) {
     font-size: 20pt;
   }
 }
@@ -226,7 +95,7 @@ section {
   margin-bottom: -1px;
   border-bottom: 1px solid rgba(#000, 0.2);
 
-  > * {
+  >* {
     position: relative;
   }
 }
@@ -243,83 +112,79 @@ section {
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
+
   &-inset {
     box-shadow: inset 0 0 5px rgba(#000, 0.2);
   }
 
-  @media (min-width: $screen-sm-min) {
+  @include media-breakpoint-up(sm) {
     &-gradient {
       &-light {
-        background: -moz-linear-gradient(
-          left,
+        background: -moz-linear-gradient(left,
           rgba(#fff, 1) 0%,
-          rgba(#fff, 0) 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-          left,
+          rgba(#fff, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,
           rgba(#fff, 1) 0%,
-          rgba(#fff, 0) 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-          to right,
+          rgba(#fff, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,
           rgba(#fff, 1) 0%,
-          rgba(#fff, 0) 100%
-        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+          rgba(#fff, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+        /* IE6-9 */
       }
+
       &-light-reverse {
-        background: -moz-linear-gradient(
-          right,
+        background: -moz-linear-gradient(right,
           rgba(#fff, 1) 0%,
-          rgba(#fff, 0) 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-          right,
+          rgba(#fff, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(right,
           rgba(#fff, 1) 0%,
-          rgba(#fff, 0) 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-          to left,
+          rgba(#fff, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to left,
           rgba(#fff, 1) 0%,
-          rgba(#fff, 0) 100%
-        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+          rgba(#fff, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+        /* IE6-9 */
       }
+
       &-dark {
-        background: -moz-linear-gradient(
-          left,
+        background: -moz-linear-gradient(left,
           rgba(#000, 0.5) 0%,
-          rgba(#000, 0) 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-          left,
+          rgba(#000, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,
           rgba(#000, 0.5) 0%,
-          rgba(#000, 0) 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-          to right,
+          rgba(#000, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,
           rgba(#000, 0.5) 0%,
-          rgba(#000, 0) 100%
-        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+          rgba(#000, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);
+        /* IE6-9 */
       }
+
       &-dark-reverse {
-        background: -moz-linear-gradient(
-          right,
+        background: -moz-linear-gradient(right,
           rgba(#000, 0.5) 0%,
-          rgba(#000, 0) 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-          right,
+          rgba(#000, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(right,
           rgba(#000, 0.5) 0%,
-          rgba(#000, 0) 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-          to left,
+          rgba(#000, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to left,
           rgba(#000, 0.5) 0%,
-          rgba(#000, 0) 100%
-        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+          rgba(#000, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=1);
+        /* IE6-9 */
       }
     }
   }
@@ -327,7 +192,7 @@ section {
 
 section {
   .layer-img {
-    @media (max-width: $screen-xs-max) {
+    @include media-breakpoint-down(xs) {
       position: relative;
       width: 96%;
       margin: 6px auto -20px auto;
@@ -344,9 +209,9 @@ section {
     @include padSection(400px, 40px);
     @extend %lightText;
 
-    @media (max-width: $screen-xs-max) {
+    @include media-breakpoint-down(xs) {
       text-align: center;
-      background-color: $brand-primary;
+      background-color: map-get($theme-colors, primary);
     }
 
     .logo {
@@ -354,7 +219,7 @@ section {
       max-width: 100%;
       margin-top: 20px;
 
-      @media (max-width: $screen-xs-max) {
+      @include media-breakpoint-down(xs) {
         margin-left: 0px;
         max-width: 80px;
       }
@@ -365,13 +230,15 @@ section {
       line-height: 1em;
       margin-bottom: 20px;
 
-      @media (max-width: $screen-xs-max) {
+      @include media-breakpoint-down(xs) {
         font-size: 30pt;
       }
     }
+
     p {
       font-size: 20pt;
-      @media (max-width: $screen-xs-max) {
+
+      @include media-breakpoint-down(xs) {
         font-size: 16pt;
       }
     }
@@ -382,8 +249,8 @@ section {
     @extend %lightText;
     background-color: rgb(225, 125, 70);
 
-    > h3 {
-      color: $brand-primary;
+    >h3 {
+      color: map-get($theme-colors, primary);
     }
   }
 
@@ -415,6 +282,7 @@ section {
   &.-inquiry {
     // @extend %lightText;
     background: $gray-lighter;
+
     .well {
       min-height: 300px;
     }
@@ -426,7 +294,8 @@ section {
 }
 
 .well-product {
-  background: $brand-primary;
+  background: map-get($theme-colors, primary);
+
   * {
     color: #fff;
   }
@@ -439,9 +308,10 @@ section {
   margin-top: 40px;
   // border-top: 1px solid rgba(#fff,0.1);
 
-  & + .cost {
+  &+.cost {
     margin-top: 20px;
   }
+
   .cost_details {
     // color: $gray-light;
     line-height: 1em;
@@ -485,6 +355,7 @@ section {
   .layer-img {
     background-size: contain;
   }
+
   img {
     max-width: 100%;
     max-height: 100%;
@@ -505,10 +376,11 @@ section {
     background-color: transparent;
 
     &.btn-primary {
-      border: 1px $brand-primary solid;
-      color: $brand-primary;
+      border: 1px map-get($theme-colors, primary) solid;
+      color: map-get($theme-colors, primary);
       background-color: transparent;
     }
+
     &.btn-light {
       border: 1px #fff solid;
       color: #fff;
@@ -527,10 +399,11 @@ section {
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
-  background-color: $brand-primary;
+  background-color: map-get($theme-colors, primary);
   transition: background-color 0.5s;
+
   &:hover {
-    background-color: lighten($brand-primary, 10%);
+    background-color: lighten(map-get($theme-colors, primary), 10%);
   }
 }
 
@@ -543,13 +416,15 @@ section {
   vertical-align: top;
 
   &:nth-child(1) .preview_img {
-    background-color: lighten($brand-primary, 0%);
+    background-color: lighten(map-get($theme-colors, primary), 0%);
   }
+
   &:nth-child(2) .preview_img {
-    background-color: lighten($brand-primary, 10%);
+    background-color: lighten(map-get($theme-colors, primary), 10%);
   }
+
   &:nth-child(3) .preview_img {
-    background-color: lighten($brand-primary, 20%);
+    background-color: lighten(map-get($theme-colors, primary), 20%);
   }
 
   .preview_img {
@@ -558,7 +433,7 @@ section {
     position: relative;
     display: inline-block;
 
-    > div {
+    >div {
       background-size: cover;
       background-position: 50%;
       position: absolute;
@@ -576,11 +451,12 @@ section {
       bottom: -7px;
       display: inline-block;
     }
+
     // opacity: 0.5;
     // transition: opacity 0.5s;
   }
 
-  @media (max-width: $screen-xs-max) {
+  @include media-breakpoint-down(xs) {
     width: 240px;
 
     .preview_img {
@@ -594,19 +470,22 @@ section {
     font-size: 14pt;
     font-weight: 800;
     margin: 5px 0;
-    // background-color: $brand-primary;
-    // color: $brand-primary-compliment;
+    // background-color: map-get($theme-colors, primary);
+    // color: map-get($theme-colors, primary-compliment);
     // padding: 5px 0;
   }
+
   &:hover {
     img {
       opacity: 1;
     }
   }
+
   p {
     color: #aaa;
     font-size: 10pt;
-    @media (min-width: $screen-sm-min) {
+
+    @include media-breakpoint-up(sm) {
       min-height: 4em;
     }
   }
@@ -619,9 +498,11 @@ article.post {
     margin: 20px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+
   .post_body {
     font-size: 12pt;
   }
+
   .post_details {
     color: $gray-light;
   }
@@ -633,6 +514,7 @@ article.post {
     margin: 50px 0;
     color: $gray-light;
   }
+
   .postListing_posts {
     margin-bottom: 100px;
   }
@@ -644,9 +526,11 @@ article.post {
   .post_title {
     margin: 0;
   }
+
   a.post_more {
     float: right;
   }
+
   &-listing {
     margin-bottom: 20px;
 
@@ -654,25 +538,30 @@ article.post {
       border-bottom: 1px solid $gray-lighter;
       padding-bottom: 5px;
     }
+
     .post_excerpt {
       padding-top: 10px;
       color: $gray-light;
     }
   }
+
   &-sidebar {
     margin-bottom: 20px;
 
     .post_title {
       font-size: 14pt;
     }
+
     .post_excerpt {
       font-size: 10pt;
       color: $gray-light;
       line-height: 1.2em;
     }
+
     .post_date {
       font-size: 9pt;
     }
+
     header {
       margin: 0 0 10px 0;
     }
@@ -696,11 +585,12 @@ article.post {
   color: $gray-light;
   // margin: 22px 0 8px 0;
 
-  @media (max-width: $screen-xs-max) {
+  @include media-breakpoint-down(xs) {
     text-align: center;
   }
 }
-fieldset + fieldset {
+
+fieldset+fieldset {
   // margin-top: 20px;
   margin-top: 10px;
   padding-top: 10px;
@@ -719,9 +609,11 @@ fieldset + fieldset {
 
 .postSideBar {
   padding: 100px 0 0 50px;
-  @media (max-width: $screen-xs-max) {
+
+  @include media-breakpoint-down(xs) {
     padding: 40px 0 0 0;
   }
+
   .sideBar_heading {
     @extend %altFont;
     text-align: center;
@@ -745,6 +637,7 @@ aside.block {
   article {
     padding-left: $size + 20px;
   }
+
   .entry_image {
     position: absolute;
     left: 0;
@@ -779,6 +672,7 @@ article.knowledgeBase {
     // margin-bottom: 40px;
     font-style: italic;
   }
+
   .entry_body {
     font-size: 14pt;
   }
@@ -814,12 +708,14 @@ a.keyword {
     padding-bottom: 5px;
     color: $gray;
   }
+
   .popover_image {
     height: 70px;
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
   }
+
   .subtle {
     text-align: right;
     color: $gray-light;
@@ -836,11 +732,13 @@ a.keyword {
 
   p {
     font-size: 18pt;
-    @media (max-width: $screen-xs-max) {
+
+    @include media-breakpoint-down(xs) {
       font-size: 14pt;
     }
   }
-  p + p {
+
+  p+p {
     margin-top: 30px;
   }
 }
@@ -848,19 +746,20 @@ a.keyword {
 .well-announce {
   font-size: 130%;
   text-align: center;
-  border: solid 2px lighten($brand-primary, 30%);
+  border: solid 2px lighten(map-get($theme-colors, primary), 30%);
   background: transparent;
-  color: lighten($brand-primary, 15%);
+  color: lighten(map-get($theme-colors, primary), 15%);
   box-shadow: none;
-  // background: lighten($brand-primary, 40%);
+  // background: lighten(map-get($theme-colors, primary), 40%);
 
   strong {
     @extend %altFont;
     font-size: 120%;
   }
 }
+
 .well {
-  > h3 {
+  >h3 {
     margin-top: 0;
   }
 }
@@ -882,6 +781,7 @@ blockquote {
     top: 0;
     left: 0;
   }
+
   &::after {
     content: "”";
     position: absolute;
@@ -901,8 +801,7 @@ blockquote {
   position: relative;
   height: 350px;
 
-  iframe {
-  }
+  iframe {}
 
   a {
     display: block;
@@ -918,43 +817,51 @@ blockquote {
 .blockGrid {
   @include clearfix;
 
-  > div {
+  >div {
     float: left;
     position: relative;
     min-height: 250px;
     width: 25%; // assumes 4
 
-    @media (max-width: $screen-sm-max) {
-    }
-    @media (max-width: $screen-xs-max) {
+    @include media-breakpoint-down(sm) {}
+
+    @include media-breakpoint-down(xs) {
       min-height: 200px;
       width: 50%;
     }
 
-    background-color: $brand-primary;
+    background-color: map-get($theme-colors, primary);
+
     &:nth-child(1) {
-      background-color: lighten($brand-primary, 5%);
+      background-color: lighten(map-get($theme-colors, primary), 5%);
     }
+
     &:nth-child(2) {
-      background-color: lighten($brand-primary, 10%);
+      background-color: lighten(map-get($theme-colors, primary), 10%);
     }
+
     &:nth-child(3) {
-      background-color: lighten($brand-primary, 15%);
+      background-color: lighten(map-get($theme-colors, primary), 15%);
     }
+
     &:nth-child(4) {
-      background-color: lighten($brand-primary, 20%);
+      background-color: lighten(map-get($theme-colors, primary), 20%);
     }
+
     &:nth-child(5) {
-      background-color: lighten($brand-primary, 20%);
+      background-color: lighten(map-get($theme-colors, primary), 20%);
     }
+
     &:nth-child(6) {
-      background-color: lighten($brand-primary, 15%);
+      background-color: lighten(map-get($theme-colors, primary), 15%);
     }
+
     &:nth-child(7) {
-      background-color: lighten($brand-primary, 10%);
+      background-color: lighten(map-get($theme-colors, primary), 10%);
     }
+
     &:nth-child(8) {
-      background-color: lighten($brand-primary, 5%);
+      background-color: lighten(map-get($theme-colors, primary), 5%);
     }
   }
 }
@@ -989,13 +896,15 @@ blockquote {
     color: #fff;
     text-shadow: 0 0 3px rgba(#000, 0.3);
 
-    @media (max-width: $screen-sm-max) {
+    @include media-breakpoint-down(sm) {
       font-size: 16pt;
     }
-    @media (max-width: $screen-xs-max) {
+
+    @include media-breakpoint-down(xs) {
       font-size: 12pt;
     }
   }
+
   .block_description {
     opacity: 0;
     transition: opacity 0.5s;
@@ -1041,8 +950,8 @@ blockquote {
 
 .hours {
   // border-bottom: 1px solid $gray;
-  border: solid 2px lighten($brand-primary, 30%);
-  color: $brand-primary;
+  border: solid 2px lighten(map-get($theme-colors, primary), 30%);
+  color: map-get($theme-colors, primary);
   border-radius: 5px;
   display: inline-block;
   padding: 0.2em 0.5em;
@@ -1068,7 +977,7 @@ blockquote {
   }
 }
 
-@media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .indent-sm {
     padding-left: 40px;
   }
@@ -1084,17 +993,35 @@ blockquote {
 .postHeader {
   position: relative;
   height: 500px;
-  @media (max-width: $screen-xs-max) {
+
+  @include media-breakpoint-down(xs) {
     height: 200px;
   }
 }
-h4 + ul {
+
+h4+ul {
   margin-top: -10px;
 }
 
-.businessFeature {
-  // text-align: center;
+.features {
+  display: flex;
+  flex-flow: row wrap;
+  // justify-content: space-around;
+  justify-content: center;
+}
+
+.feature {
+  display: inline-block;
+  max-width: 300px;
+  margin: 30px 20px;
+  text-align: left;
+
   img {
-    max-height: 200px;
+    max-height: 120px;
   }
+}
+
+.row-slim {
+  max-width: 600px;
+  margin: 0 auto;
 }
