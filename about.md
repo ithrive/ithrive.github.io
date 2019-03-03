@@ -4,78 +4,53 @@ layout: info
 permalink: /about/
 ---
 
-<section class="-splash">
-  <div class="layer layer-img b-lazy" data-src="/images/section-bgs/laura-desert.jpg"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8">
-        <h2>I'm Laura.</h2>
-        <p>I'm a passionate therapist who works closely with people to take them beyond rehabilitation, to a place where movement is both efficient and joyful.</p>
-        <p>If you have any questions please <a class="mailto" href="mailto:laura@ithrive.net.au">contact me</a>.</p>
-        <p>
-          <img src="/images/logo-splash.png" class="logo" />
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <h2>My background</h2>
-      <div class="col-sm-6">
-        <p class="lead">
-          With over 10 years of experience in manual therapy and 6 years instructing movement, my natural skills and interests have led me to specialise in clientele with chronic conditions requiring a postural and movement strategy overhaul.
-        </p><!-- .lead -->
-        <p class="lead">
-          I'm always furthering my practice to make sure I have the most up to date tools and knowledge we need to help you move forward. I currently hold qualifications in Soft Tissue Therapy, Remedial Massage and Pilates - both studio and mat.
-        </p>
-      </div>
-      <div class="col-sm-5 col-sm-offset-1">
-        <h4>Qualifications</h4>
-        <ul>
-          <li>Advanced Diploma Health Science (Soft Tissue Therapy)</li>
-          <li>Diploma Remedial Massage</li>
-          <li>Certificate IV Pilates Matwork</li>
-          <li>Diploma of Polestar Pilates Studio& Rehabilitation Method</li>
-          <li>JEMS Movement System 1, 2, 3 </li>
-        </ul>
-        <h4>Professional Association Memberships</h4>
-        <ul>
-          <li>Pilates Alliance Australasia (PAA)</li>
-          <li>Massage & Myotherapy Australia (MAA)</li>
-        </ul>
-      </div><!-- .col-sm-8 -->
-    </div><!-- .row -->
-  </div><!-- .container -->
-</section><!-- .section -->
-
 <section class="-lightOnDark">
   <div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-2.jpg"></div>
   <!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
   <div class="container">
     <div class="row">
+      <h2>My background</h2>
       <div class="col-sm-6">
-        <h2>My story</h2>
         <p class="lead">
-          A lot of what I know and teach has come from searching for solutions to my own injuries and issues.
+          I was not a confident mover growing up. I initially moved toward
+          massage as a career, not because of an interest in sports or movement,
+          but mostly because I am a natural nurturer.
         </p>
         <p>
-          I used to suffer from a lot of lower back issues. My journey in addressing these issues lead me to Pilates, soft-tissue therapy and, more recently, JEMS.
+          My passion for movement has actually developed out of the experiences
+          I’ve had growing as a practitioner. Pilates, for example, gave me an
+          excellent baseline strength and stability. JEMS ignited my curiosity
+          about what my body was capable of. The Oov has provided an excellent
+          restorative practice and an objective method for checking in with my
+          body. And the Be Activated technique helped me to take my first full
+          breath in many years!
         </p>
         <p>
-          These systems have hugely helped me in achieving a sense of comfort in my body I hadn't experienced for years.
-        </p>
-        <p>
-          I think a lot of people share a similar story to my own. I encourage you to read my full story. If you're interested in using any of these systems yourself, <a class="mailto" href="mailto:laura@ithrive.net.au">reach out to me</a> - I would love to hear from you.
-        </p>
-        <p style="padding-top:10px;">
-          <a class="btn btn-outline btn-light" href="/posts/2016/12/03/my-story.html">My full story &gt;</a>
+          The more I learn, the better I move and the more confident I am to
+          explore new things. I adore being able to share this knowledge with
+          others and love watching people move with more confidence, spontaneity
+          and freedom as a result!
         </p>
       </div>
     </div>
-  </div>
-</section>
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Qualifications</h4>
+        <ul>
+          <li>Advanced Diploma Health Science (Soft Tissue Therapy)</li>
+          <li>Diploma Remedial Massage</li>
+          <li>Certificate IV Pilates Matwork</li>
+          <li>Diploma of Polestar Pilates Studio & Rehabilitation Method</li>
+          <li>Certified JEMS Clinical Rehabilitation Practitioner </li>
+        </ul>
+        <h4>Professional Association Memberships</h4>
+        <ul>
+          <li>Massage & Myotherapy Australia Advanced Member (MAA)</li>
+        </ul>
+      </div><!-- .col-sm-8 -->
+    </div><!-- .row -->
+
+  </div><!-- .container -->
+</section><!-- .section -->
 
 {% include sections/mailing-list.html %}
