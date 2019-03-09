@@ -1,4 +1,7 @@
-// @import "~font-awesome/scss/font-awesome.scss";
+// @import "~font-awesome/scss/font-awesome.scss"; 
+
+@import "~photoswipe/src/css/main";
+// @import "~photoswipe/src/css/default-skin/default-skin";
 
 @import "src/variables";
 @import "src/defaults";
@@ -10,21 +13,6 @@
 %altFont {
   letter-spacing: 0.02em;
   line-height: 1.2em;
-}
-
-// WebFonts:
-.wf-loading {
-  /* styles to use when web fonts are loading */
-}
-
-.wf-active {
-  body {
-    font-family: "Quicksand";
-  }
-}
-
-.wf-inactive {
-  /* styles to use when web fonts are inactive */
 }
 
 a[target="_blank"] {
@@ -1028,7 +1016,7 @@ h4+ul {
 
 .well {
   @include media-breakpoint-up(sm) {
-    background-color: rgba(map-get($theme-colors, background), 0.7);
+    background-color: rgba(map-get($theme-colors, background), 0.9);
     padding: $padding-well;
     box-shadow: 0 0 5px rgba(#000, 0.1);
   }
@@ -1037,4 +1025,9 @@ h4+ul {
 .address {
   font-size: 150%;
   padding: $padding-well 0;
+}
+
+.pswp__top-bar,
+.pswp__ui {
+  display: none;
 }

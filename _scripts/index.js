@@ -1,4 +1,5 @@
 import "../_scss/main.scss";
+import "./photoSwipe";
 
 const SmoothScroll = require("smooth-scroll/dist/smooth-scroll.polyfills.js");
 
