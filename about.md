@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <section class="-lightOnDark">
-  <div class="layer layer-img b-lazy" data-src="/images/section-bgs/about-2.jpg"></div>
+  <div class="layer layer-img b-lazy" data-src="/images/backgrounds/about-2.jpg"></div>
   <!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
   <div class="container">
     <div class="row">

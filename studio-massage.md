@@ -6,7 +6,7 @@ description: "Ease work or sports related pain and tension, improve posture and 
 ---
 
 <section class="-splash">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0947.jpg"></div>
+	<div class="layer layer-img b-lazy" data-src="/images/backgrounds/IMG_0947.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark"></div>
 	<div class="container">
 		<div class="row">
@@ -169,7 +169,7 @@ description: "Ease work or sports related pain and tension, improve posture and 
 {% include sections/mailing-list.html interest="massage" %}
 
 <section class="-lightOnDark">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0961.jpg"></div>
+	<div class="layer layer-img b-lazy" data-src="/images/backgrounds/IMG_0961.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark-reverse"></div>
 	<div class="container">
 		<div class="row">

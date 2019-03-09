@@ -6,7 +6,7 @@ description: "Private and duo Pilates classes in a fully equipped studio located
 ---
 
 <section class="-splash">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0887.jpg"></div>
+	<div class="layer layer-img b-lazy" data-src="/images/backgrounds/IMG_0887.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark"></div>
 	<div class="container">
 		<div class="row">
@@ -35,7 +35,7 @@ description: "Private and duo Pilates classes in a fully equipped studio located
 </section>
 
 <section class="-lightOnDark section-sm">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0979.jpg"></div>
+	<div class="layer layer-img b-lazy" data-src="/images/backgrounds/IMG_0979.jpg"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col col-sm-4 col-sm-offset-6">
@@ -109,7 +109,7 @@ description: "Private and duo Pilates classes in a fully equipped studio located
 </section>
 
 <section class="-lightOnDark">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0864.jpg"></div>
+	<div class="layer layer-img b-lazy" data-src="/images/backgrounds/IMG_0864.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark-reverse"></div>
 	<div class="container">
 		<div class="row">
@@ -134,7 +134,7 @@ description: "Private and duo Pilates classes in a fully equipped studio located
 {% include sections/mailing-list.html interest="pilates" %}
 
 <section class="-lightOnDark">
-	<div class="layer layer-img b-lazy" data-src="/images/section-bgs/IMG_0961.jpg"></div>
+	<div class="layer layer-img b-lazy" data-src="/images/backgrounds/IMG_0961.jpg"></div>
 	<div class="layer layer-gradient layer-gradient-dark-reverse"></div>
 	<div class="container">
 		<div class="row">

@@ -27,18 +27,18 @@ url: "https://ithrive.net.au" # the base hostname & protocol for your site, e.g.
 #   publisher: 1234
 #   admins: 1234
 logo: "https://ithrive.net.au/images/site-logo.jpg"
-github_username:  ithrive
+github_username: ithrive
 author: Laura Kavanagh
 social:
   name: Laura Kavanagh
   links:
     - https://www.facebook.com/ithrivemanly
-google_site_verification: RhF5lLeJQO2xlrXR7urKO_RlcoKB8CyFBn6xbGwBLdE    
+google_site_verification: RhF5lLeJQO2xlrXR7urKO_RlcoKB8CyFBn6xbGwBLdE
 paginate: 10
 paginate_path: "/posts/page:num/"
 permalink: "/posts/:year/:month/:day/:title.html"
-disqusShortName: 'ithrive-lab'
-googleMapAPIKey: 'AIzaSyBi0fF8XB1bZWNQUhZ-g-yTpj0rQj07GcE'
+disqusShortName: "ithrive-lab"
+googleMapAPIKey: "AIzaSyBi0fF8XB1bZWNQUhZ-g-yTpj0rQj07GcE"
 # Build settings
 markdown: kramdown
 theme: minima
@@ -50,22 +50,20 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - bower.json
   - package.json
   - readme.md
-  - serve.sh
 collections:
   knowledge_base:
     output: true
     permalink: /knowledge-base/:path/
 defaults:
-- scope:
-    collection: knowledge_base
-  values:
-    layout: knowledge-base
+  - scope:
+      collection: knowledge_base
+    values:
+      layout: knowledge-base
 # https://github.com/penibelst/jekyll-compress-html
 # http://rich-knight.com/articles/compressing-html-in-jekyll/
 compress_html:
   clippings: all
-  comments:  ["<!-- ", " -->"]
-  endings:   all
+  comments: ["<!-- ", " -->"]
+  endings: all
