@@ -1025,3 +1025,16 @@ h4+ul {
   max-width: 600px;
   margin: 0 auto;
 }
+
+.well {
+  @include media-breakpoint-up(sm) {
+    background-color: rgba(map-get($theme-colors, background), 0.7);
+    padding: $padding-well;
+    box-shadow: 0 0 5px rgba(#000, 0.1);
+  }
+}
+
+.address {
+  font-size: 150%;
+  padding: $padding-well 0;
+}
