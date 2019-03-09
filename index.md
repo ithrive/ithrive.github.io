@@ -7,3 +7,4 @@ layout: default
 {% include sections/service-breakdown.html %}
 {% include sections/about.html %}
 {% include sections/bookings.html %}
+{% include sections/location.html %}
