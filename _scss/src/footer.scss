@@ -10,7 +10,7 @@ footer {
 	.footer_logo {
 		opacity: 0.4;
 		max-width: 100%;
-		width: 480px;
+		width: 300px;
 		transition: opacity 0.5s;
 
 		@include media-breakpoint-down(xs) {
@@ -46,7 +46,7 @@ footer {
 			}
 		}
 
-		.fa {
+		.icon {
 			margin-left: 10px;
 		}
 	}
