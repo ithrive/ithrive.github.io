@@ -371,21 +371,42 @@ section {
 }
 
 .btn {
+  padding: 0.6em 0.8em;
+  border-radius: 6px;
+  display: inline-block;
+
+  &.-primary {
+    border: 1px map-get($theme-colors, primary) solid;
+    color: map-get($theme-colors, primary);
+    background-color: transparent;
+  }
+
+  &.-light {
+    border: 1px #fff solid;
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+
+  &.-lg {
+    font-size: 140%;
+    font-weight: 300;
+  }
+
   &-outline {
     border: 1px #000 solid;
     color: #000;
     background-color: transparent;
 
-    &.btn-primary {
+    &.-primary {
       border: 1px map-get($theme-colors, primary) solid;
       color: map-get($theme-colors, primary);
       background-color: transparent;
     }
 
-    &.btn-light {
+    &.-light {
       border: 1px #fff solid;
-      color: #fff;
-      background-color: transparent;
+      color: #fff !important;
+      background-color: transparent !important;
     }
   }
 }
