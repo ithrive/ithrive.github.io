@@ -60,6 +60,18 @@ a[href^="mailto:"] {
   }
 }
 
+@include media-breakpoint-down(sm) {
+  section {
+    padding: $grid-gutter-width * 2;
+
+    >.container-fluid,
+    >.container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
 .sectionHeading {
   font-size: 30pt;
   margin-bottom: 20px;
@@ -182,7 +194,7 @@ section {
   .layer-img {
     @include media-breakpoint-down(xs) {
       position: relative;
-      width: 96%;
+      width: 100%;
       margin: 6px auto -20px auto;
       height: 240px;
     }
