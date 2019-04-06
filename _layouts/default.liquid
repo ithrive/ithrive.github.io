@@ -12,13 +12,12 @@
   {% include partials/favicon.html %}
   {% include partials/shim.html %}
   {% include partials/snazzyMaps.html %}
+  {% include partials/gtagHead.html %}
   {% seo %}
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <script src="//cdn.rawgit.com/jpillora/xdomain/0.7.4/dist/xdomain.min.js" slave="http://tsko-mailchimp-service.herokuapp.com/ithrive.html"></script>
-  <![endif]-->
+  {% include partials/gtagBody.html %}
   {{ content }}
   {% include nav.html %}
   {% include footer.html %}

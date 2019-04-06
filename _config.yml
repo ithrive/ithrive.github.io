@@ -49,6 +49,9 @@ paginate_path: "/posts/page:num/"
 permalink: "/posts/:year/:month/:day/:title.html"
 disqusShortName: "ithrive-lab"
 googleMapAPIKey: "AIzaSyCOs4V5JHvC2_CQS6CJV26UH43w-3G2Dao"
+
+gtag: "GTM-5H8DFSZ"
+
 # Build settings
 markdown: kramdown
 theme: minima
