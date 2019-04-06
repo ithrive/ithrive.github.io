@@ -2,6 +2,7 @@
 title: "About me"
 layout: info
 permalink: /about/
+sitemap: false
 ---
 
 <section class="-lightOnDark">
