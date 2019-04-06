@@ -10,6 +10,7 @@
 @import "src/nav";
 @import "src/footer";
 @import "src/icomoon";
+@import "src/buttons";
 
 %altFont {
   letter-spacing: 0.02em;
@@ -368,149 +369,6 @@ section {
   @extend %altFont;
   font-size: 14pt;
   color: $gray-light;
-}
-
-.btn {
-  padding: 0.6em 0.8em;
-  border-radius: 6px;
-  display: inline-block;
-
-  &.-primary {
-    border: 1px map-get($theme-colors, primary) solid;
-    color: map-get($theme-colors, primary);
-    background-color: transparent;
-  }
-
-  &.-light {
-    border: 1px #fff solid;
-    color: #000 !important;
-    background-color: #fff !important;
-  }
-
-  &.-lg {
-    font-size: 140%;
-    font-weight: 300;
-  }
-
-  &-outline {
-    border: 1px #000 solid;
-    color: #000;
-    background-color: transparent;
-
-    &.-primary {
-      border: 1px map-get($theme-colors, primary) solid;
-      color: map-get($theme-colors, primary);
-      background-color: transparent;
-    }
-
-    &.-light {
-      border: 1px #fff solid;
-      color: #fff !important;
-      background-color: transparent !important;
-    }
-  }
-}
-
-@mixin info-btn($btn-size) {
-  width: $btn-size;
-  height: $btn-size;
-  border-radius: 50%;
-  color: #fff;
-  font-size: $btn-size * 0.7;
-  line-height: $btn-size;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  background-color: map-get($theme-colors, primary);
-  transition: background-color 0.5s;
-
-  &:hover {
-    background-color: lighten(map-get($theme-colors, primary), 10%);
-  }
-}
-
-// Preview of the service, as displayed on the homepage
-.servicePreview {
-  $size: 180px;
-  display: inline-block;
-  margin: 0 5px 25px 5px;
-  width: $size;
-  vertical-align: top;
-
-  &:nth-child(1) .preview_img {
-    background-color: lighten(map-get($theme-colors, primary), 0%);
-  }
-
-  &:nth-child(2) .preview_img {
-    background-color: lighten(map-get($theme-colors, primary), 10%);
-  }
-
-  &:nth-child(3) .preview_img {
-    background-color: lighten(map-get($theme-colors, primary), 20%);
-  }
-
-  .preview_img {
-    width: $size;
-    height: $size;
-    position: relative;
-    display: inline-block;
-
-    >div {
-      background-size: cover;
-      background-position: 50%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    &:after {
-      @include info-btn(40px);
-      content: ">";
-      position: absolute;
-      right: -7px;
-      bottom: -7px;
-      display: inline-block;
-    }
-
-    // opacity: 0.5;
-    // transition: opacity 0.5s;
-  }
-
-  @include media-breakpoint-down(xs) {
-    width: 240px;
-
-    .preview_img {
-      width: 240px;
-      height: 240px;
-    }
-  }
-
-  .service_name {
-    @extend %altFont;
-    font-size: 14pt;
-    font-weight: 800;
-    margin: 5px 0;
-    // background-color: map-get($theme-colors, primary);
-    // color: map-get($theme-colors, primary-compliment);
-    // padding: 5px 0;
-  }
-
-  &:hover {
-    img {
-      opacity: 1;
-    }
-  }
-
-  p {
-    color: #aaa;
-    font-size: 10pt;
-
-    @include media-breakpoint-up(sm) {
-      min-height: 4em;
-    }
-  }
 }
 
 article.post {
@@ -884,58 +742,6 @@ blockquote {
 
     &:nth-child(8) {
       background-color: lighten(map-get($theme-colors, primary), 5%);
-    }
-  }
-}
-
-.equipmentBlock {
-  @extend %lightText;
-
-  .block_inner {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    background-color: transparent;
-    padding: 90px 20px 0 20px;
-    transition: background-color 0.5s, padding-top 0.5s;
-
-    &:hover {
-      background-color: rgba(#000, 0.5);
-      padding-top: 40px;
-
-      .block_description {
-        opacity: 1;
-      }
-    }
-  }
-
-  .block_title {
-    @extend %altFont;
-    font-size: 24pt;
-    color: #fff;
-    text-shadow: 0 0 3px rgba(#000, 0.3);
-
-    @include media-breakpoint-down(sm) {
-      font-size: 16pt;
-    }
-
-    @include media-breakpoint-down(xs) {
-      font-size: 12pt;
-    }
-  }
-
-  .block_description {
-    opacity: 0;
-    transition: opacity 0.5s;
-    font-size: 9pt;
-
-    a {
-      @include info-btn(40px);
-      display: block;
-      margin: 20px auto 0 auto;
     }
   }
 }

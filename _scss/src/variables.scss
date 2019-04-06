@@ -12,10 +12,17 @@ $gray: #999;
 $gray-light: #bbb;
 $gray-lighter: #eee;
 
+$light: #fff;
+$dark: $gray-darker;
+
 $theme-colors: ("primary": $primary,
 "primary-compliment": $primary-compliment,
 "info": $info,
 "background": $background,
+"light": $light,
+"light-complement": $dark,
+"dark": $dark,
+"dark-complement": $light,
 "gray-light": $gray-light,
 "gray": $gray,
 "gray-dark": $gray-dark);

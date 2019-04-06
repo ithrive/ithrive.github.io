@@ -1,0 +1,48 @@
+@import "./variables";
+
+.btn {
+  padding: 0.6em 0.8em;
+  border-radius: 6px;
+  display: inline-block;
+
+  &.-primary {
+    border: 1px map-get($theme-colors, primary) solid;
+    color: map-get($theme-colors, primary-compliment);
+    background-color: map-get($theme-colors, primary);
+  }
+
+  &.-light {
+    border: 1px map-get($theme-colors, light) solid;
+    background-color: map-get($theme-colors, light) !important;
+    color: map-get($theme-colors, light-complement) !important;
+  }
+
+  &.-dark {
+    border: 1px map-get($theme-colors, dark) solid;
+    background-color: map-get($theme-colors, dark) !important;
+    color: map-get($theme-colors, dark-complement) !important;
+  }
+
+  &.-lg {
+    font-size: 140%;
+    font-weight: 300;
+  }
+
+  &.-outline {
+    border: 1px #000 solid;
+    color: #000;
+    background-color: transparent;
+
+    &.-primary {
+      border: 1px map-get($theme-colors, primary) solid;
+      color: map-get($theme-colors, primary);
+      background-color: transparent;
+    }
+
+    &.-light {
+      border: 1px #fff solid;
+      color: #fff !important;
+      background-color: transparent !important;
+    }
+  }
+}

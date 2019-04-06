@@ -1,7 +1,8 @@
 @import "./variables";
 
 $nav-padding: 10px;
-$navbar-height: 40px;
+$navbar-height: 60px;
+$navbar-link-height: 40px;
 
 .navbar {
 	position: fixed;
@@ -10,7 +11,7 @@ $navbar-height: 40px;
 	width: 100%;
 	font-family: $font-heading;
 	background-color: rgba(map-get($theme-colors, background), 0.9);
-	padding: 0 $nav-padding;
+	padding: $nav-padding;
 }
 
 .navbarBrand {
@@ -38,16 +39,22 @@ ul.navbarLinks {
 		}
 
 		>a {
-			height: $navbar-height;
-			line-height: $navbar-height;
+			height: $navbar-link-height;
+			line-height: $navbar-link-height;
+			padding-top: ($navbar-height - $navbar-link-height) / 2;
 			vertical-align: middle;
 			display: inline-block;
 			padding: 0 $nav-padding;
+			color: map-get($theme-colors, "dark");
+			&.btn {
+				padding: 0 $nav-padding*1.25; 
+				margin: 0 $nav-padding*0.5;
+			}
 		}
 
 		&+li {
 			>a {
-				border-left: 1px solid map-get($theme-colors, gray);
+				border-left: 1px solid map-get($theme-colors, "gray");
 			}
 		}
 	}
