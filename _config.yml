@@ -29,11 +29,21 @@ url: "https://ithrive.net.au" # the base hostname & protocol for your site, e.g.
 logo: "https://ithrive.net.au/images/site-logo.jpg"
 github_username: ithrive
 author: Laura Kavanagh
+# facebook:
+#   app_id: 1234
+#   publisher: 1234
+#   admins: 1234
 social:
   name: Laura Kavanagh
   links:
     - https://www.facebook.com/ithrivemanly
 google_site_verification: RhF5lLeJQO2xlrXR7urKO_RlcoKB8CyFBn6xbGwBLdE
+# webmaster_verifications:
+#   google: 1234
+#   bing: 1234
+#   alexa: 1234
+#   yandex: 1234
+#   baidu: 1234
 paginate: 10
 paginate_path: "/posts/page:num/"
 permalink: "/posts/:year/:month/:day/:title.html"
@@ -53,14 +63,19 @@ exclude:
   - package.json
   - readme.md
 collections:
-  knowledge_base:
-    output: true
-    permalink: /knowledge-base/:path/
+  # knowledge_base:
+  #   output: true
+  #   permalink: /knowledge-base/:path/
 defaults:
   - scope:
       collection: knowledge_base
     values:
       layout: knowledge-base
+  # - scope:
+  #     path: ""
+  #   values:
+  #     image: /assets/images/default-card.png
+
 # https://github.com/penibelst/jekyll-compress-html
 # http://rich-knight.com/articles/compressing-html-in-jekyll/
 compress_html:

@@ -1,13 +1,18 @@
 ---
 layout: 'default'
+seo:
+	name:
+	type: "BlogPosting"
+	links:
+	date_modified:
 ---
 
 <div class="navbar-offset"></div><!-- .navbar-offset -->
 
 {% if page.image %}
-	<section class="postHeader">
-	  <div class="layer layer-img b-lazy" data-src="{{ page.image }}"></div>
-	</section>
+<section class="postHeader">
+	<div class="layer layer-img b-lazy" data-src="{{ page.image }}"></div>
+</section>
 {% endif %}
 
 <div class="container">
@@ -18,8 +23,8 @@ layout: 'default'
 				<header>
 					<h1>{{ page.title }}</h1>
 					<p class="post_details">
-            <span class="post_date">{{ page.date | date_to_string }}</span>
-          </p>
+						<span class="post_date">{{ page.date | date_to_string }}</span>
+					</p>
 				</header>
 				<div class="post_body" allow-keywords>
 					{{ content }}
@@ -30,16 +35,16 @@ layout: 'default'
 		<div class="col col-sm-1 postSideBar">
 			<!-- <h3 class="sideBar_heading">Read more</h3> -->
 			{% if page.next %}
-				<aside class="block">
-					<h4 class="block_heading"><i class="fa fa-angle-up"></i> More recent</h4>
-					{% include post-preview-sidebar.html post=page.next %}
-				</aside>
+			<aside class="block">
+				<h4 class="block_heading"><i class="fa fa-angle-up"></i> More recent</h4>
+				{% include post-preview-sidebar.html post=page.next %}
+			</aside>
 			{% endif %}
 			{% if page.previous %}
-				<aside class="block">
-					<h4 class="block_heading"><i class="fa fa-angle-down"></i> Previously</h4>
-					{% include post-preview-sidebar.html post=page.previous %}
-				</aside>
+			<aside class="block">
+				<h4 class="block_heading"><i class="fa fa-angle-down"></i> Previously</h4>
+				{% include post-preview-sidebar.html post=page.previous %}
+			</aside>
 			{% endif %}
 		</div><!-- .col-sm-4 -->
 	</div><!-- .row -->
