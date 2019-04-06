@@ -1,0 +1,11 @@
+<script>
+  window.onscroll = function() {
+    var navbar = document.getElementById("navbar");
+    var className = navbar.getAttribute("class");
+    className = className.replace(/ -hide/g, "");
+    if (window.scrollY === 0) {
+      className = className + " -hide";
+    }
+    navbar.setAttribute("class", className);
+  };
+</script>

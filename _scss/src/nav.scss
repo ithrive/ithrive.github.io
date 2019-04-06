@@ -11,8 +11,15 @@ $navbar-link-height: 40px;
 	width: 100%;
 	font-family: $font-heading;
 	background-color: rgba(map-get($theme-colors, background), 0.9);
-	padding: $nav-padding;
+	padding: 0 $nav-padding;
+	transition: top ease 1s;
+	
+	&.-hide {
+		top: -$navbar-height;
+	}
 }
+
+
 
 .navbarBrand {
 	display: inline-block;
