@@ -50,7 +50,9 @@ permalink: "/posts/:year/:month/:day/:title.html"
 disqusShortName: "ithrive-lab"
 googleMapAPIKey: "AIzaSyCOs4V5JHvC2_CQS6CJV26UH43w-3G2Dao"
 
-gtag: "GTM-5H8DFSZ"
+# service keys
+gtagKey: "GTM-5H8DFSZ"
+shareThisKey: "5ca81c026f05b20011c6da24"
 
 # Build settings
 markdown: kramdown
