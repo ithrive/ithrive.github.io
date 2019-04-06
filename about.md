@@ -2,17 +2,15 @@
 title: "About me"
 layout: info
 permalink: /about/
-sitemap: false
 ---
 
 <section class="-lightOnDark">
   <div class="layer layer-img b-lazy" data-src="/images/backgrounds/about-2.jpg"></div>
-  <!-- <div class="layer layer-gradient layer-gradient-dark-reverse"></div> -->
   <div class="container">
     <div class="row">
-      <h2>My background</h2>
       <div class="col col-sm-6">
-        <p class="lead">
+        <h2 class="hero">Hi, I'm Laura</h2>
+        <p>
           I was not a confident mover growing up. I initially moved toward
           massage as a career, not because of an interest in sports or movement,
           but mostly because I am a natural nurturer.
@@ -34,9 +32,17 @@ sitemap: false
         </p>
       </div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
     <div class="row">
       <div class="col col-sm-6">
-        <h4>Qualifications</h4>
+        <h2 class="hero">Qualifications and memberships</h2>
+      </div>
+      <div class="col col-sm-6">
+        <h3>Qualifications</h3>
         <ul>
           <li>Advanced Diploma Health Science (Soft Tissue Therapy)</li>
           <li>Diploma Remedial Massage</li>
@@ -44,14 +50,12 @@ sitemap: false
           <li>Diploma of Polestar Pilates Studio & Rehabilitation Method</li>
           <li>Certified JEMS Clinical Rehabilitation Practitioner </li>
         </ul>
-        <h4>Professional Association Memberships</h4>
+        <h3>Professional Association Memberships</h3>
         <ul>
           <li>Massage & Myotherapy Australia Advanced Member (MAA)</li>
         </ul>
-      </div><!-- .col-sm-8 -->
-    </div><!-- .row -->
+      </div>
+    </div>
 
-  </div><!-- .container -->
-</section><!-- .section -->
-
-{% include sections/mailing-list.html %}
+  </div>
+</section>

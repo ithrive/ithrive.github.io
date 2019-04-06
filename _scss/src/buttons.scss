@@ -4,6 +4,8 @@
   padding: 0.6em 0.8em;
   border-radius: 6px;
   display: inline-block;
+  font-weight: normal;
+  text-decoration: none;
 
   &.-primary {
     border: 1px map-get($theme-colors, primary) solid;
@@ -26,12 +28,14 @@
   &.-lg {
     font-size: 140%;
     font-weight: 300;
+    padding: 0.8em 1em;
   }
 
   &.-outline {
     border: 1px #000 solid;
     color: #000;
     background-color: transparent;
+    font-weight: bold;
 
     &.-primary {
       border: 1px map-get($theme-colors, primary) solid;
