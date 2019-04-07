@@ -2,7 +2,7 @@
 layout: 'default'
 ---
 
-<div class="navbar-offset"></div><!-- .navbar-offset -->
+<div class="navbar-offset"></div>
 
 {% if page.image %}
 <section class="postHeader">
@@ -16,7 +16,7 @@ layout: 'default'
 			<article class="post">
 				<!-- <a href="/posts" class="btn btn-outline btn-primary"><i class="fa fa-angle-left"></i> Back</a> -->
 				<header>
-					<h1>{{ page.title }}</h1>
+					<h1 class="hero">{{ page.title }}</h1>
 					<p class="post_details">
 						<span class="post_date">{{ page.date | date_to_string }}</span>
 					</p>
@@ -24,11 +24,11 @@ layout: 'default'
 				</header>
 				<div class="post_body" allow-keywords>
 					{{ content }}
-				</div><!-- .post_body -->
+				</div>
 			</article>
 			{% include partials/comments.html %}
-		</div><!-- .col-sm-8 -->
-		
+		</div>
+
 		<div class="col col-sm-1 postSideBar">
 			<!-- <h3 class="sideBar_heading">Read more</h3> -->
 			{% if page.next %}
@@ -43,6 +43,6 @@ layout: 'default'
 				{% include posts/post-sidebar.html post=page.previous %}
 			</aside>
 			{% endif %}
-		</div><!-- .col-sm-4 -->
-	</div><!-- .row -->
-</div><!-- .container -->
+		</div>
+	</div>
+</div>

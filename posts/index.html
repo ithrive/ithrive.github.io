@@ -4,15 +4,13 @@ title: 'Latest news'
 permalink: "/posts/"
 ---
 
-<div class="container postListing">
-  <h1 class="postListing_heading">News and interest pieces</h1>
-  <div class="postListing_posts">
-    <div class="row">
-      <div class="col col-sm-8 col-sm-offset-2">
-        {% for post in paginator.posts %}
-          {% include post-preview-listing.html post=post %}
-        {% endfor %}
-      </div>
+<section>
+  <div class="container">
+    <h1 class="hero -section">News and interest pieces</h1>
+    <div class="row-slim">
+      {% for post in paginator.posts %}
+        {% include posts/post-listing.html post=post %}
+      {% endfor %}
     </div>
   </div>
   <div class="row">
@@ -44,4 +42,4 @@ permalink: "/posts/"
       {% endif %}
     </div>
   </div>
-</div>
+</section>

@@ -44,15 +44,18 @@ google_site_verification: RhF5lLeJQO2xlrXR7urKO_RlcoKB8CyFBn6xbGwBLdE
 #   alexa: 1234
 #   yandex: 1234
 #   baidu: 1234
+
+permalink: "/posts/:year/:title.html"
+
 paginate: 10
 paginate_path: "/posts/page:num/"
-permalink: "/posts/:year/:month/:day/:title.html"
-disqusShortName: "ithrive-lab"
-googleMapAPIKey: "AIzaSyCOs4V5JHvC2_CQS6CJV26UH43w-3G2Dao"
 
 # service keys
 gtagKey: "GTM-5H8DFSZ"
 shareThisKey: "5ca81c026f05b20011c6da24"
+disqusShortName: "ithrive"
+googleMapAPIKey: "AIzaSyCOs4V5JHvC2_CQS6CJV26UH43w-3G2Dao"
+
 
 # Build settings
 markdown: kramdown
@@ -66,16 +69,23 @@ exclude:
   - Gemfile.lock
   - node_modules
   - package.json
+  - yarn.lock
   - readme.md
 collections:
   info:
     output: true
     permalink: /info/:path/
+  events:
+    output: false
 defaults:
   - scope:
       collection: info
     values:
       layout: info
+  - scope:
+      type: posts
+    values:
+      layout: post
   # - scope:
   #     path: ""
   #   values:

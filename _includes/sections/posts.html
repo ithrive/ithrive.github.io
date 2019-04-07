@@ -12,8 +12,8 @@
       </div>
       <div class="col-sm-6">
         <div class="events">
-          {% for post in site.events %}
-            {% include posts/post-listing.html post=post %}
+          {% for event in site.events %}
+            {% include events/event-listing.liquid event=event %}
           {% endfor %}
           <p><a href="/events" class="viewMore">View all events &gt;</a></p>
         </div>

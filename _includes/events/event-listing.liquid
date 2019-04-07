@@ -1,0 +1,15 @@
+{% assign content_length = include.event.content | strip | size %}
+{% assign excerpt_length = include.event.excerpt | strip | size %}
+
+<div class="postPreview well -listing">
+  <header>
+    <h4>{{ include.event.date | date_to_string }}</h4>
+    <h2>{{ include.event.title }}</h2>
+  </header>
+  <div class="postPreview_excerpt">
+    {{ include.event.description }}
+    {% comment %} {% if content_length != excerpt_length %}
+      <p><a href="{{ include.event.url }}" class="postPreview_more">Read more &gt;</a></p>
+    {% endif %} {% endcomment %}
+  </div>
+</div><!-- .postPreview -->
