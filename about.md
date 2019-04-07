@@ -8,7 +8,7 @@ permalink: /about/
   <div class="layer layer-img b-lazy" data-src="/images/backgrounds/about-2.jpg"></div>
   <div class="container">
     <div class="row">
-      <div class="col col-sm-6">
+      <div class="col-sm-6">
         <h2 class="hero">Hi, I'm Laura</h2>
         <p>
           I was not a confident mover growing up. I initially moved toward
@@ -38,10 +38,10 @@ permalink: /about/
 <section>
   <div class="container">
     <div class="row">
-      <div class="col col-sm-6">
+      <div class="col-sm-6">
         <h2 class="hero" style="padding-right:40px">Qualifications and memberships</h2>
       </div>
-      <div class="col col-sm-6">
+      <div class="col-sm-6">
         <h3>Qualifications</h3>
         <ul>
           <li>Advanced Diploma Health Science (Soft Tissue Therapy)</li>

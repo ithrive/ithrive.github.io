@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 .postPreview {
-  @include clearfix;
+  // @include clearfix;
 
   &_title {
     margin: 0;
@@ -12,9 +12,10 @@
     color: map-get($theme-colors, "gray");
   }
 
-  &_more {
-    float: right;
-  }
+  // &_more {
+  //   float: right;
+  // }
+
   &_excerpt {
     padding-top: 10px;
     color: map-get($theme-colors, "gray-dark");

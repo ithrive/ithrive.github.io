@@ -65,12 +65,10 @@ a[href^="mailto:"] {
 
 @include media-breakpoint-down(sm) {
   section {
-    padding: $grid-gutter-width * 2;
-
     >.container-fluid,
     >.container {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width / 2;
     }
   }
 }
@@ -202,7 +200,7 @@ section {
     @include media-breakpoint-down(xs) {
       position: relative;
       width: 100%;
-      margin: 6px auto -20px auto;
+      // margin: 6px auto -20px auto;
       height: 240px;
     }
   }
@@ -644,11 +642,11 @@ h4+ul {
 }
 
 .well {
-  @include media-breakpoint-up(sm) {
+  // @include media-breakpoint-up(sm) {
     background-color: rgba(map-get($theme-colors, background), 0.9);
     padding: $padding-well;
     box-shadow: 0 0 5px rgba(#000, 0.1);
-  }
+  // }
 }
 
 .address {
@@ -667,4 +665,5 @@ a.viewMore {
   // border-top: $border;
   font-size: 80%;
   line-height: 2em;
+  margin-bottom: $grid-gutter-width;
 }
