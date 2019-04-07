@@ -80,7 +80,7 @@ collections:
     permalink: /events/:path/
 defaults:
   - scope:
-      collection: info
+      type: info
     values:
       layout: info
   - scope:
@@ -88,7 +88,7 @@ defaults:
     values:
       layout: post
   - scope:
-      collection: events
+      type: events
     values:
       layout: event
   # - scope:
