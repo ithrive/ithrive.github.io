@@ -12,11 +12,12 @@ $navbar-link-height: 40px;
 	font-family: $font-heading;
 	background-color: rgba(map-get($theme-colors, background), 0.9);
 	padding: 0 $nav-padding;
-	transition: top ease 1s;
+	transition: transform ease 1s;
 	border-bottom: $border;
+	transform: translateY(0);
 	
 	&.-hide {
-		top: -$navbar-height;
+		transform: translateY(-100%);
 	}
 	@include media-breakpoint-down(xs) {
 		text-align: center;
