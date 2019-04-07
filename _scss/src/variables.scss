@@ -24,8 +24,10 @@ $theme-colors: ("primary": $primary,
 "dark": $dark,
 "dark-complement": $light,
 "gray-light": $gray-light,
+"gray-lighter": $gray-lighter,
 "gray": $gray,
-"gray-dark": $gray-dark);
+"gray-dark": $gray-dark,
+"gray-darker": $gray-darker);
 
 $font-name-body: "Helvetica";
 $font-name-heading: "Helvetica";
@@ -39,3 +41,5 @@ sans-serif;
 
 $grid-gutter-width: 10px;
 $padding-well: 20px;
+
+$border: 1px solid map-get($theme-colors, "gray-lighter");

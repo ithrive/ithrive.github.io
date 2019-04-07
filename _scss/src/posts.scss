@@ -1,0 +1,49 @@
+@import "./variables.scss";
+
+.postPreview {
+  @include clearfix;
+
+  &_title {
+    margin: 0;
+  }
+
+  &_meta {
+    font-size: 9pt;
+    color: map-get($theme-colors, "gray");
+  }
+
+  &_more {
+    float: right;
+  }
+  &_excerpt {
+    padding-top: 10px;
+    color: map-get($theme-colors, "gray-dark");
+  }
+
+  &.-listing {
+    margin-bottom: 20px;
+
+    header {
+      border-bottom: $border;
+      padding-bottom: 5px;
+    }
+  }
+
+  &.-sidebar {
+    margin-bottom: 20px;
+
+    .postPreview_title {
+      font-size: 14pt;
+    }
+
+    .postPreview_excerpt {
+      font-size: 10pt;
+      color: map-get($theme-colors, "gray-light");
+      line-height: 1.2em;
+    }
+
+    header {
+      margin: 0 0 10px 0;
+    }
+  }
+}

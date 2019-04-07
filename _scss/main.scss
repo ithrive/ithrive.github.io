@@ -11,6 +11,7 @@
 @import "src/footer";
 @import "src/icomoon";
 @import "src/buttons";
+@import "src/posts";
 
 %altFont {
   letter-spacing: 0.02em;
@@ -89,6 +90,7 @@ h1,h2,h3,h4,h5 {
     &.-section {
       opacity: 0.7;
       text-align: center;
+      margin-bottom: 30px;
     }
   }
 }
@@ -354,54 +356,6 @@ article.post {
   }
 }
 
-.postPreview {
-  @include clearfix;
-
-  .post_title {
-    margin: 0;
-  }
-
-  a.post_more {
-    float: right;
-  }
-
-  &-listing {
-    margin-bottom: 20px;
-
-    header {
-      border-bottom: 1px solid $gray-lighter;
-      padding-bottom: 5px;
-    }
-
-    .post_excerpt {
-      padding-top: 10px;
-      color: $gray-light;
-    }
-  }
-
-  &-sidebar {
-    margin-bottom: 20px;
-
-    .post_title {
-      font-size: 14pt;
-    }
-
-    .post_excerpt {
-      font-size: 10pt;
-      color: $gray-light;
-      line-height: 1.2em;
-    }
-
-    .post_date {
-      font-size: 9pt;
-    }
-
-    header {
-      margin: 0 0 10px 0;
-    }
-  }
-}
-
 // .control-label {
 // 	text-align: center;
 // 	display: block;
@@ -598,32 +552,6 @@ a.keyword {
   }
 }
 
-blockquote {
-  font-style: italic;
-  padding: 2em;
-  position: relative;
-
-  &::before,
-  &::after {
-    font-size: 400%;
-    opacity: 0.5;
-  }
-
-  &::before {
-    content: "“";
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &::after {
-    content: "”";
-    position: absolute;
-    bottom: -20px;
-    right: 20px;
-  }
-}
-
 .strong {
   font-size: 160%;
   line-height: 1.4em;
@@ -646,81 +574,6 @@ blockquote {
     height: 100%;
   }
 }
-
-// Use for showing the equipment
-.blockGrid {
-  @include clearfix;
-
-  >div {
-    float: left;
-    position: relative;
-    min-height: 250px;
-    width: 25%; // assumes 4
-
-    @include media-breakpoint-down(sm) {}
-
-    @include media-breakpoint-down(xs) {
-      min-height: 200px;
-      width: 50%;
-    }
-
-    background-color: map-get($theme-colors, primary);
-
-    &:nth-child(1) {
-      background-color: lighten(map-get($theme-colors, primary), 5%);
-    }
-
-    &:nth-child(2) {
-      background-color: lighten(map-get($theme-colors, primary), 10%);
-    }
-
-    &:nth-child(3) {
-      background-color: lighten(map-get($theme-colors, primary), 15%);
-    }
-
-    &:nth-child(4) {
-      background-color: lighten(map-get($theme-colors, primary), 20%);
-    }
-
-    &:nth-child(5) {
-      background-color: lighten(map-get($theme-colors, primary), 20%);
-    }
-
-    &:nth-child(6) {
-      background-color: lighten(map-get($theme-colors, primary), 15%);
-    }
-
-    &:nth-child(7) {
-      background-color: lighten(map-get($theme-colors, primary), 10%);
-    }
-
-    &:nth-child(8) {
-      background-color: lighten(map-get($theme-colors, primary), 5%);
-    }
-  }
-}
-
-.section-tight {
-  @include padSection(70px, 70px);
-}
-
-// ul.locationList {
-// 	list-style: none;
-// 	display: block;
-
-// 	li {
-// 		padding: 0;
-// 		display: inline;
-// 		font-weight: 700;
-// 		&::after {
-// 			content: ' - ';
-// 			font-weight: 400;
-// 		}
-// 		&:last-child::after {
-// 			display: none;
-// 		}
-// 	}
-// }
 
 .locations {
   strong {
@@ -824,4 +677,12 @@ h4+ul {
 .pswp__top-bar,
 .pswp__ui {
   display: none;
+}
+
+a.viewMore {
+  display: block;
+  text-align: center;
+  // border-top: $border;
+  font-size: 80%;
+  line-height: 2em;
 }

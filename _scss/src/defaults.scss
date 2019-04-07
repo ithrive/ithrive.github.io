@@ -55,3 +55,29 @@ li {
 a:hover {
   text-decoration: none;
 }
+
+blockquote {
+  font-style: italic;
+  padding: 2em;
+  position: relative;
+
+  &::before,
+  &::after {
+    font-size: 400%;
+    opacity: 0.5;
+  }
+
+  &::before {
+    content: "“";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "”";
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+  }
+}

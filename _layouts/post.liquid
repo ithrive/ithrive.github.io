@@ -26,20 +26,21 @@ layout: 'default'
 					{{ content }}
 				</div><!-- .post_body -->
 			</article>
-			{% include comments.html %}
+			{% include partials/comments.html %}
 		</div><!-- .col-sm-8 -->
+		
 		<div class="col col-sm-1 postSideBar">
 			<!-- <h3 class="sideBar_heading">Read more</h3> -->
 			{% if page.next %}
 			<aside class="block">
 				<h4 class="block_heading"><i class="fa fa-angle-up"></i> More recent</h4>
-				{% include post-preview-sidebar.html post=page.next %}
+				{% include posts/post-sidebar.html post=page.next %}
 			</aside>
 			{% endif %}
 			{% if page.previous %}
 			<aside class="block">
 				<h4 class="block_heading"><i class="fa fa-angle-down"></i> Previously</h4>
-				{% include post-preview-sidebar.html post=page.previous %}
+				{% include posts/post-sidebar.html post=page.previous %}
 			</aside>
 			{% endif %}
 		</div><!-- .col-sm-4 -->

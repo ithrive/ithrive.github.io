@@ -39,7 +39,7 @@ permalink: /about/
   <div class="container">
     <div class="row">
       <div class="col col-sm-6">
-        <h2 class="hero">Qualifications and memberships</h2>
+        <h2 class="hero" style="padding-right:40px">Qualifications and memberships</h2>
       </div>
       <div class="col col-sm-6">
         <h3>Qualifications</h3>
