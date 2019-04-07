@@ -2,7 +2,15 @@
 title: "JEMS in Brookvale"
 date: 2019-05-05 00:00:00
 location: "Polestar Pilates, Brookvale NSW"
-description: "Consequat magna ullamco non pariatur aute adipisicing aliqua labore cillum ipsum consequat consequat. Ut nulla magna quis sunt aute minim aliquip cupidatat quis consequat. Dolore ex commodo irure est ipsum reprehenderit id occaecat et aute."
+description: "The Power and the Grace: Ease and Efficiency in Natural Functional Movement - The JEMS® Foundation Course for Health, Fitness and Wellbeing Professionals."
 ---
 
-Ullamco aliquip dolore eu deserunt veniam nisi est. Officia anim aute voluptate sunt aliqua fugiat velit eu fugiat ad. Mollit elit minim irure dolor fugiat nostrud incididunt Lorem veniam. Deserunt in exercitation incididunt qui adipisicing tempor veniam est. Ut enim deserunt Lorem incididunt. Dolor excepteur exercitation officia aliquip eiusmod eiusmod dolor labore exercitation non eu.
+What if there was a way to help real people to move beautifully, effectively, elegantly and powerfully?
+
+What if you could see movement in a completely new but utterly logical way, understanding the biomechanics effortlessly, and opening new possibilities for people of all ages and abilities by assimilating the brain, body and emotion with function, physics and fascia?
+
+Join international elite performance consultant, physiotherapist and renowned educator Joanne Elphinston as she demystifies the science, debunks the myths and inspires your passion for movement with JEMS®, a seamless integration of the art and science of holistic movement training for both health and performance.
+
+This unique course celebrates the launch of Joanne's long awaited new book, The Power and the Grace, a Professional's Guide to Ease and Efficiency in Functional Movement.
+
+For further information and to book contact Laura: laura@ithrive.net.au
