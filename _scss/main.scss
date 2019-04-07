@@ -207,7 +207,7 @@ section {
 
   &.-lightOnDark {
     @extend %lightText;
-    background-color: #aaa;
+    background-color: map-get($theme-colors, "gray-darker");
   }
 
   &.-splash {
