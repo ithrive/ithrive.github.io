@@ -1,13 +1,13 @@
 <nav class="navbar -hide" data-scroll-header id="navbar">
   <div class="container">
     <span class="navbarBrand">
-      {% if page.url == "/index.html" %}
+      {% if page.url == "/index.html" || page.url == "/" %}
         <a href="#top"><img class="navbar_logo" src="{% include inline-images/logo.html %}" /></a>
       {% else %}
         <a href="/"><img class="navbar_logo" src="{% include inline-images/logo.html %}" /></a>
       {% endif %}
     </span>
-    {% if page.url == "/index.html" %}
+    {% if page.url == "/index.html" || page.url == "/" %}
       <ul class="navbarLinks">
         <li>
           <a href="#service">Service</a>
