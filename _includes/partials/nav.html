@@ -1,13 +1,15 @@
+{% assign url = page.url | remove: "index.html" %}
+
 <nav class="navbar -hide" data-scroll-header id="navbar">
   <div class="container">
     <span class="navbarBrand">
-      {% if page.url == "/index.html" || page.url == "/" %}
+      {% if url == "/" %}
         <a href="#top"><img class="navbar_logo" src="{% include inline-images/logo.html %}" /></a>
       {% else %}
         <a href="/"><img class="navbar_logo" src="{% include inline-images/logo.html %}" /></a>
       {% endif %}
     </span>
-    {% if page.url == "/index.html" || page.url == "/" %}
+    {% if url == "/" %}
       <ul class="navbarLinks">
         <li>
           <a href="#service">Service</a>
