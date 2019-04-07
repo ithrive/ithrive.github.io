@@ -1,16 +1,22 @@
 <nav class="navbar -hide" data-scroll-header id="navbar">
   <div class="container">
     <span class="navbarBrand">
-      <a href="#top"><img class="navbar_logo" src="{% include inline-icon-data.html %}" /></a>
+      {% if page.url == "/index.html" %}
+        <a href="#top"><img class="navbar_logo" src="{% include inline-icon-data.html %}" /></a>
+      {% else %}
+        <a href="/"><img class="navbar_logo" src="{% include inline-icon-data.html %}" /></a>
+      {% endif %}
     </span>
-    <ul class="navbarLinks">
-      <li>
-        <a href="#service">Service</a>
-        <!-- <a href="#about">About me</a> -->
-        <a href="#location">Location</a>
-        <a href="#posts">News</a>
-        <a href="#book" class="btn -dark">Book now</a>
-      </li>
-    </ul>
+    {% if page.url == "/index.html" %}
+      <ul class="navbarLinks">
+        <li>
+          <a href="#service">Service</a>
+          <!-- <a href="#about">About me</a> -->
+          <a href="#location">Location</a>
+          <a href="#posts">News</a>
+          <a href="#book" class="btn -dark">Book now</a>
+        </li>
+      </ul>
+    {% endif %}
   </div>
 </nav>

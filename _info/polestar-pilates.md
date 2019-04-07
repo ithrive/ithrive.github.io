@@ -2,7 +2,7 @@
 title: 'Polestar Pilates'
 keywords: 'Polestar Pilates'
 description: 'POLESTAR® creates life-changing movement experiences by fusing Pilates, physical-therapy and mind-body energy systems. '
-image: '/images/knowledge-base/polestar-pilates.jpg'
+image: '/images/logos/polestar-pilates.jpg'
 ---
 Polestar is an international authority in Pilates education, focused on whole body wellness, healing through movement modalities and mind-body-spirit connectivity
 

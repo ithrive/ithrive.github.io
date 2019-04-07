@@ -68,14 +68,14 @@ exclude:
   - package.json
   - readme.md
 collections:
-  # knowledge_base:
-  #   output: true
-  #   permalink: /knowledge-base/:path/
+  info:
+    output: true
+    permalink: /info/:path/
 defaults:
   - scope:
-      collection: knowledge_base
+      collection: info
     values:
-      layout: knowledge-base
+      layout: info
   # - scope:
   #     path: ""
   #   values:

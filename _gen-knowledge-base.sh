@@ -3,7 +3,7 @@ echo "Enter the name of the topic [e.g. Foam roller]:"
 read title
 # $(date +"%Y-%m-%d-")
 name=$(echo $title | tr '[:upper:]' '[:lower:]' | sed "s/ /-/g")
-filename=_knowledge_base/$name.md
+filename=_info/$name.md
 
 if [ -f "$filename" ]
 then
@@ -19,7 +19,7 @@ echo "image: '/images/knowledge-base/$name.jpg'" >> $filename
 echo "---" >> $filename
 echo "ADD FULL DESCRIPTION HERE..." >> $filename
 
-echo "Please fill in the details in: _knowledge_base/$filename"
+echo "Please fill in the details in: _info/$filename"
 
 git add $filename
 echo "The file has been added to your Git repo"
