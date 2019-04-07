@@ -47,3 +47,20 @@
     }
   }
 }
+
+article.post {
+  padding: 50px 0;
+
+  header {
+    margin: 20px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+
+  .post_body {
+    font-size: 12pt;
+  }
+
+  .post_details {
+    color: $gray-light;
+  }
+}

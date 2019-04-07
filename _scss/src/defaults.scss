@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 body {
   font-family: "Helvetica", "Arial", sans-serif;
 }
@@ -79,5 +81,13 @@ blockquote {
     position: absolute;
     bottom: -20px;
     right: 20px;
+  }
+}
+
+article {
+  header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: $border;
   }
 }

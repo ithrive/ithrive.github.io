@@ -18,7 +18,7 @@ layout: 'default'
 				<header>
 					<h1 class="hero">{{ page.title }}</h1>
 					<p class="post_details">
-						<span class="post_date">{{ page.date | date_to_string }}</span>
+						<span class="post_date">{{ page.date | date: "%b %d, %Y" }}</span>
 					</p>
 					<div class="sharethis-inline-share-buttons"></div>
 				</header>

@@ -3,13 +3,14 @@
 
 <div class="postPreview well -listing">
   <header>
-    <h4>{{ include.event.date | date_to_string }}</h4>
-    <h2>{{ include.event.title }}</h2>
+    <h4>{{ include.event.date | date: "%b %d, %Y" }}</h4>
+    <h2><a href="{{ include.event.url }}">{{ include.event.title }}</a></h2>
+    <p>
+      {% if include.event.location %}@ {{ include.event.location }}{% endif %}
+    </p>
   </header>
   <div class="postPreview_excerpt">
     {{ include.event.description }}
-    {% comment %} {% if content_length != excerpt_length %}
-      <p><a href="{{ include.event.url }}" class="postPreview_more">Read more &gt;</a></p>
-    {% endif %} {% endcomment %}
+    <p><a href="{{ include.event.url }}" class="postPreview_more">Read more &gt;</a></p>
   </div>
 </div><!-- .postPreview -->

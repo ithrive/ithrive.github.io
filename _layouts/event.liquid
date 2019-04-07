@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<article class="event well">
+					<header>
+						<h4>{{ page.date | date: "%b %d, %Y" }}</h4>
+						<h2 class="hero">{{ page.title }}</h2>
+						<p class="post_details">
+							{% if page.location %}@ {{ page.location }}{% endif %}
+						</p>
+						<div class="sharethis-inline-share-buttons"></div>
+					</header>
+					<div class="post_body">
+						<p>{{ page.description }}</p>
+						{{ content }}
+					</div>
+				</article>
+				{% include partials/comments.html %}
+			</div>
+		</div>
+	</div>
+</section>

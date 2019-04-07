@@ -1,6 +1,6 @@
 ---
 title: "JEMS in Melbourne"
-date: "2019-05-17"
+date: 2019-05-17 00:00:00
 location: "Polestar Pilates, Brookvalue, NSW"
 description: "Consequat magna ullamco non pariatur aute adipisicing aliqua labore cillum ipsum consequat consequat. Ut nulla magna quis sunt aute minim aliquip cupidatat quis consequat. Dolore ex commodo irure est ipsum reprehenderit id occaecat et aute."
 ---

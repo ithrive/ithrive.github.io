@@ -1,21 +1,22 @@
 <section id="posts">
   <div class="container">
-    <h2 class="hero -section">Latest news and events</h2>
     <div class="row">
       <div class="col-sm-6">
+        <h2 class="hero -section">Latest news</h2>
         <div class="posts">
           {% for post in site.posts %}
             {% include posts/post-listing.html post=post %}
           {% endfor %}
-          <p><a href="/posts" class="viewMore">View all posts &gt;</a></p>
+          <p><a href="/posts" class="viewMore">View all posts</a></p>
         </div>
       </div>
       <div class="col-sm-6">
+        <h2 class="hero -section">Events</h2>
         <div class="events">
           {% for event in site.events %}
             {% include events/event-listing.liquid event=event %}
           {% endfor %}
-          <p><a href="/events" class="viewMore">View all events &gt;</a></p>
+          <p><a href="/events" class="viewMore">View all events</a></p>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 ---
-title: "JEMS on the Northern Beaches"
-date: "2019-05-05"
-location: "Polestar Pilates, Brookvalue, NSW"
+title: "JEMS in Brookvale"
+date: 2019-05-05 00:00:00
+location: "Polestar Pilates, Brookvale NSW"
 description: "Consequat magna ullamco non pariatur aute adipisicing aliqua labore cillum ipsum consequat consequat. Ut nulla magna quis sunt aute minim aliquip cupidatat quis consequat. Dolore ex commodo irure est ipsum reprehenderit id occaecat et aute."
 ---
 

@@ -76,7 +76,8 @@ collections:
     output: true
     permalink: /info/:path/
   events:
-    output: false
+    output: true
+    permalink: /events/:path/
 defaults:
   - scope:
       collection: info
@@ -86,6 +87,10 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      collection: events
+    values:
+      layout: event
   # - scope:
   #     path: ""
   #   values:

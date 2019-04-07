@@ -7,7 +7,7 @@
       <a href="{{ include.post.url }}">{{ include.post.title }}</a>
     </h2>
     <div class="postPreview_meta">
-      Posted {{ include.post.date | date_to_string }} - <i class="fa fa-comment"></i> <span class="disqus-comment-count" data-disqus-identifier="{{ include.post.id }}"></span>
+      Posted {{ include.post.date | date: "%b %d, %Y" }} - <i class="fa fa-comment"></i> <span class="disqus-comment-count" data-disqus-identifier="{{ include.post.id }}"></span>
     </div>
   </header>
   <div class="postPreview_excerpt">
