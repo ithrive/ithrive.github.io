@@ -1,5 +1,5 @@
 ---
-title: "JEMS in Brookvale"
+title: "JEMS Foundation course for Health, Fitness & Wellbeing Professionals"
 date: 2019-05-05 00:00:00
 location: "Polestar Pilates, Brookvale NSW"
 description: "The Power and the Grace: Ease and Efficiency in Natural Functional Movement - The JEMS® Foundation Course for Health, Fitness and Wellbeing Professionals."
