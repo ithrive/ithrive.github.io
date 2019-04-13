@@ -660,7 +660,7 @@ a.viewMore {
 @mixin serviceIcon($size) {
   width: $size;
   height: $size;
-  font-size: $size*0.7;
+  font-size: $size*0.8;
   line-height: $size;
 }
 
@@ -703,7 +703,7 @@ a.viewMore {
 }
 
 .serviceIcons {
-  $overlap: 20px;
+  $overlap: 12px;
   text-align: center;
   padding: $overlap;
   margin: 40px 0;
