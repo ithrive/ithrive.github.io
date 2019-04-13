@@ -43,3 +43,20 @@ $grid-gutter-width: 40px;
 $padding-well: 20px;
 
 $border: 1px solid map-get($theme-colors, "gray-lighter");
+
+// from icomoon
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: $icon-font-path;
+
+$icon-be-activated: "\e903";
+$icon-remedial-massage: "\e904";
+$icon-pilates: "\e905";
+$icon-jems: "\e906";
+$icon-oov: "\e907";
+$icon-chevron-left: "\e901";
+$icon-chevron-right: "\e902";
+$icon-mail: "\e900";
+$icon-facebook: "\ea91";
+$icon-tumblr: "\eaba";
+$icon-linkedin: "\eac9";
+

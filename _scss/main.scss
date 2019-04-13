@@ -65,6 +65,7 @@ a[href^="mailto:"] {
 
 @include media-breakpoint-down(sm) {
   section {
+
     >.container-fluid,
     >.container {
       padding-left: $grid-gutter-width / 2;
@@ -73,14 +74,20 @@ a[href^="mailto:"] {
   }
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   &.hero {
     font-size: 30pt;
     font-weight: 300;
     margin: 0 0 0.3em 0;
+
     @include media-breakpoint-down(sm) {
       font-size: 24pt;
     }
+
     @include media-breakpoint-down(xs) {
       font-size: 20pt;
     }
@@ -643,9 +650,9 @@ h4+ul {
 
 .well {
   // @include media-breakpoint-up(sm) {
-    background-color: rgba(map-get($theme-colors, background), 0.9);
-    padding: $padding-well;
-    box-shadow: 0 0 5px rgba(#000, 0.1);
+  background-color: rgba(map-get($theme-colors, background), 0.9);
+  padding: $padding-well;
+  box-shadow: 0 0 5px rgba(#000, 0.1);
   // }
 }
 
@@ -666,4 +673,21 @@ a.viewMore {
   font-size: 80%;
   line-height: 2em;
   margin-bottom: $grid-gutter-width;
+}
+
+.serviceIcon {
+  $size: 120px;
+  width: $size;
+  height: $size;
+  background-color: rgba(map-get($theme-colors, "primary"), 0.7);
+  border-radius: 50%;
+  color: map-get($theme-colors, "primary-compliment");
+  margin-bottom: 15px;
+
+  >span {
+    font-size: $size*0.8;
+    text-align: center;
+    line-height: $size;
+    display: block;
+  }
 }
