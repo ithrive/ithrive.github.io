@@ -6,6 +6,12 @@ $primary-compliment: #fff;
 $info: yellow;
 $background: #fff;
 
+$jems: adjust-hue($primary, 30deg);
+$oov: adjust-hue($primary, 60deg);
+$be-activated: adjust-hue($primary, 90deg);
+$pilates: adjust-hue($primary, 120deg);
+$remedial-massage: adjust-hue($primary, 150deg);
+
 $gray-darker: #444;
 $gray-dark: #666;
 $gray: #999;
@@ -27,7 +33,13 @@ $theme-colors: ("primary": $primary,
 "gray-lighter": $gray-lighter,
 "gray": $gray,
 "gray-dark": $gray-dark,
-"gray-darker": $gray-darker);
+"gray-darker": $gray-darker,
+"jems": $jems,
+"oov": $oov,
+"be-activated": $be-activated,
+"pilates": $pilates,
+"remedial-massage": $remedial-massage,
+);
 
 $font-name-body: "Helvetica";
 $font-name-heading: "Helvetica";
@@ -59,4 +71,3 @@ $icon-mail: "\e900";
 $icon-facebook: "\ea91";
 $icon-tumblr: "\eaba";
 $icon-linkedin: "\eac9";
-

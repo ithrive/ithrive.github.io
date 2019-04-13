@@ -7,13 +7,19 @@
       <a href="{{ include.post.url }}">{{ include.post.title }}</a>
     </h2>
     <div class="postPreview_meta">
-      Posted {{ include.post.date | date: "%b %d, %Y" }} - <i class="fa fa-comment"></i> <span class="disqus-comment-count" data-disqus-identifier="{{ include.post.id }}"></span>
+      Posted {{ include.post.date | date: "%b %d, %Y" }} -
+      <i class="fa fa-comment"></i>
+      <span class="disqus-comment-count" data-disqus-identifier="{{ include.post.id }}"></span>
     </div>
   </header>
   <div class="postPreview_excerpt">
     {{ include.post.excerpt }}
     {% if content_length != excerpt_length %}
-      <p><a href="{{ include.post.url }}" class="postPreview_more">Read more &gt;</a></p>
+    <p>
+      <a href="{{ include.post.url }}" class="postPreview_more">Read more <span
+          class="icon icon-chevron-right"></span></a>
+    </p>
     {% endif %}
   </div>
-</div><!-- .postPreview -->
+</div>
+<!-- .postPreview -->

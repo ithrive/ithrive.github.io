@@ -625,24 +625,6 @@ h4+ul {
   margin-top: -10px;
 }
 
-.features {
-  display: flex;
-  flex-flow: row wrap;
-  // justify-content: space-around;
-  justify-content: center;
-}
-
-.feature {
-  display: inline-block;
-  max-width: 300px;
-  margin: 30px 20px;
-  text-align: left;
-
-  img {
-    max-height: 120px;
-  }
-}
-
 .row-slim {
   max-width: 600px;
   margin: 0 auto;
@@ -675,19 +657,102 @@ a.viewMore {
   margin-bottom: $grid-gutter-width;
 }
 
-.serviceIcon {
-  $size: 120px;
+@mixin serviceIcon($size) {
   width: $size;
   height: $size;
+  font-size: $size*0.7;
+  line-height: $size;
+}
+
+.serviceIcon {
+  @include serviceIcon(120px);
   background-color: rgba(map-get($theme-colors, "primary"), 0.7);
   border-radius: 50%;
   color: map-get($theme-colors, "primary-compliment");
   margin-bottom: 15px;
+  transition: opacity 0.5s;
+  opacity: 0.7;
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
 
-  >span {
-    font-size: $size*0.8;
-    text-align: center;
-    line-height: $size;
-    display: block;
+  &.icon-jems {
+    background-color: map-get($theme-colors, "jems");
   }
+
+  &.icon-oov {
+    background-color: map-get($theme-colors, "oov");
+  }
+
+  &.icon-be-activated {
+    background-color: map-get($theme-colors, "be-activated");
+  }
+
+  &.icon-pilates {
+    background-color: map-get($theme-colors, "pilates");
+  }
+
+  &.icon-remedial-massage {
+    background-color: map-get($theme-colors, "remedial-massage");
+  }
+
+  // &:hover {
+  //   opacity: 1;
+  //   z-index: 10;
+  // }
+}
+
+.serviceIcons {
+  $overlap: 20px;
+  text-align: center;
+  padding: $overlap;
+  margin: 40px 0;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
+  .serviceIcon {
+    @include serviceIcon(180px);
+    display: inline-block;
+    margin: $overlap*-1.5 $overlap*-1;
+  }
+}
+
+.features {
+  display: flex;
+  flex-flow: row wrap;
+  // justify-content: space-around;
+  justify-content: center;
+}
+
+.feature {
+  display: inline-block;
+  max-width: 340px;
+  margin: 30px 20px;
+  text-align: left;
+
+  p {
+    margin-bottom: 5px;
+    font-size: $font-size-sm;
+  }
+
+  >.serviceIcon {
+    @include media-breakpoint-up(sm) {
+      display: none;
+    }
+  }
+
+  >h2 .serviceIcon {
+    @include serviceIcon(40px);
+    margin-right: 5px;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}
+
+.icon-chevron-right {
+  font-size: 80%;
 }
