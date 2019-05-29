@@ -1,8 +1,12 @@
 ---
-title: 'Remedial massage'
-description: 'Occaecat aute eu anim aliqua dolor aute. Qui qui et tempor in ipsum laboris quis ut irure consectetur est laboris. Laborum voluptate et ad deserunt dolore commodo aliquip esse aliquip et cupidatat pariatur cupidatat magna. Ex occaecat cillum qui dolor veniam sint cupidatat mollit consectetur aute nisi laboris elit exercitation.'
+title: 'What is Soft Tissue Therapy'
+description: 'Soft Tissue Therapy (STT) is the assessment, treatment and management of soft tissue injury, pain and dysfunction. The soft tissues of the body include fascia, muscles, ligaments, tendons and skin. '
 ---
 
-Nostrud dolore do irure sit. Consequat consectetur elit sint tempor. Commodo nostrud enim sint laboris est aliqua sit ad enim duis. Mollit veniam do pariatur quis dolore incididunt ea qui non. Ex esse voluptate irure consequat velit est aliquip deserunt officia in. Sit ullamco occaecat sit do irure nostrud sit cupidatat.
+Soft Tissue therapists have typically progressed through three levels of training:
 
-Eiusmod ad occaecat sunt mollit elit ipsum ut culpa dolore. Magna Lorem cillum anim ea minim mollit enim cillum cillum. Elit do commodo pariatur deserunt fugiat nisi id. Lorem elit cillum fugiat culpa. Consectetur elit incididunt non cupidatat amet velit officia.
+Certificate IV in Massage Therapy: which provides basic Swedish/relaxation massage techniques.
+
+Diploma of Remedial Massage: which provides a broader skill set enabling the treatment of common musculoskeletal complaints. Therapists at this level are typically geared toward symptom alleviation. This is the basic level of qualification required for claiming health fund rebates for massage. 
+
+Advanced Diploma of Health Science - Soft Tissue Therapy (NSW) or Myotherapy (VIC): This qualification provides advanced assessment and treatment planning skills. These therapists are equipped to look beyond the "where" and understand the "why" and "how" of your complaint. That is, they look to identify and address the causative factors of your pain and are equipped to provide you with self-care to prevent recurrence. 

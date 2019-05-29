@@ -1,12 +1,13 @@
 ---
 title: "Be Activated"
-description: "Occaecat aute eu anim aliqua dolor aute. Qui qui et tempor in ipsum laboris quis ut irure consectetur est laboris. Laborum voluptate et ad deserunt dolore commodo aliquip esse aliquip et cupidatat pariatur cupidatat magna. Ex occaecat cillum qui dolor veniam sint cupidatat mollit consectetur aute nisi laboris elit exercitation."
+description: "Are you exploding with energy or imploding and collapsing?"
 image: "/images/logos/douglasheel-logo-color.jpg"
 homepageUrl: "https://douglasheel.com/"
 ---
 
-Nostrud dolore do irure sit. Consequat consectetur elit sint tempor. Commodo nostrud enim sint laboris est aliqua sit ad enim duis. Mollit veniam do pariatur quis dolore incididunt ea qui non. Ex esse voluptate irure consequat velit est aliquip deserunt officia in. Sit ullamco occaecat sit do irure nostrud sit cupidatat.
+The Be Activated Techniques is an assessment and treatment method developed by South African Physiotherapist Douglas Heel. Assessment involves a sequence of muscle strength and flexibility tests that aims to identify your muscle recruitment and sequencing choices. Treatment is then geared toward optimising this sequencing to initiate from the powerful central muscles of the trunk and expand outward, rather than relying on peripheral structures that drive inward. 
+
+An holistic, whole body treatment, it begins with addressing breathing restrictions and ultimately considers the function of all the major joints and muscles throughout the body.
 
 {% include media/youtube.liquid videoId="j3GoK90M5aM" %}
 
-Eiusmod ad occaecat sunt mollit elit ipsum ut culpa dolore. Magna Lorem cillum anim ea minim mollit enim cillum cillum. Elit do commodo pariatur deserunt fugiat nisi id. Lorem elit cillum fugiat culpa. Consectetur elit incididunt non cupidatat amet velit officia.
